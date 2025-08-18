@@ -23,7 +23,7 @@ def analyze_sentiment(review):
         return "Error in sentiment analysis"
 
 # Function to load reviews from CSV and perform sentiment analysis
-def analyze_reviews_from_csv(file_path="MOCK_DATA-_4_ (1).csv"):
+def analyze_reviews_from_csv(file_path="final_updated_dataset (1).csv"):
     try:
         # Get the absolute path to the CSV file
         abs_file_path = os.path.join(os.path.dirname(__file__), file_path)

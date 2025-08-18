@@ -1,0 +1,6104 @@
+{
+  "cf": {
+    "item_count": 10,
+    "user_count": 1000
+  },
+  "clusters": [
+    {
+      "cluster": 0,
+      "top_categories": [
+        "Indian Curry",
+        "Spicy",
+        "Seafood",
+        "Healthy",
+        "Street Food",
+        "Chinese",
+        "Cheesy",
+        "Snacks",
+        "Vegan",
+        "Dessert"
+      ]
+    },
+    {
+      "cluster": 1,
+      "top_categories": [
+        "Seafood",
+        "Chinese",
+        "Vegan",
+        "Snacks",
+        "Spicy",
+        "Dessert",
+        "Healthy",
+        "Cheesy",
+        "Indian Curry",
+        "Street Food"
+      ]
+    },
+    {
+      "cluster": 2,
+      "top_categories": [
+        "Seafood",
+        "Dessert",
+        "Indian Curry",
+        "Snacks",
+        "Chinese",
+        "Healthy",
+        "Street Food",
+        "Vegan",
+        "Cheesy",
+        "Spicy"
+      ]
+    },
+    {
+      "cluster": 3,
+      "top_categories": [
+        "Street Food",
+        "Cheesy",
+        "Seafood",
+        "Spicy",
+        "Healthy",
+        "Indian Curry",
+        "Vegan",
+        "Snacks",
+        "Dessert",
+        "Chinese"
+      ]
+    },
+    {
+      "cluster": 4,
+      "top_categories": [
+        "Cheesy",
+        "Street Food",
+        "Snacks",
+        "Healthy",
+        "Spicy",
+        "Dessert",
+        "Seafood",
+        "Chinese",
+        "Indian Curry",
+        "Vegan"
+      ]
+    },
+    {
+      "cluster": 5,
+      "top_categories": [
+        "Dessert",
+        "Indian Curry",
+        "Spicy",
+        "Cheesy",
+        "Street Food",
+        "Vegan",
+        "Seafood",
+        "Healthy",
+        "Snacks",
+        "Chinese"
+      ]
+    }
+  ],
+  "restaurants": [
+    {
+      "restaurant_id": "R1",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R10",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R100",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R1000",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R101",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R102",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R103",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R104",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R105",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R106",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R107",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R108",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R109",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R11",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R110",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R111",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R112",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R113",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R114",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R115",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R116",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R117",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R118",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R119",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R12",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R120",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R121",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R122",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R123",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R124",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R125",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R126",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R127",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R128",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R129",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R13",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R130",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R131",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R132",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R133",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R134",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R135",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R136",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R137",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R138",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R139",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R14",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R140",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R141",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R142",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R143",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R144",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R145",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R146",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R147",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R148",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R149",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R15",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R150",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R151",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R152",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R153",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R154",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R155",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R156",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R157",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R158",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R159",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R16",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R160",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R161",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R162",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R163",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R164",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R165",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R166",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R167",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R168",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R169",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R17",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R170",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R171",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R172",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R173",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R174",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R175",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R176",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R177",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R178",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R179",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R18",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R180",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R181",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R182",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R183",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R184",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R185",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R186",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R187",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R188",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R189",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R19",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R190",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R191",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R192",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R193",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R194",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R195",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R196",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R197",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R198",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R199",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R2",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R20",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R200",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R201",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R202",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R203",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R204",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R205",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R206",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R207",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R208",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R209",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R21",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R210",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R211",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R212",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R213",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R214",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R215",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R216",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R217",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R218",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R219",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R22",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R220",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R221",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R222",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R223",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R224",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R225",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R226",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R227",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R228",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R229",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R23",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R230",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R231",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R232",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R233",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R234",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R235",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R236",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R237",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R238",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R239",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R24",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R240",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R241",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R242",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R243",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R244",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R245",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R246",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R247",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R248",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R249",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R25",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R250",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R251",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R252",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R253",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R254",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R255",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R256",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R257",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R258",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R259",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R26",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R260",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R261",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R262",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R263",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R264",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R265",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R266",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R267",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R268",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R269",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R27",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R270",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R271",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R272",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R273",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R274",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R275",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R276",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R277",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R278",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R279",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R28",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R280",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R281",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R282",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R283",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R284",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R285",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R286",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R287",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R288",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R289",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R29",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R290",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R291",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R292",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R293",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R294",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R295",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R296",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R297",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R298",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R299",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R3",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R30",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R300",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R301",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R302",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R303",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R304",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R305",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R306",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R307",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R308",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R309",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R31",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R310",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R311",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R312",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R313",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R314",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R315",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R316",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R317",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R318",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R319",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R32",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R320",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R321",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R322",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R323",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R324",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R325",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R326",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R327",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R328",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R329",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R33",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R330",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R331",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R332",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R333",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R334",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R335",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R336",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R337",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R338",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R339",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R34",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R340",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R341",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R342",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R343",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R344",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R345",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R346",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R347",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R348",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R349",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R35",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R350",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R351",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R352",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R353",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R354",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R355",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R356",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R357",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R358",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R359",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R36",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R360",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R361",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R362",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R363",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R364",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R365",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R366",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R367",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R368",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R369",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R37",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R370",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R371",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R372",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R373",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R374",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R375",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R376",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R377",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R378",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R379",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R38",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R380",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R381",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R382",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R383",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R384",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R385",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R386",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R387",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R388",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R389",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R39",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R390",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R391",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R392",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R393",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R394",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R395",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R396",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R397",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R398",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R399",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R4",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R40",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R400",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R401",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R402",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R403",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R404",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R405",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R406",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R407",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R408",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R409",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R41",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R410",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R411",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R412",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R413",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R414",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R415",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R416",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R417",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R418",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R419",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R42",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R420",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R421",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R422",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R423",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R424",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R425",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R426",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R427",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R428",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R429",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R43",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R430",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R431",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R432",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R433",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R434",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R435",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R436",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R437",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R438",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R439",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R44",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R440",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R441",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R442",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R443",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R444",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R445",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R446",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R447",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R448",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R449",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R45",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R450",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R451",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R452",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R453",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R454",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R455",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R456",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R457",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R458",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R459",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R46",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R460",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R461",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R462",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R463",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R464",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R465",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R466",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R467",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R468",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R469",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R47",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R470",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R471",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R472",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R473",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R474",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R475",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R476",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R477",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R478",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R479",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R48",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R480",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R481",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R482",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R483",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R484",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R485",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R486",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R487",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R488",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R489",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R49",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R490",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R491",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R492",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R493",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R494",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R495",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R496",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R497",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R498",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R499",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R5",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R50",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R500",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R501",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R502",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R503",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R504",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R505",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R506",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R507",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R508",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R509",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R51",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R510",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R511",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R512",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R513",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R514",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R515",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R516",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R517",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R518",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R519",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R52",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R520",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R521",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R522",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R523",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R524",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R525",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R526",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R527",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R528",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R529",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R53",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R530",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R531",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R532",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R533",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R534",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R535",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R536",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R537",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R538",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R539",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R54",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R540",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R541",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R542",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R543",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R544",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R545",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R546",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R547",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R548",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R549",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R55",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R550",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R551",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R552",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R553",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R554",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R555",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R556",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R557",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R558",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R559",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R56",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R560",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R561",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R562",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R563",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R564",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R565",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R566",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R567",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R568",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R569",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R57",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R570",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R571",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R572",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R573",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R574",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R575",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R576",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R577",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R578",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R579",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R58",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R580",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R581",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R582",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R583",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R584",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R585",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R586",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R587",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R588",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R589",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R59",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R590",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R591",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R592",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R593",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R594",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R595",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R596",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R597",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R598",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R599",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R6",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R60",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R600",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R601",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R602",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R603",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R604",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R605",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R606",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R607",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R608",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R609",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R61",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R610",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R611",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R612",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R613",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R614",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R615",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R616",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R617",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R618",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R619",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R62",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R620",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R621",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R622",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R623",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R624",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R625",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R626",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R627",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R628",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R629",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R63",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R630",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R631",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R632",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R633",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R634",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R635",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R636",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R637",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R638",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R639",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R64",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R640",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R641",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R642",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R643",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R644",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R645",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R646",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R647",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R648",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R649",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R65",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R650",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R651",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R652",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R653",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R654",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R655",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R656",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R657",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R658",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R659",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R66",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R660",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R661",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R662",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R663",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R664",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R665",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R666",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R667",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R668",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R669",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R67",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R670",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R671",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R672",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R673",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R674",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R675",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R676",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R677",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R678",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R679",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R68",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R680",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R681",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R682",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R683",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R684",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R685",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R686",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R687",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R688",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R689",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R69",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R690",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R691",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R692",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R693",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R694",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R695",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R696",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R697",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R698",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R699",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R7",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R70",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R700",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R701",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R702",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R703",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R704",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R705",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R706",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R707",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R708",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R709",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R71",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R710",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R711",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R712",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R713",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R714",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R715",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R716",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R717",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R718",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R719",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R72",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R720",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R721",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R722",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R723",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R724",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R725",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R726",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R727",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R728",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R729",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R73",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R730",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R731",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R732",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R733",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R734",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R735",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R736",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R737",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R738",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R739",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R74",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R740",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R741",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R742",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R743",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R744",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R745",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R746",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R747",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R748",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R749",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R75",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R750",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R751",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R752",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R753",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R754",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R755",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R756",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R757",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R758",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R759",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R76",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R760",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R761",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R762",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R763",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R764",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R765",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R766",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R767",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R768",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R769",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R77",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R770",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R771",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R772",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R773",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R774",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R775",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R776",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R777",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R778",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R779",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R78",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R780",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R781",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R782",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R783",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R784",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R785",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R786",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R787",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R788",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R789",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R79",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R790",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R791",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R792",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R793",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R794",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R795",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R796",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R797",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R798",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R799",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R8",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R80",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R800",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R801",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R802",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R803",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R804",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R805",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R806",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R807",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R808",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R809",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R81",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R810",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R811",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R812",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R813",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R814",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R815",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R816",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R817",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R818",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R819",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R82",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R820",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R821",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R822",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R823",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R824",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R825",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R826",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R827",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R828",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R829",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R83",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R830",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R831",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R832",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R833",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R834",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R835",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R836",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R837",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R838",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R839",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R84",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R840",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R841",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R842",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R843",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R844",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R845",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R846",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R847",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R848",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R849",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R85",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R850",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R851",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R852",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R853",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R854",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R855",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R856",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R857",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R858",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R859",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R86",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R860",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R861",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R862",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R863",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R864",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R865",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R866",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R867",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R868",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R869",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R87",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R870",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R871",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R872",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R873",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R874",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R875",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R876",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R877",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R878",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R879",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R88",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R880",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R881",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R882",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R883",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R884",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R885",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R886",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R887",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R888",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R889",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R89",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R890",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R891",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R892",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R893",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R894",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R895",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R896",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R897",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R898",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R899",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R9",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R90",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R900",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R901",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R902",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R903",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R904",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R905",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R906",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R907",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R908",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R909",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R91",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R910",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R911",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R912",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R913",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R914",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R915",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R916",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R917",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R918",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R919",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R92",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R920",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R921",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R922",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R923",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R924",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R925",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R926",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R927",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R928",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R929",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R93",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R930",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R931",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R932",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R933",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R934",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R935",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R936",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R937",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R938",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R939",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R94",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R940",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R941",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R942",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R943",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R944",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R945",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R946",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R947",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R948",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R949",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R95",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R950",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R951",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R952",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R953",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R954",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R955",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R956",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R957",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R958",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R959",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R96",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R960",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R961",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R962",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R963",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R964",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R965",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R966",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R967",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R968",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R969",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R97",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R970",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R971",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R972",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R973",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R974",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R975",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R976",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R977",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R978",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R979",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R98",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R980",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R981",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R982",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R983",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R984",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R985",
+      "top_categories": [
+        "Spicy"
+      ]
+    },
+    {
+      "restaurant_id": "R986",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R987",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R988",
+      "top_categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "restaurant_id": "R989",
+      "top_categories": [
+        "Seafood"
+      ]
+    },
+    {
+      "restaurant_id": "R99",
+      "top_categories": [
+        "Indian Curry"
+      ]
+    },
+    {
+      "restaurant_id": "R990",
+      "top_categories": [
+        "Dessert"
+      ]
+    },
+    {
+      "restaurant_id": "R991",
+      "top_categories": [
+        "Cheesy"
+      ]
+    },
+    {
+      "restaurant_id": "R992",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R993",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R994",
+      "top_categories": [
+        "Healthy"
+      ]
+    },
+    {
+      "restaurant_id": "R995",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R996",
+      "top_categories": [
+        "Chinese"
+      ]
+    },
+    {
+      "restaurant_id": "R997",
+      "top_categories": [
+        "Vegan"
+      ]
+    },
+    {
+      "restaurant_id": "R998",
+      "top_categories": [
+        "Street Food"
+      ]
+    },
+    {
+      "restaurant_id": "R999",
+      "top_categories": [
+        "Vegan"
+      ]
+    }
+  ],
+  "sentiment": {
+    "trained_samples": 1000
+  },
+  "success": true
+}

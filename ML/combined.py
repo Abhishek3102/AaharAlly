@@ -55,22 +55,19 @@ def translate_and_analyze_sentiment(review):
 def sentiment_analysis():
     try:
         # Load reviews from CSV
-        df = pd.read_csv("MOCK_DATA (4).csv")  # Replace with your CSV path
+        df = pd.read_csv("MOCK_DATA (4).csv")  
         df['sentiment'] = df['review'].apply(translate_and_analyze_sentiment)
 
-        # Return the sentiment analysis results
         sentiment_results = df[['review', 'sentiment']].to_dict(orient='records')
         return jsonify({'success': True, 'data': sentiment_results})
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)})
 
-# Function to process data for clustering
 def process_clustering_data():
     try:
-        # Load dataset
-        df = pd.read_csv("MOCK_DATA (4).csv")  # Ensure the file is in the right path
+        
+        df = pd.read_csv("MOCK_DATA (4).csv")  
 
-        # Binning ages into groups
         bins = [0, 20, 25, 35, 45, 60, 100]
         labels = ['<20', '20-25', '25-35', '35-45', '45-60', '60+']
         df['age_group'] = pd.cut(df['age'], bins=bins, labels=labels, right=False)
