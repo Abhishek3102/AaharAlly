@@ -299,7 +299,7 @@ from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout, Bidirection
 
 app = Flask(__name__)
 
-client = MongoClient('mongodb+srv://betterpandey:z69UbLypqqusaeCK@aaharally.kz6zjsh.mongodb.net/?retryWrites=true&w=majority&appName=AaharAlly/')
+client = MongoClient('mongodb+srv://betterpandey:z69UbLypqqusaeCK@aaharally.kz6zjsh.mongodb.net/AaharAlly')
 db = client['aahar_ally_ml']
 orders_col = db['orders']
 reviews_col = db['reviews']
@@ -570,6 +570,7 @@ def api_train():
         })
 
     except Exception as e:
+        print(vars(e))
         return jsonify({'success': False, 'error': str(e)})
 
 
@@ -584,6 +585,7 @@ def api_store_order():
             {'$set':{'user_id':data['user_id'],'age':data.get('age'),'gender':data.get('gender')}}, upsert=True)
         return jsonify({'success':True})
     except Exception as e:
+        print(vars(e))
         return jsonify({'success':False,'error':str(e)})
 
 
@@ -594,6 +596,7 @@ def api_sentiment_predict():
         probs = predict_sentiment(texts)
         return jsonify({'success':True,'positive_probabilities': probs.tolist()})
     except Exception as e:
+        print(vars(e))
         return jsonify({'success':False,'error':str(e)})
 
 # New endpoint for LSTM sentiment prediction
@@ -604,6 +607,7 @@ def api_sentiment_predict_lstm():
         probs = predict_lstm_sentiment(texts)
         return jsonify({'success':True,'positive_probabilities_lstm': probs.tolist()})
     except Exception as e:
+        print(vars(e))
         return jsonify({'success':False,'error':str(e)})
 
 
@@ -634,6 +638,7 @@ def api_recommend():
             base = rank_with_cf(user_id, base)
             return jsonify({'success':True,'user_type':'returning','cluster':c,'recommendations':base[:10]})
     except Exception as e:
+        print(vars(e))
         return jsonify({'success':False,'error':str(e)})
 
 
