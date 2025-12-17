@@ -15,12 +15,16 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.cluster import KMeans
 from sklearn.model_selection import train_test_split
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 warnings.filterwarnings("ignore")
 app = Flask(__name__)
 
 # MongoDB setup
-client = MongoClient('mongodb+srv://betterpandey:z69UbLypqqusaeCK@aaharally.kz6zjsh.mongodb.net/?retryWrites=true&w=majority&appName=AaharAlly/')
+client = MongoClient(os.getenv("MONGO_URL"))
 db = client['aahar_ally_ml']
 orders_col = db['orders']
 reviews_col = db['reviews']

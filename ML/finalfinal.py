@@ -13,6 +13,10 @@ from surprise import Dataset, Reader, SVD
 from surprise.model_selection import cross_validate
 from pymongo import MongoClient
 import json, random, warnings
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 warnings.filterwarnings("ignore")
 
 # For LSTM
@@ -25,7 +29,7 @@ from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout, Bidirection
 app = Flask(__name__)
 
 # MongoDB
-client = MongoClient('mongodb+srv://betterpandey:z69UbLypqqusaeCK@aaharally.kz6zjsh.mongodb.net/AaharAlly')
+client = MongoClient(os.getenv("MONGO_URL"))
 db = client['aahar_ally_ml']
 orders_col = db['orders']
 reviews_col = db['reviews']

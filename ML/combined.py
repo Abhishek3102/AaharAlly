@@ -4,11 +4,15 @@ from textblob import TextBlob
 from googletrans import Translator
 from pymongo import MongoClient
 from bson import ObjectId
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
 # MongoDB Client setup
-client = MongoClient('mongodb+srv://maurya48ashish:Ashish48Maurya@cluster0.w5ltbks.mongodb.net/')
+client = MongoClient(os.getenv("MONGO_URL"))
 db = client['aahar_ally']
 collection = db['cluster']
 

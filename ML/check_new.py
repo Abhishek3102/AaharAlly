@@ -586,11 +586,15 @@ from sklearn.linear_model import LogisticRegression
 from surprise import Dataset, Reader, SVD
 from pymongo import MongoClient
 import json, random, warnings
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
 
-client = MongoClient('mongodb+srv://betterpandey:z69UbLypqqusaeCK@aaharally.kz6zjsh.mongodb.net/?retryWrites=true&w=majority&appName=AaharAlly/')
+client = MongoClient(os.getenv("MONGO_URL"))
 db = client['aahar_ally_ml']
 orders_col = db['orders']
 reviews_col = db['reviews']
