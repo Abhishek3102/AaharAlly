@@ -7,4 +7,5 @@ export type Food = {
   category: string;
   image: string;
   rating: string;
+  meal_type: string;
 };

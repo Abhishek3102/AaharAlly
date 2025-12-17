@@ -1,6 +1,10 @@
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
 
+const isProtectedRoute = createRouteMatcher([
+    '/(.*)',
+]);
+
 const isPublicRoute = createRouteMatcher([
     '/sign-in(.*)',
     '/sign-up(.*)',
@@ -9,17 +13,24 @@ const isPublicRoute = createRouteMatcher([
     '/hotelUser(.*)',
     '/api/(.*)',
     '/explore(.*)',
+    '/favorites(.*)',
+    '/checkout(.*)',
+    '/cart(.*)',
 ]);
 
 export default clerkMiddleware((auth, req) => {
     const { userId } = auth();
-    if (userId && isPublicRoute(req)) {
+    const currentUrl = new URL(req.url);
+    const isAccessingAuthRoute = currentUrl.pathname.startsWith('/sign-in') || currentUrl.pathname.startsWith('/sign-up');
+
+    // If user is logged in and trying to access sign-in/sign-up, redirect to home
+    if (userId && isAccessingAuthRoute) {
         return NextResponse.redirect(new URL('/', req.url));
     }
-    if (!userId) {
-        if (!userId && !isPublicRoute(req) && req.nextUrl.pathname !== '/') {
-            return NextResponse.redirect(new URL('/sign-in', req.url));
-        }
+
+    // If user is NOT logged in and trying to access a protected route, redirect to sign-in
+    if (!userId && !isPublicRoute(req)) {
+        return auth().protect();
     }
 });
 
