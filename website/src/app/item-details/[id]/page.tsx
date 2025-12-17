@@ -100,7 +100,7 @@ const TacoCard = ({ params }: { params: Promise<{ id: string }> }) => {
   async function fetchIngredients(item: string) {
     try {
       const model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash",
+        model: "gemini-flash-lite-latest",
       });
       const prompt = `List the ingredients for ${item} as a JSON array of only 7 items.`;
 
