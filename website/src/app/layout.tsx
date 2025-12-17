@@ -7,6 +7,7 @@ import {
 } from "@clerk/nextjs";
 import FooterBar from "@/components/FooterBar";
 import Navbar from "@/components/navigation";
+import ProfileCompletionModal from "@/components/ProfileCompletionModal";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -42,6 +43,7 @@ export default function RootLayout({
         <ClerkProvider>
           <Navbar />
           <main className="py-16">
+            <ProfileCompletionModal />
             {children}
           </main>
           <Toaster />

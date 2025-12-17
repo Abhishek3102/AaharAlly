@@ -7,10 +7,11 @@ import toast from "react-hot-toast";
 
 const CartPage = () => {
     const { user } = useUser();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [cartItems, setCartItems] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
-    const fetchCart = async () => {
+    const fetchCart = React.useCallback(async () => {
         if (!user?.primaryEmailAddress?.emailAddress) return;
         try {
             const res = await axios.get(`/api/get-cart?email=${user.primaryEmailAddress.emailAddress}`);
@@ -23,7 +24,7 @@ const CartPage = () => {
         } finally {
             setLoading(false);
         }
-    };
+    }, [user]);
 
     useEffect(() => {
         if (user) {
@@ -31,7 +32,7 @@ const CartPage = () => {
         } else if (!user && !loading) {
              setLoading(false);
         }
-    }, [user]);
+    }, [user, loading, fetchCart]);
 
     const handleRemove = async (foodId: string) => {
         try {
@@ -43,12 +44,15 @@ const CartPage = () => {
                 toast.success("Item removed");
                 fetchCart(); // Refresh cart
             }
-        } catch (error) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        } catch (error: any) {
+            console.error(error);
             toast.error("Failed to remove item");
         }
     };
 
     const calculateTotal = () => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return cartItems.reduce((total: number, item: any) => {
              const price = parseFloat(item.foodId?.price?.replace(/[^0-9.]/g, '') || "0");
              return total + (price * item.quantity);
@@ -64,7 +68,7 @@ const CartPage = () => {
             {cartItems.length === 0 ? (
                 <div className="text-center py-20 bg-white rounded-lg shadow-sm">
                     <h2 className="text-xl text-gray-600 mb-4">Your cart is currently empty</h2>
-                    <p className="text-gray-500 mb-8">Looks like you haven't added any delicious food yet!</p>
+                    <p className="text-gray-500 mb-8">Looks like you haven&apos;t added any delicious food yet!</p>
                     <Link href="/" className="bg-redCustom text-white px-6 py-3 rounded-full font-semibold hover:bg-orangeCustom transition duration-300">
                         Start Exploration
                     </Link>
@@ -72,9 +76,11 @@ const CartPage = () => {
             ) : (
                 <div className="flex flex-col lg:flex-row gap-8">
                     <div className="flex-1 bg-white p-6 rounded-lg shadow">
+                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                          {cartItems.map((item: any) => (
                              <div key={item._id} className="flex items-center justify-between border-b py-4 last:border-b-0">
                                  <div className="flex items-center gap-4">
+                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                      <img src={item.foodId?.image} alt={item.foodId?.name} className="w-20 h-20 object-cover rounded-md" />
                                      <div>
                                          <h3 className="font-semibold text-lg">{item.foodId?.name}</h3>

@@ -4,6 +4,8 @@ interface IUser extends Document {
   email: string;
   favoriteFoods: Types.ObjectId[];
   cart: { foodId: Types.ObjectId; quantity: number }[];
+  age?: number;
+  gender?: string;
 }
 
 const UserSchema = new Schema<IUser>({
@@ -15,6 +17,8 @@ const UserSchema = new Schema<IUser>({
       quantity: { type: Number, default: 1 },
     },
   ],
+  age: { type: Number },
+  gender: { type: String },
 });
 
 export const User =

@@ -45,10 +45,11 @@ const FavoritesPage = () => {
         <div className="text-center py-10">Loading your favorites...</div>
       ) : favorites.length === 0 ? (
         <div className="text-center py-10 text-gray-500">
-          You haven't added any favorites yet.
+          You haven&apos;t added any favorites yet.
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           {favorites.map((item: any, index: number) => (
             <Card
               key={item._id || index}

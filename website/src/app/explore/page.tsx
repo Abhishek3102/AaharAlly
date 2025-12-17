@@ -1,9 +1,11 @@
-import AgeModal from "@/components/AgeModal"; // Adjust the path as necessary
+// import AgeModal from "@/components/AgeModal"; // Adjust the path as necessary
 import { BannerCarousel } from "@/components/BannerCarousel";
 import FilterComponent from "@/components/Filter";
 import FoodItemCard from "@/components/FoodItemCard";
 import Card from "@/components/Card";
-const Page = () => {
+import { Suspense } from "react";
+
+const ExploreContent = () => {
     return (
         <div>
             {/* Navbar is in global layout */}
@@ -16,6 +18,14 @@ const Page = () => {
                 <Card />
             </main>
         </div>
+    )
+}
+
+const Page = () => {
+    return (
+        <Suspense fallback={<div className="text-center py-20">Loading...</div>}>
+            <ExploreContent />
+        </Suspense>
     )
 }
 

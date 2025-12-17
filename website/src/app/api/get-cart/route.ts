@@ -1,4 +1,5 @@
 import { User } from "../../models/User";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { food } from "../../models/Food"; // Ensure Food model is registered
 import { mongoConnect } from "../../utils/feature";
 import { NextResponse } from "next/server";

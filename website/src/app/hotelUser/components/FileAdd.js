@@ -117,7 +117,7 @@ const ServiceProviderUpload = () => {
 
             const result = await response.json();
             toast.success(result.message);
-            const upload = await downloadCSV();
+            await downloadCSV();
         } catch (error) {
             toast.error(`Error uploading file: ${error.message}`);
         } finally {

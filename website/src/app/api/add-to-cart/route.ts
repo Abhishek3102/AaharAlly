@@ -22,7 +22,7 @@ export async function POST(req: Request) {
         }
 
         const itemIndex = user.cart.findIndex(
-            (item: any) => item.foodId.toString() === foodId
+            (item: { foodId: { toString: () => string }; quantity: number }) => item.foodId.toString() === foodId
         );
 
         if (itemIndex > -1) {
@@ -34,6 +34,7 @@ export async function POST(req: Request) {
         await user.save();
 
         return NextResponse.json({ success: true, message: "Item added to cart", cart: user.cart }, { status: 200 });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
         console.error("Add to cart error:", error);
         return NextResponse.json({ success: false, message: error.message || "Error adding to cart" }, { status: 500 });

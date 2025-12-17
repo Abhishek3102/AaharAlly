@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
+// import Link from "next/link";
+// import Image from "next/image";
 import Carousel from "@/components/HomeCarousel";
 import Card from "@/components/HomeCard";
 import HeroCarousel from "@/components/HeroCarousel";
@@ -20,7 +20,17 @@ interface FoodItem {
   // Add other fields as necessary
 }
 
+import { Suspense } from "react";
+
 export default function Home() {
+    return (
+        <Suspense fallback={<div className="text-center py-20">Loading...</div>}>
+            <HomeContent />
+        </Suspense>
+    );
+}
+
+function HomeContent() {
   const [loading, setLoading] = useState(false);
   const [foodArray, setFoodArray] = useState<FoodItem[]>([]);
 
@@ -51,6 +61,7 @@ export default function Home() {
   return (
     <>
       <HeroCarousel />
+      {loading && <div className="text-center py-10">Loading...</div>}
 
       <div className="relative z-10 pt-10 px-6 lg:px-12 bg-gray-50">
         <section className="my-10">

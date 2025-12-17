@@ -1,3 +1,4 @@
+/*
 const fs = require('fs'); // Import the 'fs' module for file system operations
 
 // Function to read JSON file and extract names
@@ -44,3 +45,4 @@ const storeNamesInFile = (namesArray) => {
 
 // Call the function to fetch names
 fetchNames();
+*/

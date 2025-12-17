@@ -17,12 +17,15 @@ export async function POST(req: Request) {
             return NextResponse.json({ success: false, message: "User not found" }, { status: 404 });
         }
 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         user.cart = user.cart.filter((item: any) => item.foodId.toString() !== foodId);
 
         await user.save();
 
         return NextResponse.json({ success: true, message: "Item removed from cart", cart: user.cart }, { status: 200 });
-    } catch (error) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
+        console.error("Remove from cart error:", error);
         return NextResponse.json({ success: false, message: "Error removing item" }, { status: 500 });
     }
 }
