@@ -1,14 +1,18 @@
 import React from "react";
 
-const Card = ({ title, description, imageSrc }) => {
+interface HomeCardProps {
+  title: string;
+  description: string;
+  imageSrc: string;
+}
+
+const Card: React.FC<HomeCardProps> = ({ title, description, imageSrc }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden w-80">
       <img
         src={imageSrc}
         alt={title}
-        width={240}
-        height={160}
-        className="w-full h-40 object-cover"
+        className="w-full h-auto object-contain"
       />
       <div className="p-4">
         <h3 className="font-semibold text-lg text-gray-800">{title}</h3>

@@ -5,6 +5,8 @@ import { Food } from "@/types";
 import axios from "axios";
 import Loading from "@/components/loading";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { useUser } from "@clerk/nextjs";
+import toast from "react-hot-toast";
 
 
 const IngredientsModal = ({ ingredients, onClose }: { ingredients: string[]; onClose: () => void }) => (
@@ -36,6 +38,31 @@ const TacoCard = ({ params }: { params: Promise<{ id: string }> }) => {
   const [ingredients, setIngredients] = useState<string[]>([]);
   const [showModal, setShowModal] = useState(false);
   const [id, setId] = useState<string | null>(null);
+  const { user } = useUser();
+
+  const addToCart = async () => {
+    if (!user) {
+      toast.error("Please sign in to add items to cart");
+      return;
+    }
+    if (!itemDetails) return;
+
+    try {
+      toast.loading("Adding to cart...");
+      const res = await axios.post("/api/add-to-cart", {
+        email: user.primaryEmailAddress?.emailAddress,
+        foodId: itemDetails._id,
+      });
+      toast.dismiss();
+      if (res.data.success) {
+        toast.success("Added to cart!");
+      }
+    } catch (error) {
+      toast.dismiss();
+      toast.error("Failed to add to cart");
+      console.error(error);
+    }
+  };
 
   useEffect(() => {
     const fetchParams = async () => {
@@ -84,7 +111,7 @@ const TacoCard = ({ params }: { params: Promise<{ id: string }> }) => {
       console.log("Response from model:", responseText); // Inspect the raw response
 
       // Attempt to find JSON array of ingredients in the response
-      const jsonMatch = responseText.match(/\[(.*?)\]/s);
+      const jsonMatch = responseText.match(/\[([\s\S]*?)\]/);
       if (jsonMatch) {
         const parsedIngredients = JSON.parse(jsonMatch[0]);
         setIngredients(parsedIngredients);
@@ -182,7 +209,10 @@ const TacoCard = ({ params }: { params: Promise<{ id: string }> }) => {
             </div>
 
             <div className="flex justify-between items-center mt-5">
-              <button className="bg-orangeCustom text-white p-2 rounded-lg shadow-lg shadow-orangeCustom hover:bg-deep-orange-600 hover:shadow-deep-orange-700 transition duration-500">
+              <button
+                onClick={addToCart}
+                className="bg-orangeCustom text-white p-2 rounded-lg shadow-lg shadow-orangeCustom hover:bg-deep-orange-600 hover:shadow-deep-orange-700 transition duration-500"
+              >
                 Add to Cart
               </button>
               <button

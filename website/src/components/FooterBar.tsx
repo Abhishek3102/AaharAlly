@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { FaShoppingCart, FaMapMarkerAlt, FaBell, FaHeart, IconType } from "react-icons/fa";
+import { FaShoppingCart, FaMapMarkerAlt, FaBell, FaHeart } from "react-icons/fa";
+import { IconType } from "react-icons";
 import { useRouter } from "next/navigation"; // Use this for App Router
 
 interface FooterBarProps {
@@ -53,7 +54,7 @@ const FooterBar: React.FC<FooterBarProps> = ({ cartItems, notifications }) => {
   };
 
   return (
-    <div className="fixed bottom-0 flex w-full bg-whitescale-105 justify-center z-50 bg-transparent">
+    <div className="fixed bottom-0 flex w-full bg-whitescale-105 justify-center z-50 bg-transparent lg:hidden">
       <div className="fixed bottom-0 w-[40vw] flex justify-around items-center rounded-3xl px-4 mx-2 my-4 z-50 bg-redCustom text-white shadow-lg shadow-black transition duration-500 bg-opacity-95">
         {buttons.map((button, index) => (
           <div

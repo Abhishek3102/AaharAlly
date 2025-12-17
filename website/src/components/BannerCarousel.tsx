@@ -14,6 +14,7 @@ export function BannerCarousel() {
   ];
 
   return (
+    // @ts-expect-error: Material Tailwind types conflict with React 19
     <Carousel
       placeholder={"HomeCarousel"}
       className="rounded-3xl h-[40vh]"
@@ -41,6 +42,7 @@ export function BannerCarousel() {
             className="h-full w-full object-cover"
             width={500}
             height={500}
+            priority={index === 0}
           />
         ))}
     </Carousel>

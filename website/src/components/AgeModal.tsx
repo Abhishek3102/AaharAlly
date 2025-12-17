@@ -27,8 +27,7 @@ const AgeModal: React.FC<AgeModalProps> = ({ isModalOpen, setIsModalOpen }) => {
   ];
 
   useEffect(() => {
-    const age = user?.unsafeMetadata.age;
-    console.log("age:", age);
+    // const age = user?.unsafeMetadata.age;
   }, [user]);
 
   async function call(disease: string) {
@@ -40,7 +39,7 @@ const AgeModal: React.FC<AgeModalProps> = ({ isModalOpen, setIsModalOpen }) => {
     try {
       const result = await model.generateContent(prompt);
       const responseText = result.response.text();
-      const jsonMatch = responseText.match(/(\[.*?\])/s);
+      const jsonMatch = responseText.match(/(\[[\s\S]*?\])/);
 
       if (jsonMatch && jsonMatch[1]) {
         const jsonResponse = JSON.parse(jsonMatch[1]);

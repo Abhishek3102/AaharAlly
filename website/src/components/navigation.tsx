@@ -1,40 +1,50 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Search } from 'lucide-react';
 import Input from '@/components/Search';
-import { useUser, SignInButton, UserButton } from '@clerk/nextjs';
+import { SignInButton, UserButton, SignedIn, SignedOut } from '@clerk/nextjs';
 
 const Navbar = () => {
-    const user = useUser();
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [searchText, setSearchText] = useState("");
+    const router = useRouter();
+
+    const handleSearch = () => {
+        if (searchText.trim()) {
+            router.push(`/?search=${searchText}`);
+        } else {
+            router.push(`/`);
+        }
+    };
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
     const MenuLinks = [
-        // {
-        //     id: 1,
-        //     name: 'Explore',
-        //     link: '/explore'
-        // },
-        // {
-        //     id: 2,
-        //     name: 'Cart',
-        //     link: '/'
-        // },
-        // {
-        //     id: 3,
-        //     name: 'Favourites',
-        //     link: '/'
-        // },
-        // {
-        //     id: 4,
-        //     name: 'Checkout',
-        //     link: '/'
-        // }
+        {
+            id: 1,
+            name: 'Explore',
+            link: '/explore'
+        },
+        {
+            id: 2,
+            name: 'Cart',
+            link: '/cart'
+        },
+        {
+            id: 3,
+            name: 'Favourites',
+            link: '/favorites'
+        },
+        {
+            id: 4,
+            name: 'Checkout',
+            link: '/checkout'
+        }
     ];
 
     const handleScroll = () => {
@@ -47,7 +57,10 @@ const Navbar = () => {
         }
     };
 
+    const [isMounted, setIsMounted] = useState(false);
+
     useEffect(() => {
+        setIsMounted(true);
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
         return () => {
@@ -59,14 +72,27 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 w-full py-2 z-50 ${isScrolled ? 'bg-white shadow-md shadow-opacity-40 shadow-black' : 'bg-white'} transition bg-transparent duration-300`}>
             <div className="container mx-auto flex justify-between items-center px-2 md:px-10 py-2">
-                <div className='flex justify-start items-center'>
+                <div className='flex justify-start items-center gap-4'>
                     <Link href="/" className="text-lg md:text-2xl font-bold text-redCustom duration-300 hover:text-orangeCustom flex">
                         AaharAlly
                     </Link>
+                    <div className="hidden md:flex items-center bg-gray-100 rounded-full px-3 py-1">
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            className="bg-transparent outline-none text-sm text-gray-700 w-32 lg:w-48 placeholder:text-gray-400"
+                            value={searchText}
+                            onChange={(e) => setSearchText(e.target.value)}
+                            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                        />
+                        <button onClick={handleSearch} className="text-gray-500 hover:text-redCustom">
+                            <Search size={18} />
+                        </button>
+                    </div>
                 </div>
-                <div className="hidden lg:flex space-x-6 justify-center items-center">
+                <div className="hidden lg:flex space-x-8 items-center">
                     {MenuLinks.map((link) => (
-                        <Link key={link.id} href={link.link} className="text-slate-950 text-md md:text-lg duration-300 hover:text-orangeCustom font-semibold">
+                        <Link key={link.id} href={link.link} className="text-gray-700 hover:text-redCustom text-base font-medium transition-colors duration-200">
                             {link.name}
                         </Link>
                     ))}
@@ -89,9 +115,18 @@ const Navbar = () => {
                         </svg>
                     </button>
                 </div>
-                {
-                    user ? <UserButton /> : <SignInButton />
-                }
+                <div className="flex items-center gap-2">
+                    {isMounted && (
+                        <>
+                            <SignedIn>
+                                <UserButton />
+                            </SignedIn>
+                            <SignedOut>
+                                <SignInButton />
+                            </SignedOut>
+                        </>
+                    )}
+                </div>
             </div>
             <div
                 className={`fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
