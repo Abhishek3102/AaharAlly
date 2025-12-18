@@ -48,7 +48,11 @@ export async function GET() {
         const dbUser = await User.findOne({ email });
 
         if (!dbUser) {
-            return NextResponse.json({ success: false, message: "User not found" }, { status: 404 });
+            return NextResponse.json({
+                success: true,
+                profileCompleted: false,
+                user: null
+            }, { status: 200 });
         }
 
         return NextResponse.json({

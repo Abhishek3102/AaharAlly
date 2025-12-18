@@ -16,6 +16,7 @@ const isPublicRoute = createRouteMatcher([
     '/favorites(.*)',
     '/checkout(.*)',
     '/cart(.*)',
+    '/admin(.*)',
 ]);
 
 export default clerkMiddleware((auth, req) => {
@@ -30,7 +31,9 @@ export default clerkMiddleware((auth, req) => {
 
     // If user is NOT logged in and trying to access a protected route, redirect to sign-in
     if (!userId && !isPublicRoute(req)) {
-        return auth().protect();
+        const signInUrl = new URL('/sign-in', req.url);
+        signInUrl.searchParams.set('redirect_url', currentUrl.href);
+        return NextResponse.redirect(signInUrl);
     }
 });
 

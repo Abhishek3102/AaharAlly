@@ -19,7 +19,7 @@ const UserSchema = new Schema<IUser>({
   ],
   age: { type: Number },
   gender: { type: String },
-});
+}, { timestamps: true });
 
 export const User =
   mongoose.models.User || mongoose.model<IUser>("User", UserSchema);
