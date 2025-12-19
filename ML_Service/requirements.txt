@@ -1,0 +1,10 @@
+flask
+pandas
+numpy
+textblob
+scikit-learn
+scikit-surprise
+pymongo
+python-dotenv
+tensorflow
+gunicorn
