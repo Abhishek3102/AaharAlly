@@ -6,6 +6,11 @@ interface IUser extends Document {
   cart: { foodId: Types.ObjectId; quantity: number }[];
   age?: number;
   gender?: string;
+  recommendedCategories?: string[];
+  lastRecommendationDate?: Date;
+  lastOrderDate?: Date;
+  user_type?: string;
+  cluster?: number;
 }
 
 const UserSchema = new Schema<IUser>({
@@ -19,6 +24,11 @@ const UserSchema = new Schema<IUser>({
   ],
   age: { type: Number },
   gender: { type: String },
+  recommendedCategories: [{ type: String }],
+  lastRecommendationDate: { type: Date },
+  lastOrderDate: { type: Date },
+  user_type: { type: String },
+  cluster: { type: Number },
 }, { timestamps: true });
 
 export const User =

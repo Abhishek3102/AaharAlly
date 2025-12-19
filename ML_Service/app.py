@@ -12,8 +12,7 @@ from sklearn.metrics import classification_report
 from surprise import Dataset, Reader, SVD
 from surprise.model_selection import cross_validate
 from pymongo import MongoClient
-import json, random, warnings
-import os
+import json, random, warnings, pickle, os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -59,6 +58,50 @@ max_seq_len = 100
 
 
 ### Utilities
+def save_models_to_db():
+    print("Saving models to DB...")
+    # Save standard sklearn objects
+    data = {
+        'imputer': pickle.dumps(imputer) if imputer else None,
+        'scaler': pickle.dumps(scaler) if scaler else None,
+        'gender_le': pickle.dumps(gender_le) if gender_le else None,
+        'meal_ohe': pickle.dumps(meal_ohe) if meal_ohe else None,
+        'pca': pickle.dumps(pca) if pca else None,
+        'kmeans': pickle.dumps(kmeans) if kmeans else None,
+        'svd': pickle.dumps(svd) if svd else None,
+         # Light objects
+        'user_index': user_index,
+        'item_index': item_index,
+        'item_reverse_index': item_reverse_index
+    }
+    models_col.delete_many({'model': 'core_components'})
+    models_col.insert_one({'model': 'core_components', 'data': data})
+    print("Core models saved to DB.")
+
+def load_models_from_db():
+    global imputer, scaler, gender_le, meal_ohe, pca, kmeans, svd, user_index, item_index, item_reverse_index
+    
+    print("Loading models from DB...")
+    doc = models_col.find_one({'model': 'core_components'})
+    if not doc:
+        print("No core models found in DB.")
+        return False
+        
+    data = doc['data']
+    imputer = pickle.loads(data['imputer']) if data.get('imputer') else None
+    scaler = pickle.loads(data['scaler']) if data.get('scaler') else None
+    gender_le = pickle.loads(data['gender_le']) if data.get('gender_le') else None
+    meal_ohe = pickle.loads(data['meal_ohe']) if data.get('meal_ohe') else None
+    pca = pickle.loads(data['pca']) if data.get('pca') else None
+    kmeans = pickle.loads(data['kmeans']) if data.get('kmeans') else None
+    svd = pickle.loads(data['svd']) if data.get('svd') else None
+    
+    user_index = data.get('user_index')
+    item_index = data.get('item_index')
+    item_reverse_index = data.get('item_reverse_index')
+    
+    print("Core models loaded from DB.")
+    return True
 def to_jsonable(d):
     return json.loads(json.dumps(d, default=str))
 
@@ -322,9 +365,14 @@ def api_train():
         c = fit_sentiment(df)
         d = fit_cf(df)
         e = fit_lstm_sentiment(df)
+        
+        save_models_to_db() # Save to DB
 
         cat_sent = build_sentiment_category_scores(df)
-        models_col.delete_many({})
+        
+        save_models_to_db() # Save to DB
+
+        models_col.delete_many({'model':'metadata'})
         models_col.insert_one({'model': 'metadata', 'cat_sentiment': cat_sent})
 
         return jsonify({
@@ -409,6 +457,18 @@ def api_recommend():
     except Exception as e:
         return jsonify({'success':False,'error':str(e)})
 
+
+# Try loading on startup
+try:
+    load_models_from_db()
+except Exception as e:
+    print(f"Failed to load models on startup: {e}")
+
+# Try loading on startup
+try:
+    load_models_from_db()
+except Exception as e:
+    print(f"Failed to load models on startup: {e}")
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
