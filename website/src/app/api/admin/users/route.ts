@@ -42,6 +42,10 @@ export async function GET() {
                 email: user.email,
                 joinedAt: joinDate,
                 orderCount: orderCount,
+                age: user.age,
+                gender: user.gender,
+                recommendations: user.recommendedCategories,
+                scores: user.debugRecommendationData || []
             };
         }));
 

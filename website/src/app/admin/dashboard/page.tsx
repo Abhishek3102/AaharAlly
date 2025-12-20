@@ -9,6 +9,10 @@ interface UserStat {
   email: string;
   joinedAt: string;
   orderCount: number;
+  age?: number;
+  gender?: string;
+  recommendations?: string[];
+  scores?: any[];
 }
 
 const AdminDashboard = () => {
@@ -87,28 +91,57 @@ const AdminDashboard = () => {
           <table className="w-full text-left">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="p-4 font-semibold text-gray-600">User Email</th>
-                <th className="p-4 font-semibold text-gray-600">Joined Date</th>
-                <th className="p-4 font-semibold text-gray-600">Orders Made</th>
-                <th className="p-4 font-semibold text-gray-600">Status</th>
+                <th className="p-4 font-semibold text-gray-600">User / Profile</th>
+                <th className="p-4 font-semibold text-gray-600">Joined</th>
+                <th className="p-4 font-semibold text-gray-600 w-1/3">AI Recommendations (Score)</th>
+                <th className="p-4 font-semibold text-gray-600">Stats</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
               {users.map((user) => (
                 <tr key={user._id} className="hover:bg-gray-50 transition">
-                  <td className="p-4 text-gray-800 font-medium">{user.email}</td>
+                  <td className="p-4 text-gray-800 font-medium leading-relaxed">
+                    <div className="font-bold mb-1">{user.email}</div>
+                    <div className="text-xs text-gray-500">
+                        {user.age ? `Age: ${user.age}` : 'Age: ??'} • {user.gender || 'Gen: ??'}
+                    </div>
+                  </td>
                   <td className="p-4 text-gray-600">
                     {user.joinedAt ? new Date(user.joinedAt).toLocaleDateString() : 'N/A'}
                   </td>
                   <td className="p-4">
+                     <div className="flex flex-col gap-1 max-h-40 overflow-auto">
+                        {/* Top 4 Highlighted */}
+                        {user.recommendations?.slice(0,4).map((rec, idx) => {
+                             const scoreObj = user.scores?.find((s:any) => s.category === rec);
+                             const score = scoreObj ? scoreObj.score : 'N/A';
+                             return (
+                                <div key={idx} className="text-xs bg-green-50 text-green-700 px-2 py-1 rounded border border-green-100 flex justify-between">
+                                    <span>{rec}</span>
+                                    <span className="font-bold">{score}</span>
+                                </div>
+                             )
+                        })}
+                        {/* Others (Debug) */}
+                         <details className="mt-1">
+                            <summary className="text-[10px] text-gray-400 cursor-pointer">View Candidates</summary>
+                            <div className="flex flex-col gap-1 mt-1">
+                                {user.scores?.filter((s:any) => !user.recommendations?.slice(0,4).includes(s.category)).map((s:any, idx:number) => (
+                                     <div key={idx} className="text-[10px] text-gray-500 px-2 flex justify-between">
+                                        <span>{s.category}</span>
+                                        <span>{s.score}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </details>
+                     </div>
+                  </td>
+                  <td className="p-4 vertical-top">
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      user.orderCount > 0 ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'
+                      user.orderCount > 0 ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'
                     }`}>
                       {user.orderCount} Orders
                     </span>
-                  </td>
-                  <td className="p-4">
-                    <span className="text-green-500 text-sm">Active</span>
                   </td>
                 </tr>
               ))}

@@ -11,6 +11,7 @@ interface IUser extends Document {
   lastOrderDate?: Date;
   user_type?: string;
   cluster?: number;
+  debugRecommendationData?: any;
 }
 
 const UserSchema = new Schema<IUser>({
@@ -29,6 +30,7 @@ const UserSchema = new Schema<IUser>({
   lastOrderDate: { type: Date },
   user_type: { type: String },
   cluster: { type: Number },
+  debugRecommendationData: { type: Schema.Types.Mixed },
 }, { timestamps: true });
 
 export const User =

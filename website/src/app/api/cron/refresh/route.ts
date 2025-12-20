@@ -48,7 +48,8 @@ export async function GET(req: Request) {
                                 recommendedCategories: recommendations,
                                 lastRecommendationDate: new Date(),
                                 user_type: res.data.user_type,
-                                cluster: res.data.cluster
+                                cluster: res.data.cluster,
+                                debugRecommendationData: res.data.debug_scores || []
                             }
                         });
                         successCount++;
