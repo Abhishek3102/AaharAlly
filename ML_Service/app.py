@@ -454,14 +454,16 @@ def api_recommend():
             random.shuffle(cand)
             cand = apply_sentiment_rerank(cand, cat_sent_map)
             cand = rank_with_cf(user_id, cand)
-            return jsonify({'success':True,'user_type':'new','cluster':c,'recommendations':cand[:10]})
+            # Limit to Top 4 as requested
+            return jsonify({'success':True,'user_type':'new','cluster':c,'recommendations':cand[:4]})
         else:
             base = list(dict.fromkeys(hist + cluster_cats + rest_cats))
             if hist: base = [x for x in base if x in set(hist + cluster_cats)]
             random.shuffle(base)
             base = apply_sentiment_rerank(base, cat_sent_map)
             base = rank_with_cf(user_id, base)
-            return jsonify({'success':True,'user_type':'returning','cluster':c,'recommendations':base[:10]})
+            # Limit to Top 4 as requested
+            return jsonify({'success':True,'user_type':'returning','cluster':c,'recommendations':base[:4]})
     except Exception as e:
         return jsonify({'success':False,'error':str(e)})
 
