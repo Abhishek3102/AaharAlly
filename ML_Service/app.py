@@ -340,8 +340,26 @@ def api_train():
         data = request.get_json(force=True, silent=True) or {}
         p = data.get('csv_path', 'train_data.csv')
 
-        df = pd.read_csv(p)
-        # Type cleaning...
+        # 1. Load Static CSV (Baseline Knowledge)
+        df_csv = pd.read_csv(p)
+        if df_csv.columns[0].lower() not in ["user_id", "uid"]:
+             df_csv = pd.read_csv(p, header=None,
+                              names=["user_id","restaurant_id","age","gender","meal_category","review"])
+        
+        # 2. Load Live MongoDB Data (Real-time Learning)
+        live_orders = list(orders_col.find({}, {'_id':0})) 
+        if live_orders:
+            df_mongo = pd.DataFrame(live_orders)
+            required_cols = ["user_id", "restaurant_id", "age", "gender", "meal_category", "review"]
+            for col in required_cols:
+                if col not in df_mongo.columns:
+                    df_mongo[col] = np.nan
+            
+            df_mongo = df_mongo[required_cols]
+            print(f"Merging {len(df_csv)} CSV rows with {len(df_mongo)} Live Mongo rows.")
+            df = pd.concat([df_csv, df_mongo], ignore_index=True)
+        else:
+            df = df_csv
         df['gender'] = df['gender'].apply(standardize_gender)
         df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(df['age'].median())
 

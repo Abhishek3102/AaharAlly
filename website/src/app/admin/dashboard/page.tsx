@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import MLControls from '@/components/admin/MLControls';
 
 interface UserStat {
   _id: string;
@@ -63,6 +64,8 @@ const AdminDashboard = () => {
           </div>
         </div>
 
+
+        <MLControls />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <h3 className="text-gray-500 text-sm font-medium">Total Users</h3>
