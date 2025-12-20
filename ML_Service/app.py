@@ -423,38 +423,47 @@ def api_recommend():
         # 3. Load Metadata (Global Categories + Sentiment)
         meta = models_col.find_one({'model':'metadata'}) or {}
         cat_sent_map = meta.get('cat_sentiment', {})
-        # If all_categories is empty (first run), try to use cluster_cats, else hardcode fallback
+        # Use full list from metadata, OR fallback to a guaranteed rich list
         candidates = meta.get('all_categories', [])
-        if not candidates:
-            candidates = list(set(cluster_cats + hist + ["Indian Curry", "Biryani", "Pizza", "Burger", "Chinese"]))
+        # GUARANTEE a diverse list if metadata is sparse
+        fallback_cats = ["Indian Curry", "Biryani", "Pizza", "Burger", "Chinese", 
+                         "South Indian", "Street Food", "Healthy", "Vegan", 
+                         "Dessert", "Spicy", "Seafood", "Snacks", "Cheesy", "Beverages"]
+        candidates = list(set(candidates + fallback_cats))
 
         # 4. Calculate Comprehensive Score for EVERY category
-        # Score = (0.4 * Sentiment) + (0.4 * Personal_CF_Score) + (0.2 * Cluster_Popularity_Bonus)
+        # NEW FORMULA: Heavy penalization for mismatch, High bonus for cluster
         scored_candidates = []
         
         for cat in candidates:
-            # A. Sentiment Score (0-1)
+            # A. Sentiment Score (0.0 - 1.0)
             s_score = cat_sent_map.get(cat, 0.5)
             
-            # B. Collaborative Filtering Score (0-1)
+            # B. Collaborative Filtering Score (0.0 - 1.0)
             cf_score = get_cf_score_normalized(user_id, cat)
             
-            # C. Cluster/History Bonus
+            # C. Cluster/History Bonus (The Personalization Factor)
+            # significantly increased weights to force variety
             bonus = 0.0
-            if cat in cluster_cats: bonus += 0.1
-            if cat in hist: bonus += 0.2
+            if cat in cluster_cats: bonus += 0.2  # Moderate Demographic nudge
+            if cat in hist: bonus += 0.1          # Slight History nudge (CF covers most)
+            
+            # D. Random Noise (to break ties in generic setups)
+            noise = random.uniform(-0.02, 0.02)
             
             # Final Weighted Score
-            # Heavy weight on CF for personalization, but Sentiment acts as quality gate
-            final_score = (0.5 * cf_score) + (0.3 * s_score) + bonus
+            # 30% Sentiment (Quality Gate)
+            # 40% CF (Personal Preference - Main Driver of Variety)
+            # + Bonuses
+            final_score = (0.3 * s_score) + (0.4 * cf_score) + bonus + noise
             
             # Clamping
-            final_score = min(1.0, max(0.0, final_score))
+            final_score = min(1.0, max(0.01, final_score))
             
             scored_candidates.append({
                 'category': cat,
-                'score': round(final_score, 3), # 3 decimals for variety
-                'debug_details': f"CF:{cf_score:.2f}, Sent:{s_score:.2f}, Bonus:{bonus:.1f}"
+                'score': round(final_score, 3), 
+                'debug_details': f"AgeGen:{0.2 if cat in cluster_cats else 0}, Hist:{0.1 if cat in hist else 0}, Sent:{s_score:.2f}, CF:{cf_score:.2f}"
             })
 
         # 5. Sort by Score
