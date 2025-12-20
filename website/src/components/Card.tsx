@@ -192,11 +192,13 @@ export function BookingCard() {
           </div>
         </div>
         {/* REPLACED Next.js Image with standard img for reliability */}
-        <img
+        <Image
           src={item.image}
           alt={item.name}
           className="object-cover group-hover:scale-110 group-hover:shadow-xl transition-transform duration-300 ease-in-out h-full w-full"
-          loading="lazy" 
+          width={500}
+          height={500}
+          unoptimized={true}
         />
         <div className="absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60" />
         {/* @ts-expect-error: Material Tailwind types using ref causing conflict with React 19 */}

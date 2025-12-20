@@ -71,9 +71,10 @@ function HomeContent() {
               {featuredItems.map((item, index) => (
                 <Card
                   key={index}
-                  title={item.name} // Adjust based on your data structure
-                  description={item.description} // Adjust based on your data structure
+                  title={item.name}
+                  description={item.description}
                   imageSrc={item.image}
+                  className="w-80 h-full flex-shrink-0 snap-center" 
                 />
               ))}
             </div>
@@ -87,8 +88,9 @@ function HomeContent() {
               <Card
                 key={index}
                 title={item.name} // Adjust based on your data structure
-                description={item.description} // Adjust based on your data structure
-                imageSrc={item.image} // Adjust based on your data structure
+                description={item.description}
+                imageSrc={item.image}
+                className="w-full h-full"
               />
             ))}
           </div>
