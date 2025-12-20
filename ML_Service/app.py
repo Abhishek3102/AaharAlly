@@ -510,67 +510,7 @@ def api_sentiment_predict_lstm():
         return jsonify({'success':False,'error':str(e)})
 
 
-@app.route('/api/recommend', methods=['POST'])
-def api_recommend():
-    try:
-        payload = request.get_json()
-        user_id = str(payload.get('user_id'))
-        age = float(payload.get('age'))
-        gender = standardize_gender(payload.get('gender'))
-        restaurant_id = str(payload.get('restaurant_id'))
 
-        c = age_gender_to_cluster(age, gender)
-        cluster_cats = pop_for_cluster(c)
-        rest_cats = pop_for_restaurant(restaurant_id)
-        hist = top_history_categories(user_id, n=10)
-
-        cat_sent_map = (models_col.find_one({'model':'metadata'}) or {}).get('cat_sentiment', {})
-        new_user = orders_col.count_documents({'user_id': user_id}) == 0
-
-        if new_user:
-            cand = list(set(cluster_cats) | set(rest_cats))
-            # Score them before shuffling/sorting for display
-            cand_scores = []
-            for c_name in cand:
-                # Base score (0.5) + Sentiment Adjust
-                s = cat_sent_map.get(c_name, 0.5)
-                cand_scores.append({'category': c_name, 'score': round(s, 2)})
-            
-            random.shuffle(cand)
-            cand = apply_sentiment_rerank(cand, cat_sent_map)
-            cand = rank_with_cf(user_id, cand)
-            
-            return jsonify({
-                'success':True,
-                'user_type':'new',
-                'cluster':c,
-                'recommendations':cand[:4],
-                'debug_scores': cand_scores
-            })
-        else:
-            base = list(dict.fromkeys(hist + cluster_cats + rest_cats))
-            if hist: base = [x for x in base if x in set(hist + cluster_cats)]
-            
-            base_scores = []
-            for c_name in base:
-                s = cat_sent_map.get(c_name, 0.5)
-                # CF Score would be nice but SVD predict is costly to run for all just for debug
-                # We'll just show sentiment score for now
-                base_scores.append({'category': c_name, 'score': round(s, 2)})
-
-            random.shuffle(base)
-            base = apply_sentiment_rerank(base, cat_sent_map)
-            base = rank_with_cf(user_id, base)
-            
-            return jsonify({
-                'success':True,
-                'user_type':'returning',
-                'cluster':c,
-                'recommendations':base[:4],
-                'debug_scores': base_scores
-            })
-    except Exception as e:
-        return jsonify({'success':False,'error':str(e)})
 
 # Load on startup
 try:
