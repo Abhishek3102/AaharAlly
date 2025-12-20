@@ -14,7 +14,9 @@ export async function POST(req: Request) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({}) // Empty JSON object
+            body: JSON.stringify({
+                csv_path: 'train_data.csv'
+            })
         });
 
         let data;

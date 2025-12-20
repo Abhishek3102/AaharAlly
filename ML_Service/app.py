@@ -303,6 +303,7 @@ def apply_sentiment_rerank(candidates, cat_sent_map):
 ### ---- API ----
 
 # Persistence Hooks
+import pickle
 def save_models_to_db():
     print("Saving models to DB...")
     data = {
@@ -336,49 +337,113 @@ def load_models_from_db():
 @app.route('/api/train', methods=['POST'])
 def api_train():
     try:
-        # Robust JSON handling
-        data = request.get_json(force=True, silent=True) or {}
-        p = data.get('csv_path', 'train_data.csv')
+        # Accept explicit path but default to train_data.csv
+        p = request.json.get('csv_path', 'train_data.csv') if request.json else 'train_data.csv'
 
-        # 1. Load Static CSV (Baseline Knowledge)
-        df_csv = pd.read_csv(p)
-        if df_csv.columns[0].lower() not in ["user_id", "uid"]:
-             df_csv = pd.read_csv(p, header=None,
-                              names=["user_id","restaurant_id","age","gender","meal_category","review"])
-        
-        # 2. Load Live MongoDB Data (Real-time Learning)
-        live_orders = list(orders_col.find({}, {'_id':0})) 
-        if live_orders:
-            df_mongo = pd.DataFrame(live_orders)
-            required_cols = ["user_id", "restaurant_id", "age", "gender", "meal_category", "review"]
-            for col in required_cols:
-                if col not in df_mongo.columns:
-                    df_mongo[col] = np.nan
-            
-            df_mongo = df_mongo[required_cols]
-            print(f"Merging {len(df_csv)} CSV rows with {len(df_mongo)} Live Mongo rows.")
-            df = pd.concat([df_csv, df_mongo], ignore_index=True)
-        else:
-            df = df_csv
+        # Try reading with header first
+        df = pd.read_csv(p)
+        if df.columns[0].lower() not in ["user_id", "uid"]:
+            df = pd.read_csv(p, header=None,
+                             names=["user_id","restaurant_id","age","gender","meal_category","review"])
+
+        # Clean types
         df['gender'] = df['gender'].apply(standardize_gender)
         df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(df['age'].median())
 
         df = fit_preprocess_cluster(df)
-        fit_apriori_cluster_popularity(df)
-        fit_restaurant_popularity(df)
-        fit_sentiment(df)
-        fit_cf(df)
-        fit_lstm_sentiment(df)
+        a = fit_apriori_cluster_popularity(df)
+        b = fit_restaurant_popularity(df)
+        c = fit_sentiment(df)
+        d = fit_cf(df)
+        e = fit_lstm_sentiment(df)
 
         cat_sent = build_sentiment_category_scores(df)
         models_col.delete_many({'model':'metadata'})
         models_col.insert_one({'model': 'metadata', 'cat_sentiment': cat_sent})
         
-        save_models_to_db() # Critical for Persistence
+        save_models_to_db()
 
-        return jsonify({'success': True, 'message': 'Trained and Saved'})
+        return jsonify({
+            'success': True,
+            'clusters': a,
+            'restaurants': b,
+            'sentiment_logreg': c,
+            'cf': d,
+            'sentiment_lstm': e
+        })
+
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)})
+
+
+
+@app.route('/api/store_order', methods=['POST'])
+def api_store_order():
+    try:
+        data = request.get_json()
+        data['user_id'] = str(data.get('user_id'))
+        data['restaurant_id'] = str(data.get('restaurant_id'))
+        data['gender'] = standardize_gender(data.get('gender', "other"))
+        orders_col.insert_one(data)
+        users_col.update_one({'user_id': data['user_id']},
+            {'$set':{'user_id':data['user_id'],'age':data.get('age'),'gender':data['gender']}}, upsert=True)
+        return jsonify({'success':True})
+    except Exception as e:
+        return jsonify({'success':False,'error':str(e)})
+
+
+@app.route('/api/sentiment/predict', methods=['POST'])
+def api_sentiment_predict():
+    try:
+        texts = request.json.get('texts', [])
+        probs = predict_sentiment(texts)
+        return jsonify({'success':True,'positive_probabilities': probs.tolist()})
+    except Exception as e:
+        return jsonify({'success':False,'error':str(e)})
+
+
+@app.route('/api/sentiment/predict_lstm', methods=['POST'])
+def api_sentiment_predict_lstm():
+    try:
+        texts = request.json.get('texts', [])
+        probs = predict_lstm_sentiment(texts)
+        return jsonify({'success':True,'positive_probabilities_lstm': probs.tolist()})
+    except Exception as e:
+        return jsonify({'success':False,'error':str(e)})
+
+
+@app.route('/api/recommend', methods=['POST'])
+def api_recommend():
+    try:
+        payload = request.get_json()
+        user_id = str(payload.get('user_id'))
+        age = float(payload.get('age'))
+        gender = standardize_gender(payload.get('gender'))
+        restaurant_id = str(payload.get('restaurant_id'))
+
+        c = age_gender_to_cluster(age, gender)
+        cluster_cats = pop_for_cluster(c)
+        rest_cats = pop_for_restaurant(restaurant_id)
+        hist = top_history_categories(user_id, n=10)
+
+        cat_sent_map = (models_col.find_one({'model':'metadata'}) or {}).get('cat_sentiment', {})
+        new_user = orders_col.count_documents({'user_id': user_id}) == 0
+
+        if new_user:
+            cand = list(set(cluster_cats) | set(rest_cats))
+            random.shuffle(cand)
+            cand = apply_sentiment_rerank(cand, cat_sent_map)
+            cand = rank_with_cf(user_id, cand)
+            return jsonify({'success':True,'user_type':'new','cluster':c,'recommendations':cand[:10]})
+        else:
+            base = list(dict.fromkeys(hist + cluster_cats + rest_cats))
+            if hist: base = [x for x in base if x in set(hist + cluster_cats)]
+            random.shuffle(base)
+            base = apply_sentiment_rerank(base, cat_sent_map)
+            base = rank_with_cf(user_id, base)
+            return jsonify({'success':True,'user_type':'returning','cluster':c,'recommendations':base[:10]})
+    except Exception as e:
+        return jsonify({'success':False,'error':str(e)})
 
 # Load on startup
 try:
@@ -387,6 +452,6 @@ except:
     pass
 
 if __name__ == '__main__':
+    # RENDER REQUIRES host='0.0.0.0'
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
-
