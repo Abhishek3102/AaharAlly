@@ -3,8 +3,11 @@ import { food } from "../../models/Food";
 import FoodPreference from "../../models/FoodPreferenceSchema";
 import { mongoConnect } from "../../utils/feature";
 import { NextResponse } from "next/server";
+import { filterFoodsByCondition } from "../../utils/gemini";
+import { HealthCache } from "../../models/HealthCache";
 
-export async function GET(req) {
+
+export async function GET(req: Request) {
     const url = new URL(req.url);
     const ageParam = url.searchParams.get('age');
     const id = url.searchParams.get('id');
@@ -12,6 +15,7 @@ export async function GET(req) {
     const categoryParam = url.searchParams.get('categories'); // Allow multiple categories
     const meal_type = url.searchParams.get('meal_type');
     const search = url.searchParams.get('search');
+    const health_condition = url.searchParams.get('health_condition');
 
     try {
         await mongoConnect();
@@ -22,9 +26,9 @@ export async function GET(req) {
             return NextResponse.json({ data, success: true }, { status: 200 });
         }
 
-        const conditions = {};
-        let categoriesArray = [];
-        let regionsArray = [];
+        const conditions: any = {};
+        let categoriesArray: any[] = [];
+        let regionsArray: string[] = [];
 
         // If age is provided, find the category that matches the age range
         if (ageParam) {
@@ -94,7 +98,7 @@ export async function GET(req) {
             // Collect the most consumed categories from the aggregation
             if (consumptionData.length > 0) {
                 consumptionData.forEach(data => {
-                    const mostConsumedCategory = data.categories.reduce((prev, current) => {
+                    const mostConsumedCategory = data.categories.reduce((prev: any, current: any) => {
                         return prev.categoryCount > current.categoryCount ? prev : current;
                     });
                     categoriesArray.push(mostConsumedCategory.meal_category);
@@ -127,10 +131,36 @@ export async function GET(req) {
             ];
         }
 
+
+
+        // ... existing imports ...
+
         // Find and return data based on final conditions
-        const data = await food.find(conditions);
+        let data = await food.find(conditions);
+
+        // --- GEMINI FILTERING (CACHED) ---
+        if (health_condition) {
+            // 1. Fetch pre-calculated safe IDs
+            const cache = await HealthCache.findOne({ condition: health_condition });
+
+            if (cache && cache.safe_food_ids) {
+                // 2. Filter the current result set
+                // Convert IDs to string for comparison or use includes
+                const safeSet = new Set(cache.safe_food_ids.map((id: any) => id.toString()));
+                data = data.filter((item: any) => safeSet.has(item._id.toString()));
+            } else {
+                // Feature fallback: If cache empty, maybe return nothing or all?
+                // User expects valid filtering. If we haven't run the classifier, returning all is dangerous for health.
+                // We return empty array with a log.
+                console.warn(`No health cache found for: ${health_condition}`);
+                data = [];
+            }
+        }
+
         return NextResponse.json({ data, success: true }, { status: 200 });
-    } catch (err) {
+    } catch (err: any) {
+        console.error("API Error:", err);
         return NextResponse.json({ message: `Error processing request: ${err.message}`, success: false }, { status: 500 });
     }
 }
+

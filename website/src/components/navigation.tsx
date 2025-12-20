@@ -41,14 +41,9 @@ const Navbar = () => {
             link: '/favorites'
         },
         {
-            id: 4,
-            name: 'Checkout',
-            link: '/checkout'
-        },
-        {
-            id: 5,
-            name: 'Orders',
-            link: '/orders'
+           id: 4, 
+           name: 'Orders',
+           link: '/orders'
         }
     ];
 

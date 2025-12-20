@@ -24,12 +24,23 @@ interface Order {
     items: OrderItem[];
 }
 
+import { useUser } from '@clerk/nextjs';
+import { useRouter } from 'next/navigation';
+
 const OrdersPage = () => {
+    const { user, isLoaded } = useUser();
+    const router = useRouter();
     const [orders, setOrders] = useState<Order[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        if (isLoaded && !user) {
+            router.push('/sign-in'); // Redirect if not logged in
+            return;
+        }
+
         const fetchOrders = async () => {
+            if (!user) return; // double check
             try {
                 const res = await axios.get('/api/orders');
                 if (res.data.success) {
@@ -41,8 +52,11 @@ const OrdersPage = () => {
                 setLoading(false);
             }
         };
-        fetchOrders();
-    }, []);
+        
+        if (isLoaded && user) {
+            fetchOrders();
+        }
+    }, [user, isLoaded, router]);
 
     if (loading) return <div className="text-center py-20">Loading orders...</div>;
 
@@ -60,37 +74,62 @@ const OrdersPage = () => {
                     </Link>
                 </div>
             ) : (
-                <div className="space-y-6">
+                <div className="grid gap-8">
                     {orders.map((order) => (
-                        <div key={order._id} className="bg-white p-6 rounded-lg shadow-md border-l-4 border-redCustom">
-                            <div className="flex justify-between items-start mb-4 border-b pb-2">
+                        <div key={order._id} className="bg-gradient-to-br from-gray-900 via-gray-800 to-black p-6 rounded-2xl shadow-xl border border-gray-700 text-white relative overflow-hidden transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-orange-500/10">
+                            {/* Decorative Top Bar */}
+                            <div className={`absolute top-0 left-0 w-full h-1 ${
+                                order.status === 'completed' ? 'bg-gradient-to-r from-green-400 to-emerald-600' : 'bg-gradient-to-r from-yellow-400 to-orange-500'
+                            }`} />
+
+                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 border-b border-gray-700 pb-4 mt-2">
                                 <div>
-                                    <p className="text-sm text-gray-500">Order ID: {order._id}</p>
-                                    <p className="text-sm text-gray-500">{new Date(order.createdAt).toLocaleDateString()} at {new Date(order.createdAt).toLocaleTimeString()}</p>
+                                    <p className="text-xs text-gray-400 font-mono tracking-wider uppercase mb-1">Order ID</p>
+                                    <p className="text-sm font-semibold text-gray-200">{order._id}</p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        {new Date(order.createdAt).toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })} • {new Date(order.createdAt).toLocaleTimeString()}
+                                    </p>
                                 </div>
-                                <div className="text-right">
-                                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                                        order.status === 'completed' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
+                                <div className="text-right mt-4 md:mt-0 flex flex-col items-end">
+                                    <span className={`inline-block px-4 py-1 rounded-full text-xs font-bold tracking-wide shadow-lg mb-2 ${
+                                        order.status === 'completed' 
+                                        ? 'bg-green-900/50 text-green-400 border border-green-700/50' 
+                                        : 'bg-yellow-900/50 text-yellow-400 border border-yellow-700/50'
                                     }`}>
                                         {order.status.toUpperCase()}
                                     </span>
-                                    <p className="font-bold text-xl mt-1">₹{order.totalAmount.toFixed(2)}</p>
+                                    <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                                        ₹{order.totalAmount.toFixed(2)}
+                                    </p>
                                 </div>
                             </div>
                             
-                            <div className="space-y-3">
+                            <div className="space-y-3 mt-4">
                                 {order.items.map((item, idx) => (
-                                    <div key={idx} className="flex justify-between items-center">
-                                        <div className="flex items-center space-x-4">
-                                            {item.foodId?.image && (
-                                                <img src={item.foodId.image} alt={item.foodId.name} className="w-12 h-12 object-cover rounded" />
-                                            )}
+                                    <div key={idx} className="group flex justify-between items-center bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/10">
+                                        <div className="flex items-center space-x-5">
+                                            <div className="relative">
+                                                {item.foodId?.image ? (
+                                                    <img src={item.foodId.image} alt={item.foodId.name} className="w-16 h-16 object-cover rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300" />
+                                                ) : (
+                                                    <div className="w-16 h-16 bg-gray-700 rounded-xl flex items-center justify-center text-gray-500 text-xs">No Img</div>
+                                                )}
+                                                {/* Quantity Badge */}
+                                                <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full shadow-md border border-gray-900">
+                                                    {item.quantity}
+                                                </span>
+                                            </div>
                                             <div>
-                                                <p className="font-medium text-gray-800">{item.foodId?.name || "Unknown Item"}</p>
-                                                <p className="text-sm text-gray-500">Qty: {item.quantity} x ₹{item.price}</p>
+                                                <p className="font-bold text-lg text-white group-hover:text-orange-400 transition-colors">{item.foodId?.name || "Unknown Item"}</p>
+                                                <p className="text-sm text-gray-400 mt-1">
+                                                     ₹{item.price} each
+                                                </p>
                                             </div>
                                         </div>
-                                        <p className="font-medium">₹{(item.quantity * item.price).toFixed(2)}</p>
+                                        <div className="text-right">
+                                            <p className="font-bold text-xl text-white">₹{(item.quantity * item.price).toFixed(2)}</p>
+                                            <p className="text-xs text-gray-500 mt-1">Subtotal</p>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

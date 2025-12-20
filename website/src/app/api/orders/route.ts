@@ -30,7 +30,13 @@ export async function POST(req: Request) {
         // Calculate Total
         let totalAmount = 0;
         const orderItems = dbUser.cart.map((item: any) => {
-            const price = parseFloat(item.foodId.price.replace(/[^0-9.]/g, '')); // Handle "₹ 200" or similar
+            // Fix: Handle ranges like "$12-16"
+            let priceStr = item.foodId.price || "0";
+            if (priceStr.includes('-')) {
+                priceStr = priceStr.split('-')[0];
+            }
+            const price = parseFloat(priceStr.replace(/[^0-9.]/g, ''));
+
             const total = price * item.quantity;
             totalAmount += total;
             return {
@@ -59,31 +65,24 @@ export async function POST(req: Request) {
         // dbUser.recommendedCategories = []; // Optional, or let time/date check handle it
         await dbUser.save();
 
-        // Background: Notify ML Service
-        // We do this asynchronously (fire and forget) to keep UI fast
-        // or await if we want to be sure. Await is safer for now.
+        // Background: Notify ML Service (Optimized)
+        // We use Promise.allSettled with a strict timeout to ensure this never hangs the UI > 2 seconds
         const ML_API = process.env.NEXT_PUBLIC_ML_API_URL || "https://aaharally.onrender.com";
-
-        // We notify for EACH item or unique category?
-        // ML expects single order entries usually.
-        // Let's iterate unique categories bought.
         const uniqueItems = orderItems;
 
-        // We might need to batch this or just loop.
-        for (const item of uniqueItems) {
-            try {
-                await axios.post(`${ML_API}/api/store_order`, {
-                    user_id: user.id, // Clerk ID
-                    restaurant_id: "AaharAlly_Main",
-                    meal_category: item.category, // e.g. "Create your Own" or "North Indian"
-                    age: dbUser.age,
-                    gender: dbUser.gender,
-                    review: "" // No reviewer yet
-                });
-            } catch (err) {
-                console.error("Failed to sync order to ML:", err);
-            }
-        }
+        const mlPromises = uniqueItems.map((item: any) => {
+            return axios.post(`${ML_API}/api/store_order`, {
+                user_id: user.id, // Clerk ID
+                restaurant_id: "AaharAlly_Main",
+                meal_category: item.category,
+                age: dbUser.age,
+                gender: dbUser.gender,
+                review: ""
+            }, { timeout: 2500 }); // 2.5s Timeout
+        });
+
+        // Wait for all, but don't fail if they fail.
+        await Promise.allSettled(mlPromises);
 
         return NextResponse.json({ success: true, orderId: newOrder._id });
 

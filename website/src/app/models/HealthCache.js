@@ -1,0 +1,19 @@
+import mongoose from "mongoose";
+
+const HealthCacheSchema = new mongoose.Schema({
+    condition: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    safe_food_ids: [{
+        type: String, // Storing as String IDs is safer for generic checking, or ObjectId
+        required: true
+    }],
+    last_updated: {
+        type: Date,
+        default: Date.now
+    }
+});
+
+export const HealthCache = mongoose.models.HealthCache || mongoose.model("HealthCache", HealthCacheSchema);

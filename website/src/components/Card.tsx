@@ -25,61 +25,94 @@ export function BookingCard() {
   const { user } = useUser();
 
   const searchParams = useSearchParams();
-  const [loading, setLoading] = useState(false);
+  const [initialLoading, setInitialLoading] = useState(true); // Loading for first fetch
+  const [loading, setLoading] = useState(false); // Loading for server-side refetch
   const [likeLoading, setLikeLoading] = useState(false);
-  const [foodArray, setFoodArray] = useState<Food[]>([]);
+  const [allFood, setAllFood] = useState<Food[]>([]); // Store ALL data
+  const [filteredFood, setFilteredFood] = useState<Food[]>([]); // Displayed data
   const [likedItem, setLikedItem] = useState<string[]>([]);
 
-  // Consolidate fetching logic
+  // 1. Fetch ALL data on mount (Optimized)
   useEffect(() => {
-    const controller = new AbortController();
-    const signal = controller.signal;
+    const fetchAllData = async () => {
+      try {
+        setInitialLoading(true);
+        const response = await axios.get(`/api/Users/`); // Fetch everything
+        if (response.data.success) {
+            setAllFood(response.data.data);
+            setFilteredFood(response.data.data);
+        }
+      } catch (error) {
+        console.error("Error fetching initial data:", error);
+      } finally {
+        setInitialLoading(false);
+      }
+    };
+    fetchAllData();
+  }, []);
+
+  // 2. Client-Side Filtering (Instant)
+  // We only re-fetch from server if strictly necessary (like Region logic which is complex).
+  // For Category and Meal Type, we filter locally.
+  useEffect(() => {
+    if (allFood.length === 0) return;
+
     const categoryParam = searchParams.get("category");
     const regionParam = searchParams.get("region");
     const mealTypeParam = searchParams.get("meal_type");
+    const searchParam = searchParams.get("search");
+    const healthConditionParam = searchParams.get("health_condition");
 
-    const categoriesArray = categoryParam
-      ? categoryParam.split(",").map((cat) => cat.trim())
-      : [];
-    const regionsArray = regionParam
-      ? regionParam.split(",").map((reg) => reg.trim())
-      : [];
+    // If Region OR Health Condition is present, we used Server Logic.
+    // Region: Complex Aggregation.
+    // Health Condition: Gemini AI Filtering.
+    if (regionParam || healthConditionParam) {
+       const fetchServerData = async () => {
+          setLoading(true);
+          try {
+             // Pass all params to server
+             const response = await axios.get(`/api/Users/`, {
+                params: {
+                   categories: categoryParam,
+                   regions: regionParam,
+                   meal_type: mealTypeParam,
+                   search: searchParam,
+                   health_condition: healthConditionParam 
+                }
+             });
+             setFilteredFood(response.data.data);
+          } catch(err) {
+             console.error(err);
+          } finally {
+             setLoading(false);
+          }
+       };
+       fetchServerData();
+       return; 
+    }
 
-    const isFilterActive =
-      categoriesArray.length > 0 ||
-      regionsArray.length > 0 ||
-      mealTypeParam;
+    // --- INSTANT CLIENT FILTERING ---
+    // Only applied if we rely on standard category/meal_type filtering
+    let result = [...allFood];
 
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        // If no filter is active, we still want to fetch data (all data to show in rows)
-        // We pass age if available for recommendations, but don't block on it.
-        const response = await axios.get(`/api/Users/`, {
-          params: {
-            categories: categoriesArray.join(","),
-            regions: regionsArray.join(","),
-            meal_type: mealTypeParam,
-            age: user?.unsafeMetadata.age,
-          },
-          signal,
-        });
-        setFoodArray(response.data.data);
-      } catch (error: any) {
-        if (axios.isCancel(error)) {
-          console.log("Request canceled:", error.message);
-        } else {
-          console.error("Error fetching data:", error);
-        }
-      } finally {
-        setLoading(false);
-      }
-    };
+    if (categoryParam) {
+        const cats = categoryParam.split(",").map(c => c.trim().toLowerCase());
+        result = result.filter(item => cats.includes(item.category.toLowerCase()));
+    }
 
-    fetchData();
+    if (mealTypeParam) {
+        result = result.filter(item => item.meal_type.toLowerCase() === mealTypeParam.toLowerCase());
+    }
+    
+    // Simple client-side search if needed (optional)
+    if (searchParam) {
+       // logic if search param was passed (though Navbar usually handles search URL)
+    }
 
-    return () => controller.abort();
-  }, [searchParams, user?.unsafeMetadata.age]);
+    setFilteredFood(result);
+
+  }, [searchParams, allFood]); 
+
 
   useEffect(() => {
     const fetchLike = async () => {
@@ -98,7 +131,7 @@ export function BookingCard() {
           );
         }
       } catch (error: any) {
-        toast.error(error.response?.message || "An error occurred");
+        if(error?.response?.data?.message) toast.error(error.response.data.message);
       } finally {
         setLikeLoading(false);
       }
@@ -158,13 +191,12 @@ export function BookingCard() {
             </div>
           </div>
         </div>
-        <Image
+        {/* REPLACED Next.js Image with standard img for reliability */}
+        <img
           src={item.image}
           alt={item.name}
           className="object-cover group-hover:scale-110 group-hover:shadow-xl transition-transform duration-300 ease-in-out h-full w-full"
-          loading="lazy"
-          width={500}
-          height={500}
+          loading="lazy" 
         />
         <div className="absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60" />
         {/* @ts-expect-error: Material Tailwind types using ref causing conflict with React 19 */}
@@ -233,13 +265,13 @@ export function BookingCard() {
 
   const categories = ["Breakfast", "Lunch", "Dinner"];
 
-  if (loading) return <Loading />;
+  if (initialLoading || loading) return <Loading />;
 
   if (!isFilterActive) {
       return (
           <div className="w-full flex flex-col gap-10 pb-10">
               {categories.map((cat) => {
-                  const items = foodArray.filter(item => item.meal_type === cat).slice(0, 5);
+                  const items = allFood.filter(item => item.meal_type === cat).slice(0, 5);
                   if (items.length === 0) return null;
                   return (
                       <div key={cat} className="flex flex-col gap-4">
@@ -264,8 +296,8 @@ export function BookingCard() {
 
   return (
     <div className="flex flex-wrap justify-center gap-8">
-      {foodArray.length > 0 ? (
-          foodArray.map(renderCard)
+      {filteredFood.length > 0 ? (
+          filteredFood.map(renderCard)
       ) : (
           <div className="text-center w-full py-10 text-gray-500">No items found</div>
       )}
