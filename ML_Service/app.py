@@ -347,7 +347,8 @@ def apply_sentiment_rerank(candidates, cat_sent_map):
 @app.route('/api/train', methods=['POST'])
 def api_train():
     try:
-        p = request.json.get('csv_path', 'train_data.csv')
+        data = request.get_json(force=True, silent=True) or {}
+        p = data.get('csv_path', 'train_data.csv')
 
         # Try reading with header first
         df = pd.read_csv(p)
