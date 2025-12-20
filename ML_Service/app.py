@@ -334,42 +334,54 @@ def load_models_from_db():
         svd = pickle.loads(data['svd']) if data.get('svd') else None
         print("Models loaded from DB.")
 
+import threading
+
+def run_training_pipeline(csv_path):
+    with app.app_context():
+        try:
+            print("--- Starting Background Training ---")
+            # Accept explicit path but default to train_data.csv
+            p = csv_path
+            
+            # Try reading with header first
+            df = pd.read_csv(p)
+            if df.columns[0].lower() not in ["user_id", "uid"]:
+                df = pd.read_csv(p, header=None,
+                                names=["user_id","restaurant_id","age","gender","meal_category","review"])
+
+            # Clean types
+            df['gender'] = df['gender'].apply(standardize_gender)
+            df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(df['age'].median())
+
+            df = fit_preprocess_cluster(df)
+            fit_apriori_cluster_popularity(df)
+            fit_restaurant_popularity(df)
+            fit_sentiment(df)
+            fit_cf(df)
+            fit_lstm_sentiment(df)
+
+            cat_sent = build_sentiment_category_scores(df)
+            models_col.delete_many({'model':'metadata'})
+            models_col.insert_one({'model': 'metadata', 'cat_sentiment': cat_sent})
+            
+            save_models_to_db()
+            print("--- Background Training Completed Successfully ---")
+        except Exception as e:
+            print(f"--- Background Training Failed: {e} ---")
+
 @app.route('/api/train', methods=['POST'])
 def api_train():
     try:
-        # Accept explicit path but default to train_data.csv
-        p = request.json.get('csv_path', 'train_data.csv') if request.json else 'train_data.csv'
-
-        # Try reading with header first
-        df = pd.read_csv(p)
-        if df.columns[0].lower() not in ["user_id", "uid"]:
-            df = pd.read_csv(p, header=None,
-                             names=["user_id","restaurant_id","age","gender","meal_category","review"])
-
-        # Clean types
-        df['gender'] = df['gender'].apply(standardize_gender)
-        df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(df['age'].median())
-
-        df = fit_preprocess_cluster(df)
-        a = fit_apriori_cluster_popularity(df)
-        b = fit_restaurant_popularity(df)
-        c = fit_sentiment(df)
-        d = fit_cf(df)
-        e = fit_lstm_sentiment(df)
-
-        cat_sent = build_sentiment_category_scores(df)
-        models_col.delete_many({'model':'metadata'})
-        models_col.insert_one({'model': 'metadata', 'cat_sentiment': cat_sent})
+        data = request.json or {}
+        p = data.get('csv_path', 'train_data.csv')
         
-        save_models_to_db()
+        # Start background thread
+        thread = threading.Thread(target=run_training_pipeline, args=(p,))
+        thread.start()
 
         return jsonify({
             'success': True,
-            'clusters': a,
-            'restaurants': b,
-            'sentiment_logreg': c,
-            'cf': d,
-            'sentiment_lstm': e
+            'message': 'Training started in background. Check logs for completion.'
         })
 
     except Exception as e:
