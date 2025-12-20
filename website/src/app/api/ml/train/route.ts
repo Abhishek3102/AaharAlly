@@ -4,10 +4,10 @@ import { NextResponse } from "next/server";
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 
-export async function GET() {
+export async function POST(req: Request) {
     try {
         const ML_API = process.env.NEXT_PUBLIC_ML_API_URL || "https://aaharally.onrender.com";
-        console.log("Triggering ML Training (Native Fetch)...");
+        console.log("Triggering ML Training...");
 
         const res = await fetch(`${ML_API}/api/train`, {
             method: 'POST',
