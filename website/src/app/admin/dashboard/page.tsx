@@ -123,15 +123,26 @@ const AdminDashboard = () => {
                              )
                         })}
                         {/* Others (Debug) */}
-                         <details className="mt-1">
-                            <summary className="text-[10px] text-gray-400 cursor-pointer">View Candidates</summary>
-                            <div className="flex flex-col gap-1 mt-1">
-                                {user.scores?.filter((s:any) => !user.recommendations?.slice(0,4).includes(s.category)).map((s:any, idx:number) => (
-                                     <div key={idx} className="text-[10px] text-gray-500 px-2 flex justify-between">
+                         <details className="mt-2 group">
+                            <summary className="text-xs text-blue-600 font-medium cursor-pointer hover:underline list-none flex items-center gap-1">
+                               ▶ View All Candidates
+                            </summary>
+                            <div className="flex flex-col gap-1 mt-2 p-2 bg-gray-50 rounded border border-gray-100">
+                                {user.scores && user.scores.length > 0 ? (
+                                    user.scores
+                                    .filter((s:any) => !user.recommendations?.slice(0,4).includes(s.category))
+                                    .sort((a:any, b:any) => b.score - a.score)
+                                    .map((s:any, idx:number) => (
+                                     <div key={idx} className="text-xs text-gray-600 flex justify-between border-b border-gray-100 last:border-0 py-1">
                                         <span>{s.category}</span>
-                                        <span>{s.score}</span>
+                                        <span className="font-mono text-gray-400">{s.score}</span>
                                     </div>
-                                ))}
+                                    ))
+                                ) : (
+                                    <span className="text-[10px] text-gray-400 italic">
+                                        No scores available. (Len: {user.scores ? user.scores.length : 'Undef'})
+                                    </span>
+                                )}
                             </div>
                         </details>
                      </div>

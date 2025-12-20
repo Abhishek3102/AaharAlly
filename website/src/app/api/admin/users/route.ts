@@ -31,6 +31,14 @@ export async function GET() {
         // Simple approach for now (assumes < 10k users, else pagination needed):
         const users = await User.find({}).sort({ createdAt: -1 }).lean();
 
+        // DEBUG: Check if data exists in DB
+        if (users.length > 0) {
+            console.log("DEBUG: First User Data:", JSON.stringify({
+                email: (users[0] as any).email,
+                debugData: (users[0] as any).debugRecommendationData
+            }, null, 2));
+        }
+
         const userStats = await Promise.all(users.map(async (user: any) => {
             const orderCount = await Order.countDocuments({ userId: user._id });
 
