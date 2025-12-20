@@ -334,48 +334,12 @@ def load_models_from_db():
         svd = pickle.loads(data['svd']) if data.get('svd') else None
         print("Models loaded from DB.")
 
-import threading
-
-def run_training_pipeline(csv_path):
-    with app.app_context():
-        try:
-            print("--- Starting Background Training ---")
-            # Accept explicit path but default to train_data.csv
-            p = csv_path
-            
-            # Try reading with header first
-            df = pd.read_csv(p)
-            if df.columns[0].lower() not in ["user_id", "uid"]:
-                df = pd.read_csv(p, header=None,
-                                names=["user_id","restaurant_id","age","gender","meal_category","review"])
-
-            # Clean types
-            df['gender'] = df['gender'].apply(standardize_gender)
-            df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(df['age'].median())
-
-            df = fit_preprocess_cluster(df)
-            fit_apriori_cluster_popularity(df)
-            fit_restaurant_popularity(df)
-            c = fit_sentiment(df)
-            d = fit_cf(df)
-            
-            # MEMORY OPTIMIZATION FOR RENDER FREE TIER
-            # LSTM (TensorFlow) is too heavy for 512MB RAM. 
-            # We skip it and rely on the faster LogisticRegression (c) above.
-            e = {'status': 'skipped_for_memory', 'accuracy': 'use_logreg_instead'}
-            # try:
-            #     e = fit_lstm_sentiment(df)
-            # except:
-            #     e = {}
-
-            cat_sent = build_sentiment_category_scores(df)
-            models_col.delete_many({'model':'metadata'})
-            models_col.insert_one({'model': 'metadata', 'cat_sentiment': cat_sent})
-            
-            save_models_to_db()
-            print("--- Background Training Completed Successfully ---")
-        except Exception as e:
-            print(f"--- Background Training Failed: {e} ---")
+# Global list of all categories found during training
+all_categories = []
+def cache_all_categories(df):
+    global all_categories
+    if 'meal_category' in df.columns:
+        all_categories = sorted(df['meal_category'].dropna().unique().tolist())
 
 @app.route('/api/train', methods=['POST'])
 def api_train():
@@ -394,6 +358,120 @@ def api_train():
 
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)})
+
+def run_training_pipeline(csv_path):
+    global all_categories
+    with app.app_context():
+        try:
+            print("--- Starting Background Training ---")
+            p = csv_path
+            df = pd.read_csv(p)
+            if df.columns[0].lower() not in ["user_id", "uid"]:
+                df = pd.read_csv(p, header=None,
+                                names=["user_id","restaurant_id","age","gender","meal_category","review"])
+
+            # Clean types
+            df['gender'] = df['gender'].apply(standardize_gender)
+            df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(df['age'].median())
+
+            # Cache categories for scoring
+            cache_all_categories(df)
+
+            df = fit_preprocess_cluster(df)
+            fit_apriori_cluster_popularity(df)
+            fit_restaurant_popularity(df)
+            c = fit_sentiment(df)
+            d = fit_cf(df)
+            
+            # Skip LSTM for memory
+            e = {'status': 'skipped_for_memory'}
+
+            cat_sent = build_sentiment_category_scores(df)
+            models_col.delete_many({'model':'metadata'})
+            models_col.insert_one({'model': 'metadata', 'cat_sentiment': cat_sent, 'all_categories': all_categories})
+            
+            save_models_to_db()
+            print("--- Background Training Completed Successfully ---")
+        except Exception as e:
+            print(f"--- Background Training Failed: {e} ---")
+
+def get_cf_score_normalized(uid, item):
+    if svd is None: return 0.5
+    try:
+        # SVD predicts rating 1-5. Normalize to 0-1.
+        est = svd.predict(str(uid), str(item)).est
+        return (est - 1) / 4.0
+    except:
+        return 0.5
+
+@app.route('/api/recommend', methods=['POST'])
+def api_recommend():
+    try:
+        payload = request.get_json()
+        user_id = str(payload.get('user_id'))
+        age = float(payload.get('age'))
+        gender = standardize_gender(payload.get('gender'))
+        
+        # 1. Get Cluster-based suggestions
+        c = age_gender_to_cluster(age, gender)
+        cluster_cats = pop_for_cluster(c) # Top 10 popular in this cluster
+        
+        # 2. Get User History (if returning)
+        hist = top_history_categories(user_id, n=10)
+        
+        # 3. Load Metadata (Global Categories + Sentiment)
+        meta = models_col.find_one({'model':'metadata'}) or {}
+        cat_sent_map = meta.get('cat_sentiment', {})
+        # If all_categories is empty (first run), try to use cluster_cats, else hardcode fallback
+        candidates = meta.get('all_categories', [])
+        if not candidates:
+            candidates = list(set(cluster_cats + hist + ["Indian Curry", "Biryani", "Pizza", "Burger", "Chinese"]))
+
+        # 4. Calculate Comprehensive Score for EVERY category
+        # Score = (0.4 * Sentiment) + (0.4 * Personal_CF_Score) + (0.2 * Cluster_Popularity_Bonus)
+        scored_candidates = []
+        
+        for cat in candidates:
+            # A. Sentiment Score (0-1)
+            s_score = cat_sent_map.get(cat, 0.5)
+            
+            # B. Collaborative Filtering Score (0-1)
+            cf_score = get_cf_score_normalized(user_id, cat)
+            
+            # C. Cluster/History Bonus
+            bonus = 0.0
+            if cat in cluster_cats: bonus += 0.1
+            if cat in hist: bonus += 0.2
+            
+            # Final Weighted Score
+            # Heavy weight on CF for personalization, but Sentiment acts as quality gate
+            final_score = (0.5 * cf_score) + (0.3 * s_score) + bonus
+            
+            # Clamping
+            final_score = min(1.0, max(0.0, final_score))
+            
+            scored_candidates.append({
+                'category': cat,
+                'score': round(final_score, 3), # 3 decimals for variety
+                'debug_details': f"CF:{cf_score:.2f}, Sent:{s_score:.2f}, Bonus:{bonus:.1f}"
+            })
+
+        # 5. Sort by Score
+        scored_candidates.sort(key=lambda x: x['score'], reverse=True)
+        
+        # 6. Select Top 4
+        top_4 = [x['category'] for x in scored_candidates[:4]]
+        
+        return jsonify({
+            'success': True,
+            'user_type': 'returning' if hist else 'new',
+            'cluster': c,
+            'recommendations': top_4,
+            'debug_scores': scored_candidates # Send FULL list
+        })
+
+    except Exception as e:
+        return jsonify({'success':False,'error':str(e)})
 
 
 

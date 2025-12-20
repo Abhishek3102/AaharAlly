@@ -133,9 +133,14 @@ const AdminDashboard = () => {
                                     .filter((s:any) => !user.recommendations?.slice(0,4).includes(s.category))
                                     .sort((a:any, b:any) => b.score - a.score)
                                     .map((s:any, idx:number) => (
-                                     <div key={idx} className="text-xs text-gray-600 flex justify-between border-b border-gray-100 last:border-0 py-1">
-                                        <span>{s.category}</span>
-                                        <span className="font-mono text-gray-400">{s.score}</span>
+                                     <div key={idx} className="flex flex-col border-b border-gray-100 last:border-0 py-1">
+                                         <div className="flex justify-between text-xs text-gray-600">
+                                            <span>{s.category}</span>
+                                            <span className="font-mono text-gray-400">{s.score}</span>
+                                         </div>
+                                         <div className="text-[9px] text-gray-400 font-mono pl-1">
+                                             {s.debug_details || ''}
+                                         </div>
                                     </div>
                                     ))
                                 ) : (
