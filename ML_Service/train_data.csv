@@ -1,1001 +1,1465 @@
 user_id,restaurant_id,age,gender,meal_category,review
-U1,R1,48,Male,Street Food,The food was decent
-U2,R2,15,Male,Indian Curry,I enjoyed it
-U3,R3,38,Male,Vegan,but the food was just average.
-U4,R4,62,Male,Chinese,making it a good value.
-U5,R5,54,Female,Dessert,I loved the combination of flavors; it was a delightful surprise.
-U6,R6,64,Female,Dessert,and the taste lived up to expectations.
-U7,R7,26,Male,Snacks,making it a memorable dish.
-U8,R8,36,Male,Street Food,and I appreciated the creativity behind it.
-U9,R9,31,Female,Vegan,It was okay
-U10,R10,14,Male,Seafood,The meal was packed with flavor; I can't wait to have it again!
-U11,R11,59,Female,Indian Curry,making it a memorable dish.
-U12,R12,57,Female,Vegan,The dish was well-prepared and the flavors were spot on!
-U13,R13,27,Female,Snacks,I found it to be too oily for my liking.
-U14,R14,24,Female,Street Food,and every bite was a joy!
-U15,R15,37,Female,Vegan,It was quite disappointing; I expected a lot more flavor.
-U16,R16,27,Female,Cheesy,I was left wanting more; it felt incomplete.
-U17,R17,66,Male,Healthy,but I think it could use a bit more spice.
-U18,R18,59,Female,Snacks,though not memorable.
-U19,R19,18,Male,Dessert,The consistency was a bit strange; not what I expected.
-U20,R20,32,Male,Vegan,and the taste did not disappoint.
-U21,R21,10,Male,Vegan,but I feel there are better options available.
-U22,R22,38,Male,Indian Curry,and I appreciated the creativity behind it.
-U23,R23,47,Female,Chinese,and the taste did not disappoint.
-U24,R24,27,Male,Seafood,I loved the combination of flavors; it was a delightful surprise.
-U25,R25,37,Male,Dessert,a satisfying meal that I would recommend.
-U26,R26,43,Female,Indian Curry,but I wouldn't order it again.
-U27,R27,46,Male,Snacks,The meal had great potential but ultimately fell short.
-U28,R28,57,Female,Seafood,I was thrilled with how flavorful it was; a real treat!
-U29,R29,38,Male,Indian Curry,The meal was satisfying
-U30,R30,55,Female,Seafood,making it a memorable dish.
-U31,R31,66,Female,Dessert,It was fine
-U32,R32,11,Male,Cheesy,Overall
-U33,R33,70,Male,Indian Curry,Absolutely loved the spices used; it was a delightful experience!
-U34,R34,51,Male,Chinese,and every bite was a joy!
-U35,R35,30,Female,Healthy,a satisfying meal that I would recommend.
-U36,R36,47,Female,Cheesy,The meal was packed with flavor; I can't wait to have it again!
-U37,R37,64,Female,Snacks,The flavors were unique
-U38,R38,25,Male,Cheesy,The aroma was inviting
-U39,R39,20,Male,Seafood,but I think it could use a bit more spice.
-U40,R40,39,Male,Cheesy,I enjoyed it
-U41,R41,33,Male,Seafood,but I think it could use a bit more spice.
-U42,R42,20,Female,Vegan,The overall experience was pleasant
-U43,R43,48,Male,Dessert,but I think it could use a bit more spice.
-U44,R44,10,Female,Spicy,The aroma was inviting
-U45,R45,54,Female,Spicy,and I appreciated the creativity behind it.
-U46,R46,38,Female,Indian Curry,making it a memorable dish.
-U47,R47,36,Female,Street Food,I was left wanting more; it felt incomplete.
-U48,R48,47,Male,Dessert,The meal was satisfying
-U49,R49,32,Female,Street Food,Absolutely loved the spices used; it was a delightful experience!
-U50,R50,69,Female,Healthy,but I feel there are better options available.
-U51,R51,33,Female,Healthy,The aroma was inviting
-U52,R52,41,Female,Healthy,It was fine
-U53,R53,70,Female,Street Food,and the taste lived up to expectations.
-U54,R54,13,Female,Street Food,but I feel there are better options available.
-U55,R55,55,Female,Cheesy,I enjoyed it
-U56,R56,34,Female,Indian Curry,but I expected more based on the reviews.
-U57,R57,15,Male,Cheesy,The dish was well-prepared and the flavors were spot on!
-U58,R58,68,Female,Spicy,The dish was well-prepared and the flavors were spot on!
-U59,R59,64,Male,Healthy,The portion size was generous
-U60,R60,13,Male,Cheesy,but it missed the mark.
-U61,R61,63,Male,Vegan,a satisfying meal that I would recommend.
-U62,R62,32,Male,Seafood,The presentation was impressive
-U63,R63,54,Male,Spicy,The meal was satisfying
-U64,R64,60,Male,Vegan,The flavors were unique
-U65,R65,49,Male,Spicy,I enjoyed it
-U66,R66,24,Female,Chinese,The aroma was inviting
-U67,R67,41,Female,Spicy,The texture was perfect
-U68,R68,59,Female,Indian Curry,The service was excellent
-U69,R69,22,Female,Spicy,The food was decent
-U70,R70,66,Male,Cheesy,I enjoyed the freshness of the ingredients; it made a difference.
-U71,R71,10,Female,Healthy,I was not a fan of the seasoning; it felt a bit off.
-U72,R72,22,Male,Chinese,It was fine
-U73,R73,33,Female,Snacks,I enjoyed the freshness of the ingredients; it made a difference.
-U74,R74,44,Male,Snacks,but I expected more based on the reviews.
-U75,R75,24,Male,Indian Curry,making it a memorable dish.
-U76,R76,47,Male,Seafood,but the seasoning could improve.
-U77,R77,49,Female,Chinese,It was just alright; I wouldn't go out of my way to have it again.
-U78,R78,64,Male,Indian Curry,It was quite disappointing; I expected a lot more flavor.
-U79,R79,62,Male,Street Food,I appreciated the effort put into the dish
-U80,R80,49,Male,Seafood,The dish was well-prepared and the flavors were spot on!
-U81,R81,26,Female,Indian Curry,The presentation was impressive
-U82,R82,18,Female,Indian Curry,The food was decent
-U83,R83,38,Female,Snacks,making it a good value.
-U84,R84,13,Female,Seafood,The meal was packed with flavor; I can't wait to have it again!
-U85,R85,24,Male,Street Food,I found it to be too oily for my liking.
-U86,R86,11,Female,Spicy,I found the meal to be quite average; nothing particularly stood out.
-U87,R87,67,Female,Vegan,but the food was just average.
-U88,R88,55,Female,Cheesy,The meal was packed with flavor; I can't wait to have it again!
-U89,R89,60,Female,Spicy,It was quite disappointing; I expected a lot more flavor.
-U90,R90,33,Male,Indian Curry,The dish was average; I expected more based on the hype.
-U91,R91,35,Male,Chinese,The dish was well-prepared and the flavors were spot on!
-U92,R92,57,Female,Dessert,The aroma was inviting
-U93,R93,55,Male,Cheesy,I was thrilled with how flavorful it was; a real treat!
-U94,R94,67,Male,Chinese,but it missed the mark.
-U95,R95,29,Male,Cheesy,and I appreciated the creativity behind it.
-U96,R96,49,Female,Street Food,and the taste did not disappoint.
-U97,R97,28,Male,Spicy,and the taste lived up to expectations.
-U98,R98,58,Female,Indian Curry,but I feel there are better options available.
-U99,R99,29,Male,Indian Curry,The meal was satisfying
-U100,R100,26,Female,Chinese,I was surprised by how bland the dish turned out to be.
-U101,R101,59,Female,Seafood,It was okay
-U102,R102,28,Male,Street Food,I was not a fan of the seasoning; it felt a bit off.
-U103,R103,62,Male,Cheesy,I loved the combination of flavors; it was a delightful surprise.
-U104,R104,40,Female,Cheesy,but I wouldn't order it again.
-U105,R105,11,Female,Seafood,and the taste did not disappoint.
-U106,R106,16,Male,Street Food,I was surprised by how bland the dish turned out to be.
-U107,R107,18,Female,Healthy,I appreciated the effort put into the dish
-U108,R108,28,Female,Snacks,The dish was well-prepared and the flavors were spot on!
-U109,R109,27,Female,Healthy,The overall experience was pleasant
-U110,R110,43,Male,Snacks,The meal was satisfying
-U111,R111,39,Male,Seafood,The flavors were unique
-U112,R112,39,Male,Dessert,The aroma was inviting
-U113,R113,40,Male,Healthy,but I feel there are better options available.
-U114,R114,46,Male,Vegan,but it missed the mark.
-U115,R115,15,Female,Indian Curry,I was left wanting more; it felt incomplete.
-U116,R116,33,Male,Chinese,and I appreciated the creativity behind it.
-U117,R117,10,Male,Cheesy,but I expected more based on the reviews.
-U118,R118,13,Male,Cheesy,I was not a fan of the seasoning; it felt a bit off.
-U119,R119,29,Female,Seafood,but I expected more based on the reviews.
-U120,R120,48,Female,Indian Curry,but I feel there are better options available.
-U121,R121,34,Male,Spicy,making it a memorable dish.
-U122,R122,63,Male,Healthy,It was fine
-U123,R123,32,Female,Indian Curry,The portion size was generous
-U124,R124,39,Male,Chinese,a satisfying meal that I would recommend.
-U125,R125,65,Female,Spicy,making it a good value.
-U126,R126,11,Female,Cheesy,The portion size was generous
-U127,R127,16,Female,Seafood,The meal was packed with flavor; I can't wait to have it again!
-U128,R128,30,Male,Spicy,but I feel there are better options available.
-U129,R129,54,Female,Healthy,I found it to be too oily for my liking.
-U130,R130,40,Male,Chinese,I appreciated the effort put into the dish
-U131,R131,12,Female,Indian Curry,The presentation was impressive
-U132,R132,38,Male,Vegan,The meal was packed with flavor; I can't wait to have it again!
-U133,R133,49,Female,Chinese,The overall experience was pleasant
-U134,R134,28,Female,Healthy,and the taste lived up to expectations.
-U135,R135,30,Female,Snacks,The consistency was a bit strange; not what I expected.
-U136,R136,28,Female,Vegan,The food was decent
-U137,R137,38,Male,Chinese,I was surprised by how bland the dish turned out to be.
-U138,R138,23,Male,Chinese,but the food was just average.
-U139,R139,32,Female,Chinese,The overall experience was pleasant
-U140,R140,17,Female,Street Food,The portion size was generous
-U141,R141,57,Male,Indian Curry,but I expected more based on the reviews.
-U142,R142,29,Female,Dessert,but the food was just average.
-U143,R143,17,Female,Vegan,I loved the combination of flavors; it was a delightful surprise.
-U144,R144,43,Male,Vegan,I appreciated the effort put into the dish
-U145,R145,25,Female,Seafood,I was surprised by how bland the dish turned out to be.
-U146,R146,67,Male,Dessert,but I feel there are better options available.
-U147,R147,48,Male,Dessert,and I appreciated the creativity behind it.
-U148,R148,37,Male,Dessert,and the taste did not disappoint.
-U149,R149,46,Male,Spicy,I enjoyed it
-U150,R150,53,Female,Vegan,The flavors were unique
-U151,R151,37,Male,Vegan,I was thrilled with how flavorful it was; a real treat!
-U152,R152,36,Male,Street Food,I was not a fan of the seasoning; it felt a bit off.
-U153,R153,51,Male,Spicy,I was not a fan of the seasoning; it felt a bit off.
-U154,R154,56,Female,Cheesy,The meal had great potential but ultimately fell short.
-U155,R155,43,Male,Cheesy,The meal was packed with flavor; I can't wait to have it again!
-U156,R156,35,Male,Healthy,Overall
-U157,R157,26,Male,Chinese,The meal was satisfying
-U158,R158,31,Male,Vegan,I loved the combination of flavors; it was a delightful surprise.
-U159,R159,22,Female,Seafood,It was fine
-U160,R160,16,Male,Snacks,though not memorable.
-U161,R161,54,Female,Seafood,but it missed the mark.
-U162,R162,51,Female,Chinese,It was okay
-U163,R163,68,Male,Cheesy,but I feel there are better options available.
-U164,R164,13,Male,Street Food,The portion size was generous
-U165,R165,61,Male,Dessert,The consistency was a bit strange; not what I expected.
-U166,R166,33,Male,Healthy,though not memorable.
-U167,R167,33,Male,Chinese,I found the meal to be quite average; nothing particularly stood out.
-U168,R168,69,Male,Indian Curry,The texture was perfect
-U169,R169,46,Male,Snacks,It was just alright; I wouldn't go out of my way to have it again.
-U170,R170,53,Male,Chinese,but I wouldn't order it again.
-U171,R171,47,Male,Seafood,The food was decent
-U172,R172,20,Female,Seafood,The texture was perfect
-U173,R173,32,Male,Chinese,The texture was perfect
-U174,R174,67,Female,Seafood,I loved the combination of flavors; it was a delightful surprise.
-U175,R175,20,Male,Snacks,It was fine
-U176,R176,10,Male,Chinese,The meal was packed with flavor; I can't wait to have it again!
-U177,R177,28,Male,Dessert,and I appreciated the creativity behind it.
-U178,R178,26,Male,Snacks,The dish was well-prepared and the flavors were spot on!
-U179,R179,39,Female,Snacks,and every bite was a joy!
-U180,R180,69,Female,Dessert,The food was decent
-U181,R181,31,Female,Healthy,and I appreciated the creativity behind it.
-U182,R182,67,Male,Spicy,It was just alright; I wouldn't go out of my way to have it again.
-U183,R183,38,Male,Healthy,The overall experience was pleasant
-U184,R184,69,Male,Snacks,and I appreciated the creativity behind it.
-U185,R185,54,Female,Vegan,I found the meal to be quite average; nothing particularly stood out.
-U186,R186,51,Male,Seafood,Overall
-U187,R187,57,Female,Dessert,I was surprised by how bland the dish turned out to be.
-U188,R188,70,Female,Spicy,I was thrilled with how flavorful it was; a real treat!
-U189,R189,40,Female,Street Food,I appreciated the effort put into the dish
-U190,R190,33,Female,Indian Curry,and every bite was a joy!
-U191,R191,13,Male,Dessert,I loved the combination of flavors; it was a delightful surprise.
-U192,R192,60,Female,Seafood,making it a good value.
-U193,R193,47,Female,Seafood,and the taste did not disappoint.
-U194,R194,52,Male,Vegan,Overall
-U195,R195,70,Male,Indian Curry,and the taste lived up to expectations.
-U196,R196,16,Female,Healthy,I found the meal to be quite average; nothing particularly stood out.
-U197,R197,30,Female,Cheesy,I found it to be too oily for my liking.
-U198,R198,55,Male,Dessert,The dish was well-prepared and the flavors were spot on!
-U199,R199,69,Male,Street Food,but the food was just average.
-U200,R200,48,Female,Cheesy,It was quite disappointing; I expected a lot more flavor.
-U201,R201,47,Female,Dessert,but it missed the mark.
-U202,R202,14,Female,Street Food,Absolutely loved the spices used; it was a delightful experience!
-U203,R203,50,Male,Street Food,I found the meal to be quite average; nothing particularly stood out.
-U204,R204,52,Female,Vegan,but I wouldn't order it again.
-U205,R205,44,Female,Snacks,making it a good value.
-U206,R206,65,Female,Snacks,I enjoyed it
-U207,R207,43,Female,Chinese,The meal was satisfying
-U208,R208,50,Male,Vegan,It was fine
-U209,R209,53,Female,Street Food,I found it to be too oily for my liking.
-U210,R210,18,Female,Indian Curry,The portion size was generous
-U211,R211,12,Male,Snacks,The presentation was impressive
-U212,R212,39,Female,Chinese,I was not a fan of the seasoning; it felt a bit off.
-U213,R213,16,Female,Vegan,The portion size was generous
-U214,R214,13,Male,Street Food,The service was excellent
-U215,R215,26,Male,Indian Curry,It was quite disappointing; I expected a lot more flavor.
-U216,R216,55,Male,Spicy,Absolutely loved the spices used; it was a delightful experience!
-U217,R217,52,Male,Street Food,It was quite disappointing; I expected a lot more flavor.
-U218,R218,25,Female,Healthy,but I wouldn't order it again.
-U219,R219,57,Female,Cheesy,It was just alright; I wouldn't go out of my way to have it again.
-U220,R220,55,Female,Cheesy,Overall
-U221,R221,47,Female,Spicy,but I expected more based on the reviews.
-U222,R222,29,Female,Street Food,The portion size was generous
-U223,R223,49,Female,Street Food,It was fine
-U224,R224,52,Male,Cheesy,I was thrilled with how flavorful it was; a real treat!
-U225,R225,21,Female,Healthy,and I appreciated the creativity behind it.
-U226,R226,25,Female,Healthy,The dish was average; I expected more based on the hype.
-U227,R227,17,Male,Healthy,I enjoyed it
-U228,R228,30,Male,Street Food,The presentation was impressive
-U229,R229,30,Male,Seafood,The consistency was a bit strange; not what I expected.
-U230,R230,21,Male,Seafood,The texture was perfect
-U231,R231,34,Female,Dessert,and I appreciated the creativity behind it.
-U232,R232,31,Male,Healthy,I found it to be too oily for my liking.
-U233,R233,44,Female,Healthy,The dish was well-prepared and the flavors were spot on!
-U234,R234,58,Male,Street Food,The flavors were unique
-U235,R235,51,Male,Chinese,but I feel there are better options available.
-U236,R236,34,Female,Chinese,and the taste lived up to expectations.
-U237,R237,30,Male,Spicy,and every bite was a joy!
-U238,R238,45,Male,Seafood,and every bite was a joy!
-U239,R239,52,Male,Indian Curry,The meal had great potential but ultimately fell short.
-U240,R240,11,Female,Chinese,The ingredients felt fresh
-U241,R241,53,Male,Seafood,though not memorable.
-U242,R242,58,Female,Spicy,but I think it could use a bit more spice.
-U243,R243,58,Male,Street Food,but I expected more based on the reviews.
-U244,R244,40,Female,Chinese,I enjoyed it
-U245,R245,52,Female,Chinese,I loved the combination of flavors; it was a delightful surprise.
-U246,R246,19,Male,Indian Curry,It was quite disappointing; I expected a lot more flavor.
-U247,R247,58,Female,Indian Curry,making it a good value.
-U248,R248,64,Female,Indian Curry,but I wouldn't order it again.
-U249,R249,57,Female,Chinese,The food was decent
-U250,R250,29,Male,Seafood,I found the meal to be quite average; nothing particularly stood out.
-U251,R251,27,Male,Snacks,but the seasoning could improve.
-U252,R252,11,Male,Street Food,Overall
-U253,R253,17,Male,Snacks,I loved the combination of flavors; it was a delightful surprise.
-U254,R254,32,Female,Snacks,but the food was just average.
-U255,R255,19,Female,Healthy,I was left wanting more; it felt incomplete.
-U256,R256,30,Male,Cheesy,but the food was just average.
-U257,R257,25,Female,Healthy,The ingredients felt fresh
-U258,R258,61,Female,Healthy,making it a good value.
-U259,R259,42,Female,Dessert,The consistency was a bit strange; not what I expected.
-U260,R260,32,Male,Snacks,Overall
-U261,R261,30,Female,Cheesy,making it a memorable dish.
-U262,R262,24,Female,Vegan,It was quite disappointing; I expected a lot more flavor.
-U263,R263,22,Female,Healthy,It was just alright; I wouldn't go out of my way to have it again.
-U264,R264,21,Male,Street Food,but I feel there are better options available.
-U265,R265,62,Female,Dessert,though not memorable.
-U266,R266,32,Male,Vegan,a satisfying meal that I would recommend.
-U267,R267,57,Female,Spicy,but the seasoning could improve.
-U268,R268,67,Male,Indian Curry,The overall experience was pleasant
-U269,R269,49,Female,Seafood,making it a good value.
-U270,R270,35,Female,Dessert,I was left wanting more; it felt incomplete.
-U271,R271,23,Female,Street Food,It was okay
-U272,R272,53,Male,Chinese,making it a good value.
-U273,R273,34,Male,Indian Curry,I found the meal to be quite average; nothing particularly stood out.
-U274,R274,37,Female,Dessert,It was fine
-U275,R275,21,Female,Spicy,The portion size was generous
-U276,R276,27,Female,Street Food,The food was decent
-U277,R277,10,Female,Chinese,The flavors were unique
-U278,R278,46,Female,Vegan,The food was decent
-U279,R279,58,Male,Cheesy,though not memorable.
-U280,R280,54,Male,Dessert,The portion size was generous
-U281,R281,67,Male,Street Food,I was left wanting more; it felt incomplete.
-U282,R282,61,Female,Dessert,making it a memorable dish.
-U283,R283,23,Male,Snacks,but I wouldn't order it again.
-U284,R284,46,Female,Seafood,I appreciated the effort put into the dish
-U285,R285,48,Female,Seafood,The food was decent
-U286,R286,58,Male,Cheesy,The service was excellent
-U287,R287,52,Male,Snacks,Absolutely loved the spices used; it was a delightful experience!
-U288,R288,43,Male,Chinese,but I think it could use a bit more spice.
-U289,R289,27,Male,Seafood,The texture was perfect
-U290,R290,58,Male,Healthy,I was not a fan of the seasoning; it felt a bit off.
-U291,R291,23,Female,Spicy,The meal was satisfying
-U292,R292,39,Female,Seafood,I was surprised by how bland the dish turned out to be.
-U293,R293,22,Female,Vegan,and every bite was a joy!
-U294,R294,67,Male,Healthy,and the taste did not disappoint.
-U295,R295,25,Male,Chinese,The overall experience was pleasant
-U296,R296,38,Male,Indian Curry,but the seasoning could improve.
-U297,R297,56,Female,Street Food,I loved the combination of flavors; it was a delightful surprise.
-U298,R298,67,Male,Dessert,I enjoyed it
-U299,R299,22,Female,Street Food,but I expected more based on the reviews.
-U300,R300,13,Male,Snacks,I enjoyed it
-U301,R301,51,Male,Spicy,a satisfying meal that I would recommend.
-U302,R302,24,Female,Chinese,but I feel there are better options available.
-U303,R303,69,Female,Dessert,but it missed the mark.
-U304,R304,39,Male,Snacks,The meal was packed with flavor; I can't wait to have it again!
-U305,R305,63,Male,Vegan,The service was excellent
-U306,R306,25,Female,Healthy,making it a good value.
-U307,R307,29,Male,Cheesy,making it a good value.
-U308,R308,50,Male,Seafood,I was surprised by how bland the dish turned out to be.
-U309,R309,53,Female,Dessert,Overall
-U310,R310,54,Male,Street Food,I was left wanting more; it felt incomplete.
-U311,R311,10,Female,Healthy,Overall
-U312,R312,39,Female,Dessert,Overall
-U313,R313,45,Male,Snacks,The meal had great potential but ultimately fell short.
-U314,R314,42,Female,Dessert,I found it to be too oily for my liking.
-U315,R315,32,Male,Seafood,It was just alright; I wouldn't go out of my way to have it again.
-U316,R316,70,Female,Chinese,and the taste lived up to expectations.
-U317,R317,21,Female,Snacks,I was not a fan of the seasoning; it felt a bit off.
-U318,R318,24,Female,Snacks,The portion size was generous
-U319,R319,29,Male,Chinese,The meal was packed with flavor; I can't wait to have it again!
-U320,R320,31,Male,Street Food,The service was excellent
-U321,R321,69,Male,Indian Curry,I enjoyed it
-U322,R322,57,Male,Vegan,It was quite disappointing; I expected a lot more flavor.
-U323,R323,16,Female,Healthy,The service was excellent
-U324,R324,67,Male,Street Food,and the taste lived up to expectations.
-U325,R325,34,Female,Seafood,It was okay
-U326,R326,39,Female,Cheesy,The overall experience was pleasant
-U327,R327,32,Male,Indian Curry,I loved the combination of flavors; it was a delightful surprise.
-U328,R328,51,Male,Vegan,I was not a fan of the seasoning; it felt a bit off.
-U329,R329,59,Male,Dessert,I was left wanting more; it felt incomplete.
-U330,R330,50,Male,Indian Curry,I found it to be too oily for my liking.
-U331,R331,70,Male,Vegan,but I think it could use a bit more spice.
-U332,R332,57,Male,Seafood,but it missed the mark.
-U333,R333,33,Male,Healthy,I enjoyed the freshness of the ingredients; it made a difference.
-U334,R334,35,Male,Indian Curry,The aroma was inviting
-U335,R335,10,Male,Spicy,The meal was satisfying
-U336,R336,39,Female,Street Food,It was quite disappointing; I expected a lot more flavor.
-U337,R337,55,Male,Street Food,It was just alright; I wouldn't go out of my way to have it again.
-U338,R338,44,Female,Street Food,I was surprised by how bland the dish turned out to be.
-U339,R339,44,Male,Dessert,I found it to be too oily for my liking.
-U340,R340,44,Female,Vegan,The meal had great potential but ultimately fell short.
-U341,R341,61,Female,Seafood,making it a memorable dish.
-U342,R342,56,Male,Snacks,The presentation was impressive
-U343,R343,29,Female,Chinese,The overall experience was pleasant
-U344,R344,55,Female,Street Food,and I appreciated the creativity behind it.
-U345,R345,57,Female,Indian Curry,and every bite was a joy!
-U346,R346,54,Male,Spicy,The texture was perfect
-U347,R347,33,Male,Vegan,and the taste lived up to expectations.
-U348,R348,27,Male,Healthy,making it a good value.
-U349,R349,51,Female,Chinese,I enjoyed it
-U350,R350,28,Female,Spicy,The meal had great potential but ultimately fell short.
-U351,R351,53,Female,Indian Curry,but it missed the mark.
-U352,R352,46,Female,Snacks,The dish was well-prepared and the flavors were spot on!
-U353,R353,60,Female,Snacks,The meal was satisfying
-U354,R354,22,Male,Spicy,The consistency was a bit strange; not what I expected.
-U355,R355,62,Male,Dessert,I appreciated the effort put into the dish
-U356,R356,57,Female,Spicy,The presentation was impressive
-U357,R357,11,Female,Street Food,I was surprised by how bland the dish turned out to be.
-U358,R358,68,Male,Spicy,Absolutely loved the spices used; it was a delightful experience!
-U359,R359,15,Female,Street Food,The meal was packed with flavor; I can't wait to have it again!
-U360,R360,68,Female,Healthy,I was left wanting more; it felt incomplete.
-U361,R361,64,Female,Chinese,I was left wanting more; it felt incomplete.
-U362,R362,65,Female,Indian Curry,The consistency was a bit strange; not what I expected.
-U363,R363,65,Female,Seafood,I was thrilled with how flavorful it was; a real treat!
-U364,R364,38,Male,Indian Curry,I was left wanting more; it felt incomplete.
-U365,R365,57,Male,Cheesy,The service was excellent
-U366,R366,19,Male,Seafood,It was okay
-U367,R367,29,Female,Chinese,It was okay
-U368,R368,38,Female,Chinese,The dish was average; I expected more based on the hype.
-U369,R369,63,Female,Snacks,The ingredients felt fresh
-U370,R370,18,Female,Snacks,I appreciated the effort put into the dish
-U371,R371,49,Female,Seafood,but I expected more based on the reviews.
-U372,R372,50,Male,Spicy,The service was excellent
-U373,R373,22,Male,Vegan,but I wouldn't order it again.
-U374,R374,44,Male,Healthy,I found it to be too oily for my liking.
-U375,R375,17,Male,Dessert,It was fine
-U376,R376,21,Female,Indian Curry,The dish was well-prepared and the flavors were spot on!
-U377,R377,54,Female,Snacks,I was thrilled with how flavorful it was; a real treat!
-U378,R378,44,Female,Indian Curry,The texture was perfect
-U379,R379,65,Male,Cheesy,making it a good value.
-U380,R380,24,Female,Chinese,I was thrilled with how flavorful it was; a real treat!
-U381,R381,27,Male,Snacks,The texture was perfect
-U382,R382,41,Female,Cheesy,but it missed the mark.
-U383,R383,18,Male,Healthy,I found it to be too oily for my liking.
-U384,R384,45,Female,Indian Curry,The portion size was generous
-U385,R385,70,Female,Street Food,though not memorable.
-U386,R386,12,Female,Spicy,The presentation was impressive
-U387,R387,22,Male,Cheesy,The consistency was a bit strange; not what I expected.
-U388,R388,58,Female,Chinese,but it missed the mark.
-U389,R389,12,Female,Seafood,a satisfying meal that I would recommend.
-U390,R390,21,Male,Chinese,The service was excellent
-U391,R391,29,Female,Seafood,I was not a fan of the seasoning; it felt a bit off.
-U392,R392,31,Female,Healthy,The food was decent
-U393,R393,70,Male,Vegan,but the food was just average.
-U394,R394,68,Female,Vegan,The meal was packed with flavor; I can't wait to have it again!
-U395,R395,31,Male,Indian Curry,but I feel there are better options available.
-U396,R396,43,Male,Seafood,The ingredients felt fresh
-U397,R397,68,Female,Cheesy,The food was decent
-U398,R398,11,Female,Indian Curry,but I expected more based on the reviews.
-U399,R399,14,Male,Street Food,The ingredients felt fresh
-U400,R400,63,Female,Spicy,but it missed the mark.
-U401,R401,67,Male,Cheesy,The portion size was generous
-U402,R402,33,Female,Seafood,The meal had great potential but ultimately fell short.
-U403,R403,69,Female,Street Food,but the seasoning could improve.
-U404,R404,21,Male,Cheesy,The dish was well-prepared and the flavors were spot on!
-U405,R405,40,Female,Spicy,The dish was well-prepared and the flavors were spot on!
-U406,R406,29,Female,Indian Curry,The food was decent
-U407,R407,23,Male,Spicy,making it a good value.
-U408,R408,47,Male,Snacks,but I wouldn't order it again.
-U409,R409,54,Female,Healthy,but the food was just average.
-U410,R410,33,Female,Healthy,but I expected more based on the reviews.
-U411,R411,36,Female,Snacks,The meal was packed with flavor; I can't wait to have it again!
-U412,R412,12,Female,Healthy,The flavors were unique
-U413,R413,34,Female,Indian Curry,Absolutely loved the spices used; it was a delightful experience!
-U414,R414,45,Female,Cheesy,but it missed the mark.
-U415,R415,40,Male,Snacks,The ingredients felt fresh
-U416,R416,40,Female,Vegan,The service was excellent
-U417,R417,15,Female,Cheesy,but I think it could use a bit more spice.
-U418,R418,45,Female,Spicy,Overall
-U419,R419,11,Female,Indian Curry,The dish was average; I expected more based on the hype.
-U420,R420,67,Male,Indian Curry,but I expected more based on the reviews.
-U421,R421,44,Female,Spicy,The meal had great potential but ultimately fell short.
-U422,R422,56,Female,Dessert,The dish was well-prepared and the flavors were spot on!
-U423,R423,70,Male,Spicy,and the taste lived up to expectations.
-U424,R424,53,Female,Indian Curry,though not memorable.
-U425,R425,11,Female,Dessert,The food was decent
-U426,R426,59,Male,Healthy,but the food was just average.
-U427,R427,25,Female,Dessert,but I wouldn't order it again.
-U428,R428,15,Female,Indian Curry,The consistency was a bit strange; not what I expected.
-U429,R429,48,Female,Dessert,but the food was just average.
-U430,R430,30,Male,Spicy,but I think it could use a bit more spice.
-U431,R431,57,Male,Dessert,The food was decent
-U432,R432,61,Male,Seafood,but it missed the mark.
-U433,R433,19,Male,Healthy,The portion size was generous
-U434,R434,43,Female,Street Food,It was fine
-U435,R435,42,Male,Healthy,but the food was just average.
-U436,R436,53,Female,Seafood,but I wouldn't order it again.
-U437,R437,52,Male,Healthy,The consistency was a bit strange; not what I expected.
-U438,R438,41,Female,Indian Curry,I appreciated the effort put into the dish
-U439,R439,51,Female,Dessert,but the seasoning could improve.
-U440,R440,48,Male,Dessert,The consistency was a bit strange; not what I expected.
-U441,R441,36,Male,Chinese,It was just alright; I wouldn't go out of my way to have it again.
-U442,R442,44,Female,Healthy,but I expected more based on the reviews.
-U443,R443,59,Male,Indian Curry,but it missed the mark.
-U444,R444,31,Male,Vegan,but it missed the mark.
-U445,R445,65,Male,Snacks,The overall experience was pleasant
-U446,R446,24,Female,Dessert,I found it to be too oily for my liking.
-U447,R447,70,Female,Indian Curry,The service was excellent
-U448,R448,17,Male,Vegan,but I wouldn't order it again.
-U449,R449,41,Female,Street Food,Overall
-U450,R450,53,Male,Street Food,but the food was just average.
-U451,R451,56,Female,Street Food,The dish was well-prepared and the flavors were spot on!
-U452,R452,57,Male,Cheesy,The dish was well-prepared and the flavors were spot on!
-U453,R453,10,Male,Cheesy,The aroma was inviting
-U454,R454,33,Female,Dessert,and the taste lived up to expectations.
-U455,R455,48,Male,Healthy,The meal was satisfying
-U456,R456,49,Male,Vegan,and the taste lived up to expectations.
-U457,R457,62,Male,Street Food,making it a memorable dish.
-U458,R458,18,Male,Snacks,The dish was well-prepared and the flavors were spot on!
-U459,R459,66,Male,Street Food,I found it to be too oily for my liking.
-U460,R460,19,Male,Dessert,though not memorable.
-U461,R461,46,Female,Vegan,The meal had great potential but ultimately fell short.
-U462,R462,27,Female,Street Food,but the food was just average.
-U463,R463,10,Female,Spicy,making it a memorable dish.
-U464,R464,59,Female,Indian Curry,It was okay
-U465,R465,13,Male,Street Food,making it a good value.
-U466,R466,27,Female,Healthy,It was just alright; I wouldn't go out of my way to have it again.
-U467,R467,13,Female,Spicy,It was just alright; I wouldn't go out of my way to have it again.
-U468,R468,17,Male,Dessert,I enjoyed the freshness of the ingredients; it made a difference.
-U469,R469,69,Female,Vegan,Overall
-U470,R470,56,Female,Dessert,I found the meal to be quite average; nothing particularly stood out.
-U471,R471,46,Male,Chinese,and every bite was a joy!
-U472,R472,24,Male,Indian Curry,The presentation was impressive
-U473,R473,38,Male,Spicy,I found the meal to be quite average; nothing particularly stood out.
-U474,R474,65,Male,Vegan,and the taste did not disappoint.
-U475,R475,41,Male,Vegan,The ingredients felt fresh
-U476,R476,31,Female,Street Food,The flavors were unique
-U477,R477,55,Female,Healthy,making it a memorable dish.
-U478,R478,35,Female,Spicy,The overall experience was pleasant
-U479,R479,57,Male,Street Food,The ingredients felt fresh
-U480,R480,25,Female,Chinese,making it a memorable dish.
-U481,R481,62,Male,Spicy,and the taste did not disappoint.
-U482,R482,57,Male,Snacks,Overall
-U483,R483,23,Female,Spicy,The portion size was generous
-U484,R484,65,Female,Cheesy,but I wouldn't order it again.
-U485,R485,25,Male,Healthy,It was just alright; I wouldn't go out of my way to have it again.
-U486,R486,45,Female,Dessert,but the seasoning could improve.
-U487,R487,38,Female,Snacks,and the taste lived up to expectations.
-U488,R488,70,Male,Seafood,I enjoyed it
-U489,R489,23,Male,Healthy,a satisfying meal that I would recommend.
-U490,R490,40,Male,Spicy,I enjoyed it
-U491,R491,50,Female,Street Food,and I appreciated the creativity behind it.
-U492,R492,27,Male,Cheesy,I appreciated the effort put into the dish
-U493,R493,55,Male,Spicy,I appreciated the effort put into the dish
-U494,R494,69,Female,Seafood,I was not a fan of the seasoning; it felt a bit off.
-U495,R495,70,Female,Snacks,The consistency was a bit strange; not what I expected.
-U496,R496,54,Female,Street Food,It was okay
-U497,R497,27,Male,Street Food,It was okay
-U498,R498,48,Male,Chinese,I found it to be too oily for my liking.
-U499,R499,33,Female,Snacks,The meal was satisfying
-U500,R500,38,Female,Vegan,The texture was perfect
-U501,R501,46,Male,Cheesy,though not memorable.
-U502,R502,66,Female,Healthy,The presentation was impressive
-U503,R503,14,Male,Indian Curry,but I wouldn't order it again.
-U504,R504,28,Male,Cheesy,I was left wanting more; it felt incomplete.
-U505,R505,46,Male,Chinese,but I think it could use a bit more spice.
-U506,R506,19,Female,Chinese,I enjoyed it
-U507,R507,36,Male,Chinese,The meal was satisfying
-U508,R508,10,Male,Seafood,The meal had great potential but ultimately fell short.
-U509,R509,15,Male,Cheesy,The flavors were unique
-U510,R510,70,Female,Dessert,I appreciated the effort put into the dish
-U511,R511,47,Female,Indian Curry,making it a memorable dish.
-U512,R512,24,Female,Vegan,I found it to be too oily for my liking.
-U513,R513,47,Male,Snacks,The dish was average; I expected more based on the hype.
-U514,R514,51,Male,Indian Curry,The meal was satisfying
-U515,R515,53,Male,Cheesy,I enjoyed it
-U516,R516,30,Male,Chinese,It was quite disappointing; I expected a lot more flavor.
-U517,R517,39,Female,Vegan,though not memorable.
-U518,R518,55,Female,Vegan,The texture was perfect
-U519,R519,67,Male,Street Food,The dish was average; I expected more based on the hype.
-U520,R520,40,Female,Seafood,and every bite was a joy!
-U521,R521,45,Male,Indian Curry,but I wouldn't order it again.
-U522,R522,65,Male,Snacks,but the seasoning could improve.
-U523,R523,26,Female,Dessert,The dish was average; I expected more based on the hype.
-U524,R524,23,Male,Street Food,and every bite was a joy!
-U525,R525,49,Female,Seafood,The portion size was generous
-U526,R526,56,Male,Seafood,The ingredients felt fresh
-U527,R527,13,Male,Spicy,The dish was average; I expected more based on the hype.
-U528,R528,15,Female,Spicy,The ingredients felt fresh
-U529,R529,26,Male,Healthy,but it missed the mark.
-U530,R530,44,Male,Indian Curry,The dish was well-prepared and the flavors were spot on!
-U531,R531,43,Female,Spicy,The aroma was inviting
-U532,R532,37,Male,Dessert,but I expected more based on the reviews.
-U533,R533,69,Male,Dessert,The meal had great potential but ultimately fell short.
-U534,R534,13,Female,Street Food,The ingredients felt fresh
-U535,R535,46,Male,Healthy,It was fine
-U536,R536,11,Male,Street Food,but the food was just average.
-U537,R537,26,Male,Dessert,The dish was well-prepared and the flavors were spot on!
-U538,R538,54,Female,Cheesy,I appreciated the effort put into the dish
-U539,R539,23,Female,Vegan,Absolutely loved the spices used; it was a delightful experience!
-U540,R540,54,Male,Chinese,but it missed the mark.
-U541,R541,63,Male,Indian Curry,It was okay
-U542,R542,65,Male,Seafood,The flavors were unique
-U543,R543,49,Male,Cheesy,I found the meal to be quite average; nothing particularly stood out.
-U544,R544,32,Male,Snacks,Absolutely loved the spices used; it was a delightful experience!
-U545,R545,28,Male,Chinese,The dish was well-prepared and the flavors were spot on!
-U546,R546,65,Male,Healthy,The texture was perfect
-U547,R547,66,Female,Spicy,but it missed the mark.
-U548,R548,49,Female,Healthy,It was just alright; I wouldn't go out of my way to have it again.
-U549,R549,27,Female,Indian Curry,I enjoyed the freshness of the ingredients; it made a difference.
-U550,R550,56,Female,Spicy,but the food was just average.
-U551,R551,19,Female,Seafood,The ingredients felt fresh
-U552,R552,10,Male,Spicy,The aroma was inviting
-U553,R553,25,Female,Snacks,The portion size was generous
-U554,R554,23,Male,Dessert,I was surprised by how bland the dish turned out to be.
-U555,R555,29,Female,Chinese,and the taste lived up to expectations.
-U556,R556,25,Female,Street Food,and I appreciated the creativity behind it.
-U557,R557,36,Male,Seafood,I was left wanting more; it felt incomplete.
-U558,R558,29,Female,Chinese,I appreciated the effort put into the dish
-U559,R559,35,Female,Vegan,I was thrilled with how flavorful it was; a real treat!
-U560,R560,52,Female,Indian Curry,and the taste did not disappoint.
-U561,R561,41,Female,Vegan,I found the meal to be quite average; nothing particularly stood out.
-U562,R562,48,Female,Seafood,It was okay
-U563,R563,37,Male,Spicy,I found it to be too oily for my liking.
-U564,R564,25,Female,Cheesy,I found the meal to be quite average; nothing particularly stood out.
-U565,R565,50,Male,Street Food,I appreciated the effort put into the dish
-U566,R566,56,Female,Spicy,The food was decent
-U567,R567,49,Male,Seafood,It was okay
-U568,R568,42,Female,Snacks,It was okay
-U569,R569,36,Male,Dessert,The ingredients felt fresh
-U570,R570,48,Male,Healthy,though not memorable.
-U571,R571,63,Male,Chinese,making it a memorable dish.
-U572,R572,70,Female,Snacks,but I think it could use a bit more spice.
-U573,R573,10,Female,Snacks,I was not a fan of the seasoning; it felt a bit off.
-U574,R574,27,Female,Cheesy,The portion size was generous
-U575,R575,33,Male,Seafood,but the seasoning could improve.
-U576,R576,38,Female,Cheesy,The flavors were unique
-U577,R577,54,Female,Street Food,The ingredients felt fresh
-U578,R578,63,Female,Spicy,I was surprised by how bland the dish turned out to be.
-U579,R579,25,Male,Chinese,making it a memorable dish.
-U580,R580,62,Female,Cheesy,The flavors were unique
-U581,R581,12,Female,Indian Curry,but I wouldn't order it again.
-U582,R582,35,Female,Spicy,The overall experience was pleasant
-U583,R583,30,Male,Snacks,I appreciated the effort put into the dish
-U584,R584,66,Female,Chinese,though not memorable.
-U585,R585,63,Male,Seafood,The aroma was inviting
-U586,R586,28,Male,Snacks,but the seasoning could improve.
-U587,R587,48,Female,Healthy,The meal was packed with flavor; I can't wait to have it again!
-U588,R588,13,Female,Vegan,I found it to be too oily for my liking.
-U589,R589,41,Male,Snacks,and every bite was a joy!
-U590,R590,16,Female,Spicy,but I feel there are better options available.
-U591,R591,67,Male,Healthy,I loved the combination of flavors; it was a delightful surprise.
-U592,R592,56,Female,Chinese,The aroma was inviting
-U593,R593,51,Male,Indian Curry,The presentation was impressive
-U594,R594,22,Male,Street Food,and I appreciated the creativity behind it.
-U595,R595,26,Male,Seafood,Absolutely loved the spices used; it was a delightful experience!
-U596,R596,35,Female,Vegan,The service was excellent
-U597,R597,13,Male,Cheesy,Absolutely loved the spices used; it was a delightful experience!
-U598,R598,63,Male,Healthy,and I appreciated the creativity behind it.
-U599,R599,21,Male,Seafood,The overall experience was pleasant
-U600,R600,28,Male,Chinese,The dish was average; I expected more based on the hype.
-U601,R601,34,Male,Seafood,but I wouldn't order it again.
-U602,R602,35,Female,Indian Curry,I found the meal to be quite average; nothing particularly stood out.
-U603,R603,28,Female,Dessert,but I think it could use a bit more spice.
-U604,R604,20,Female,Healthy,The food was decent
-U605,R605,62,Male,Seafood,and the taste did not disappoint.
-U606,R606,37,Female,Street Food,I loved the combination of flavors; it was a delightful surprise.
-U607,R607,24,Male,Street Food,but I expected more based on the reviews.
-U608,R608,10,Male,Healthy,The dish was well-prepared and the flavors were spot on!
-U609,R609,39,Male,Vegan,making it a good value.
-U610,R610,67,Female,Spicy,The service was excellent
-U611,R611,13,Female,Vegan,The meal had great potential but ultimately fell short.
-U612,R612,55,Male,Street Food,It was okay
-U613,R613,52,Female,Indian Curry,I found it to be too oily for my liking.
-U614,R614,39,Male,Spicy,I was surprised by how bland the dish turned out to be.
-U615,R615,30,Female,Cheesy,and the taste did not disappoint.
-U616,R616,62,Male,Snacks,It was quite disappointing; I expected a lot more flavor.
-U617,R617,16,Female,Snacks,but I think it could use a bit more spice.
-U618,R618,47,Male,Vegan,but I wouldn't order it again.
-U619,R619,33,Male,Cheesy,It was okay
-U620,R620,29,Male,Vegan,The meal was satisfying
-U621,R621,60,Male,Spicy,The meal was satisfying
-U622,R622,59,Female,Dessert,making it a good value.
-U623,R623,21,Female,Vegan,making it a good value.
-U624,R624,61,Male,Chinese,I was surprised by how bland the dish turned out to be.
-U625,R625,61,Female,Vegan,I was surprised by how bland the dish turned out to be.
-U626,R626,52,Male,Vegan,I enjoyed it
-U627,R627,60,Female,Dessert,The meal was packed with flavor; I can't wait to have it again!
-U628,R628,18,Female,Snacks,I was not a fan of the seasoning; it felt a bit off.
-U629,R629,57,Female,Cheesy,The consistency was a bit strange; not what I expected.
-U630,R630,42,Male,Healthy,The dish was average; I expected more based on the hype.
-U631,R631,38,Female,Seafood,The service was excellent
-U632,R632,38,Male,Healthy,but I think it could use a bit more spice.
-U633,R633,50,Male,Cheesy,but it missed the mark.
-U634,R634,46,Female,Snacks,but the food was just average.
-U635,R635,38,Female,Dessert,The overall experience was pleasant
-U636,R636,49,Female,Indian Curry,but the food was just average.
-U637,R637,32,Male,Cheesy,but I expected more based on the reviews.
-U638,R638,45,Male,Seafood,The dish was average; I expected more based on the hype.
-U639,R639,16,Female,Spicy,The dish was well-prepared and the flavors were spot on!
-U640,R640,25,Male,Chinese,but I wouldn't order it again.
-U641,R641,54,Female,Indian Curry,making it a good value.
-U642,R642,42,Male,Chinese,It was okay
-U643,R643,64,Female,Snacks,but I wouldn't order it again.
-U644,R644,38,Male,Spicy,I enjoyed the freshness of the ingredients; it made a difference.
-U645,R645,38,Female,Dessert,It was fine
-U646,R646,23,Male,Spicy,The consistency was a bit strange; not what I expected.
-U647,R647,28,Male,Indian Curry,The aroma was inviting
-U648,R648,48,Male,Street Food,a satisfying meal that I would recommend.
-U649,R649,58,Male,Seafood,but the seasoning could improve.
-U650,R650,51,Female,Seafood,I found it to be too oily for my liking.
-U651,R651,70,Female,Healthy,The aroma was inviting
-U652,R652,18,Female,Seafood,and the taste did not disappoint.
-U653,R653,62,Male,Spicy,but it missed the mark.
-U654,R654,39,Male,Healthy,I found it to be too oily for my liking.
-U655,R655,56,Male,Healthy,but I think it could use a bit more spice.
-U656,R656,34,Male,Cheesy,but I feel there are better options available.
-U657,R657,24,Female,Cheesy,The ingredients felt fresh
-U658,R658,25,Female,Dessert,a satisfying meal that I would recommend.
-U659,R659,39,Male,Seafood,I appreciated the effort put into the dish
-U660,R660,12,Female,Dessert,a satisfying meal that I would recommend.
-U661,R661,20,Male,Spicy,The overall experience was pleasant
-U662,R662,56,Female,Street Food,Overall
-U663,R663,68,Female,Street Food,It was quite disappointing; I expected a lot more flavor.
-U664,R664,31,Female,Street Food,The meal had great potential but ultimately fell short.
-U665,R665,48,Female,Cheesy,I found the meal to be quite average; nothing particularly stood out.
-U666,R666,28,Female,Vegan,The portion size was generous
-U667,R667,35,Male,Spicy,The food was decent
-U668,R668,27,Female,Spicy,I enjoyed the freshness of the ingredients; it made a difference.
-U669,R669,66,Male,Seafood,and every bite was a joy!
-U670,R670,16,Male,Indian Curry,but I think it could use a bit more spice.
-U671,R671,15,Female,Indian Curry,and I appreciated the creativity behind it.
-U672,R672,24,Male,Street Food,I was not a fan of the seasoning; it felt a bit off.
-U673,R673,51,Female,Spicy,The meal was packed with flavor; I can't wait to have it again!
-U674,R674,25,Male,Dessert,a satisfying meal that I would recommend.
-U675,R675,63,Male,Chinese,I enjoyed it
-U676,R676,19,Female,Street Food,The ingredients felt fresh
-U677,R677,15,Female,Dessert,I loved the combination of flavors; it was a delightful surprise.
-U678,R678,55,Male,Spicy,and the taste lived up to expectations.
-U679,R679,58,Male,Cheesy,The ingredients felt fresh
-U680,R680,63,Male,Snacks,The food was decent
-U681,R681,58,Female,Vegan,It was just alright; I wouldn't go out of my way to have it again.
-U682,R682,63,Male,Spicy,The portion size was generous
-U683,R683,55,Female,Healthy,Absolutely loved the spices used; it was a delightful experience!
-U684,R684,64,Male,Seafood,making it a memorable dish.
-U685,R685,44,Female,Snacks,I enjoyed the freshness of the ingredients; it made a difference.
-U686,R686,58,Female,Street Food,The meal was packed with flavor; I can't wait to have it again!
-U687,R687,28,Male,Seafood,It was just alright; I wouldn't go out of my way to have it again.
-U688,R688,66,Female,Vegan,but it missed the mark.
-U689,R689,30,Female,Snacks,The texture was perfect
-U690,R690,52,Female,Cheesy,making it a memorable dish.
-U691,R691,66,Male,Snacks,The flavors were unique
-U692,R692,10,Male,Dessert,I found the meal to be quite average; nothing particularly stood out.
-U693,R693,33,Male,Snacks,I was left wanting more; it felt incomplete.
-U694,R694,12,Female,Chinese,The dish was average; I expected more based on the hype.
-U695,R695,33,Female,Indian Curry,I enjoyed it
-U696,R696,30,Female,Spicy,The portion size was generous
-U697,R697,14,Male,Healthy,a satisfying meal that I would recommend.
-U698,R698,23,Male,Cheesy,I was thrilled with how flavorful it was; a real treat!
-U699,R699,55,Female,Street Food,a satisfying meal that I would recommend.
-U700,R700,55,Female,Vegan,Overall
-U701,R701,25,Female,Indian Curry,The texture was perfect
-U702,R702,33,Female,Seafood,I enjoyed it
-U703,R703,15,Female,Street Food,The portion size was generous
-U704,R704,31,Male,Seafood,I enjoyed the freshness of the ingredients; it made a difference.
-U705,R705,32,Female,Snacks,The ingredients felt fresh
-U706,R706,38,Female,Seafood,and the taste lived up to expectations.
-U707,R707,47,Female,Spicy,The service was excellent
-U708,R708,20,Female,Seafood,The meal was packed with flavor; I can't wait to have it again!
-U709,R709,66,Male,Healthy,but I feel there are better options available.
-U710,R710,48,Male,Dessert,The aroma was inviting
-U711,R711,48,Male,Cheesy,I was left wanting more; it felt incomplete.
-U712,R712,38,Male,Snacks,but I feel there are better options available.
-U713,R713,19,Female,Spicy,making it a good value.
-U714,R714,40,Male,Dessert,I loved the combination of flavors; it was a delightful surprise.
-U715,R715,16,Female,Dessert,and every bite was a joy!
-U716,R716,16,Male,Chinese,The dish was average; I expected more based on the hype.
-U717,R717,41,Male,Dessert,It was fine
-U718,R718,30,Male,Seafood,though not memorable.
-U719,R719,48,Male,Vegan,making it a memorable dish.
-U720,R720,29,Male,Healthy,making it a good value.
-U721,R721,55,Female,Indian Curry,Absolutely loved the spices used; it was a delightful experience!
-U722,R722,17,Female,Chinese,I enjoyed the freshness of the ingredients; it made a difference.
-U723,R723,18,Female,Chinese,I found the meal to be quite average; nothing particularly stood out.
-U724,R724,40,Female,Dessert,making it a good value.
-U725,R725,18,Male,Cheesy,I was thrilled with how flavorful it was; a real treat!
-U726,R726,60,Female,Indian Curry,but I think it could use a bit more spice.
-U727,R727,53,Female,Chinese,but the food was just average.
-U728,R728,19,Male,Chinese,It was fine
-U729,R729,43,Male,Chinese,but I expected more based on the reviews.
-U730,R730,27,Male,Healthy,The dish was average; I expected more based on the hype.
-U731,R731,70,Female,Healthy,Absolutely loved the spices used; it was a delightful experience!
-U732,R732,68,Female,Street Food,The aroma was inviting
-U733,R733,58,Female,Snacks,Overall
-U734,R734,30,Male,Snacks,and the taste did not disappoint.
-U735,R735,16,Female,Cheesy,The dish was average; I expected more based on the hype.
-U736,R736,47,Female,Seafood,and the taste did not disappoint.
-U737,R737,28,Female,Snacks,I was not a fan of the seasoning; it felt a bit off.
-U738,R738,20,Female,Dessert,The presentation was impressive
-U739,R739,70,Female,Snacks,I found it to be too oily for my liking.
-U740,R740,34,Female,Vegan,The portion size was generous
-U741,R741,40,Male,Healthy,Overall
-U742,R742,42,Male,Dessert,but I think it could use a bit more spice.
-U743,R743,55,Female,Street Food,The dish was well-prepared and the flavors were spot on!
-U744,R744,40,Female,Cheesy,I was surprised by how bland the dish turned out to be.
-U745,R745,54,Male,Cheesy,The food was decent
-U746,R746,62,Male,Indian Curry,The meal was packed with flavor; I can't wait to have it again!
-U747,R747,54,Male,Healthy,but I feel there are better options available.
-U748,R748,15,Male,Seafood,It was quite disappointing; I expected a lot more flavor.
-U749,R749,41,Male,Chinese,The food was decent
-U750,R750,51,Male,Street Food,but I think it could use a bit more spice.
-U751,R751,11,Male,Vegan,Absolutely loved the spices used; it was a delightful experience!
-U752,R752,25,Female,Chinese,It was quite disappointing; I expected a lot more flavor.
-U753,R753,52,Female,Dessert,making it a good value.
-U754,R754,69,Male,Snacks,but the food was just average.
-U755,R755,12,Male,Seafood,The service was excellent
-U756,R756,39,Male,Seafood,I found the meal to be quite average; nothing particularly stood out.
-U757,R757,36,Female,Seafood,making it a good value.
-U758,R758,38,Female,Chinese,I was left wanting more; it felt incomplete.
-U759,R759,30,Male,Vegan,The meal had great potential but ultimately fell short.
-U760,R760,70,Female,Healthy,I was not a fan of the seasoning; it felt a bit off.
-U761,R761,15,Male,Spicy,making it a memorable dish.
-U762,R762,64,Male,Dessert,I appreciated the effort put into the dish
-U763,R763,42,Female,Cheesy,I found the meal to be quite average; nothing particularly stood out.
-U764,R764,60,Male,Vegan,I was left wanting more; it felt incomplete.
-U765,R765,14,Female,Seafood,but I think it could use a bit more spice.
-U766,R766,12,Male,Vegan,I loved the combination of flavors; it was a delightful surprise.
-U767,R767,63,Male,Vegan,I was surprised by how bland the dish turned out to be.
-U768,R768,65,Female,Seafood,I enjoyed the freshness of the ingredients; it made a difference.
-U769,R769,10,Female,Cheesy,I appreciated the effort put into the dish
-U770,R770,46,Female,Snacks,I enjoyed it
-U771,R771,60,Male,Cheesy,I enjoyed it
-U772,R772,39,Male,Snacks,but the seasoning could improve.
-U773,R773,56,Male,Seafood,The presentation was impressive
-U774,R774,61,Male,Cheesy,but it missed the mark.
-U775,R775,52,Female,Spicy,The overall experience was pleasant
-U776,R776,52,Female,Indian Curry,The food was decent
-U777,R777,35,Male,Dessert,The meal was packed with flavor; I can't wait to have it again!
-U778,R778,28,Male,Snacks,and every bite was a joy!
-U779,R779,28,Male,Vegan,I appreciated the effort put into the dish
-U780,R780,66,Male,Snacks,I appreciated the effort put into the dish
-U781,R781,32,Male,Seafood,though not memorable.
-U782,R782,61,Female,Seafood,I was surprised by how bland the dish turned out to be.
-U783,R783,56,Male,Seafood,The dish was average; I expected more based on the hype.
-U784,R784,52,Male,Cheesy,Absolutely loved the spices used; it was a delightful experience!
-U785,R785,30,Female,Chinese,The portion size was generous
-U786,R786,53,Male,Seafood,The texture was perfect
-U787,R787,57,Female,Spicy,Overall
-U788,R788,14,Male,Street Food,The service was excellent
-U789,R789,35,Female,Indian Curry,The flavors were unique
-U790,R790,36,Male,Dessert,The texture was perfect
-U791,R791,16,Female,Street Food,The aroma was inviting
-U792,R792,25,Male,Street Food,It was quite disappointing; I expected a lot more flavor.
-U793,R793,68,Female,Spicy,The aroma was inviting
-U794,R794,64,Male,Healthy,The meal was satisfying
-U795,R795,41,Male,Spicy,a satisfying meal that I would recommend.
-U796,R796,12,Female,Seafood,and every bite was a joy!
-U797,R797,41,Female,Chinese,The dish was well-prepared and the flavors were spot on!
-U798,R798,43,Male,Cheesy,and the taste lived up to expectations.
-U799,R799,25,Female,Indian Curry,though not memorable.
-U800,R800,19,Male,Spicy,making it a good value.
-U801,R801,19,Female,Vegan,and every bite was a joy!
-U802,R802,29,Female,Indian Curry,and the taste did not disappoint.
-U803,R803,43,Male,Spicy,The flavors were unique
-U804,R804,40,Male,Vegan,but I feel there are better options available.
-U805,R805,22,Male,Snacks,The meal was packed with flavor; I can't wait to have it again!
-U806,R806,42,Female,Vegan,I was surprised by how bland the dish turned out to be.
-U807,R807,13,Female,Indian Curry,but the seasoning could improve.
-U808,R808,14,Female,Spicy,but I feel there are better options available.
-U809,R809,16,Male,Cheesy,The food was decent
-U810,R810,10,Male,Dessert,but the food was just average.
-U811,R811,60,Male,Seafood,though not memorable.
-U812,R812,59,Female,Cheesy,The flavors were unique
-U813,R813,59,Male,Spicy,I loved the combination of flavors; it was a delightful surprise.
-U814,R814,45,Male,Street Food,The meal was packed with flavor; I can't wait to have it again!
-U815,R815,11,Female,Dessert,The consistency was a bit strange; not what I expected.
-U816,R816,53,Male,Indian Curry,making it a memorable dish.
-U817,R817,56,Male,Vegan,The portion size was generous
-U818,R818,30,Male,Chinese,but the seasoning could improve.
-U819,R819,63,Male,Snacks,The ingredients felt fresh
-U820,R820,50,Female,Spicy,and the taste did not disappoint.
-U821,R821,35,Male,Street Food,and the taste lived up to expectations.
-U822,R822,19,Male,Spicy,The food was decent
-U823,R823,53,Female,Dessert,The service was excellent
-U824,R824,17,Male,Healthy,but the food was just average.
-U825,R825,45,Female,Snacks,I was thrilled with how flavorful it was; a real treat!
-U826,R826,60,Female,Vegan,The service was excellent
-U827,R827,55,Male,Dessert,It was okay
-U828,R828,41,Male,Seafood,The meal was satisfying
-U829,R829,58,Female,Indian Curry,but it missed the mark.
-U830,R830,34,Female,Healthy,The meal had great potential but ultimately fell short.
-U831,R831,13,Male,Healthy,making it a good value.
-U832,R832,44,Male,Spicy,though not memorable.
-U833,R833,59,Female,Vegan,I found the meal to be quite average; nothing particularly stood out.
-U834,R834,51,Male,Seafood,I appreciated the effort put into the dish
-U835,R835,46,Female,Dessert,I appreciated the effort put into the dish
-U836,R836,41,Male,Vegan,but I feel there are better options available.
-U837,R837,22,Male,Snacks,and the taste did not disappoint.
-U838,R838,24,Male,Snacks,I loved the combination of flavors; it was a delightful surprise.
-U839,R839,42,Female,Dessert,The dish was well-prepared and the flavors were spot on!
-U840,R840,64,Female,Dessert,but I expected more based on the reviews.
-U841,R841,14,Male,Healthy,but I expected more based on the reviews.
-U842,R842,70,Male,Street Food,I found it to be too oily for my liking.
-U843,R843,10,Female,Dessert,a satisfying meal that I would recommend.
-U844,R844,20,Female,Cheesy,The service was excellent
-U845,R845,61,Male,Cheesy,making it a good value.
-U846,R846,15,Female,Seafood,I was left wanting more; it felt incomplete.
-U847,R847,58,Female,Street Food,though not memorable.
-U848,R848,57,Female,Cheesy,It was okay
-U849,R849,51,Female,Healthy,The meal was packed with flavor; I can't wait to have it again!
-U850,R850,61,Female,Cheesy,The consistency was a bit strange; not what I expected.
-U851,R851,38,Male,Healthy,I found it to be too oily for my liking.
-U852,R852,18,Female,Vegan,a satisfying meal that I would recommend.
-U853,R853,18,Female,Spicy,I loved the combination of flavors; it was a delightful surprise.
-U854,R854,53,Male,Dessert,The food was decent
-U855,R855,18,Female,Cheesy,The aroma was inviting
-U856,R856,65,Female,Cheesy,The aroma was inviting
-U857,R857,28,Female,Indian Curry,The service was excellent
-U858,R858,10,Male,Spicy,making it a memorable dish.
-U859,R859,27,Male,Street Food,I was left wanting more; it felt incomplete.
-U860,R860,32,Female,Vegan,I enjoyed the freshness of the ingredients; it made a difference.
-U861,R861,25,Female,Snacks,The dish was well-prepared and the flavors were spot on!
-U862,R862,42,Male,Snacks,The overall experience was pleasant
-U863,R863,48,Male,Snacks,but I feel there are better options available.
-U864,R864,35,Male,Dessert,I found the meal to be quite average; nothing particularly stood out.
-U865,R865,12,Female,Healthy,The meal had great potential but ultimately fell short.
-U866,R866,36,Female,Dessert,Overall
-U867,R867,11,Female,Seafood,but I feel there are better options available.
-U868,R868,14,Female,Cheesy,I was not a fan of the seasoning; it felt a bit off.
-U869,R869,10,Male,Healthy,but I expected more based on the reviews.
-U870,R870,54,Male,Snacks,but the food was just average.
-U871,R871,35,Male,Spicy,The service was excellent
-U872,R872,70,Female,Healthy,but it missed the mark.
-U873,R873,41,Female,Vegan,I loved the combination of flavors; it was a delightful surprise.
-U874,R874,27,Male,Street Food,I found it to be too oily for my liking.
-U875,R875,63,Male,Street Food,The portion size was generous
-U876,R876,38,Male,Spicy,I found it to be too oily for my liking.
-U877,R877,21,Male,Cheesy,The consistency was a bit strange; not what I expected.
-U878,R878,12,Male,Spicy,The service was excellent
-U879,R879,24,Female,Street Food,I found the meal to be quite average; nothing particularly stood out.
-U880,R880,49,Female,Chinese,I enjoyed the freshness of the ingredients; it made a difference.
-U881,R881,16,Male,Snacks,The meal was satisfying
-U882,R882,15,Female,Spicy,The aroma was inviting
-U883,R883,55,Female,Spicy,though not memorable.
-U884,R884,47,Male,Cheesy,though not memorable.
-U885,R885,13,Male,Seafood,It was quite disappointing; I expected a lot more flavor.
-U886,R886,63,Female,Dessert,I was not a fan of the seasoning; it felt a bit off.
-U887,R887,67,Male,Snacks,The aroma was inviting
-U888,R888,20,Male,Dessert,and every bite was a joy!
-U889,R889,19,Female,Seafood,Absolutely loved the spices used; it was a delightful experience!
-U890,R890,53,Male,Snacks,but I wouldn't order it again.
-U891,R891,64,Male,Seafood,and the taste lived up to expectations.
-U892,R892,46,Female,Healthy,I was thrilled with how flavorful it was; a real treat!
-U893,R893,35,Female,Seafood,and the taste did not disappoint.
-U894,R894,26,Female,Seafood,The meal was satisfying
-U895,R895,36,Male,Cheesy,I was surprised by how bland the dish turned out to be.
-U896,R896,62,Female,Cheesy,and the taste lived up to expectations.
-U897,R897,10,Male,Healthy,The portion size was generous
-U898,R898,39,Male,Cheesy,and the taste lived up to expectations.
-U899,R899,44,Male,Indian Curry,The meal was packed with flavor; I can't wait to have it again!
-U900,R900,26,Male,Indian Curry,The food was decent
-U901,R901,61,Female,Cheesy,I enjoyed it
-U902,R902,38,Male,Chinese,The aroma was inviting
-U903,R903,58,Female,Street Food,The food was decent
-U904,R904,13,Female,Indian Curry,I appreciated the effort put into the dish
-U905,R905,54,Female,Indian Curry,I found it to be too oily for my liking.
-U906,R906,33,Female,Seafood,The ingredients felt fresh
-U907,R907,38,Male,Chinese,but I expected more based on the reviews.
-U908,R908,56,Male,Healthy,The texture was perfect
-U909,R909,58,Male,Street Food,The overall experience was pleasant
-U910,R910,26,Female,Seafood,I was left wanting more; it felt incomplete.
-U911,R911,31,Male,Spicy,I was surprised by how bland the dish turned out to be.
-U912,R912,22,Female,Indian Curry,The dish was average; I expected more based on the hype.
-U913,R913,43,Male,Cheesy,Overall
-U914,R914,36,Female,Healthy,The meal had great potential but ultimately fell short.
-U915,R915,63,Female,Cheesy,making it a good value.
-U916,R916,13,Male,Vegan,I loved the combination of flavors; it was a delightful surprise.
-U917,R917,30,Female,Spicy,but the seasoning could improve.
-U918,R918,67,Female,Vegan,The presentation was impressive
-U919,R919,35,Female,Street Food,The aroma was inviting
-U920,R920,20,Female,Spicy,and the taste lived up to expectations.
-U921,R921,67,Male,Chinese,I was left wanting more; it felt incomplete.
-U922,R922,55,Male,Dessert,The meal was satisfying
-U923,R923,24,Male,Spicy,but the seasoning could improve.
-U924,R924,60,Female,Snacks,I was not a fan of the seasoning; it felt a bit off.
-U925,R925,67,Male,Seafood,I loved the combination of flavors; it was a delightful surprise.
-U926,R926,35,Female,Indian Curry,The service was excellent
-U927,R927,53,Female,Chinese,I found the meal to be quite average; nothing particularly stood out.
-U928,R928,20,Female,Spicy,The presentation was impressive
-U929,R929,55,Female,Dessert,though not memorable.
-U930,R930,28,Female,Indian Curry,The food was decent
-U931,R931,44,Female,Healthy,but I feel there are better options available.
-U932,R932,47,Male,Chinese,The presentation was impressive
-U933,R933,20,Female,Snacks,I enjoyed the freshness of the ingredients; it made a difference.
-U934,R934,46,Female,Cheesy,The meal was satisfying
-U935,R935,16,Male,Dessert,I loved the combination of flavors; it was a delightful surprise.
-U936,R936,45,Male,Seafood,The meal was satisfying
-U937,R937,66,Female,Street Food,and the taste lived up to expectations.
-U938,R938,33,Female,Cheesy,The texture was perfect
-U939,R939,45,Female,Chinese,The texture was perfect
-U940,R940,24,Male,Indian Curry,but the seasoning could improve.
-U941,R941,20,Female,Street Food,The overall experience was pleasant
-U942,R942,20,Female,Seafood,but the food was just average.
-U943,R943,39,Female,Cheesy,a satisfying meal that I would recommend.
-U944,R944,11,Male,Vegan,I enjoyed it
-U945,R945,41,Male,Seafood,but the food was just average.
-U946,R946,16,Female,Seafood,but I think it could use a bit more spice.
-U947,R947,28,Female,Indian Curry,It was okay
-U948,R948,32,Female,Healthy,The flavors were unique
-U949,R949,13,Male,Spicy,The meal was satisfying
-U950,R950,57,Male,Indian Curry,I enjoyed it
-U951,R951,56,Male,Cheesy,I was thrilled with how flavorful it was; a real treat!
-U952,R952,25,Female,Street Food,The meal had great potential but ultimately fell short.
-U953,R953,68,Male,Dessert,making it a memorable dish.
-U954,R954,43,Female,Indian Curry,The ingredients felt fresh
-U955,R955,50,Female,Snacks,but it missed the mark.
-U956,R956,54,Female,Seafood,The dish was average; I expected more based on the hype.
-U957,R957,55,Female,Indian Curry,The meal was satisfying
-U958,R958,48,Female,Chinese,I loved the combination of flavors; it was a delightful surprise.
-U959,R959,17,Male,Snacks,The food was decent
-U960,R960,47,Male,Dessert,I enjoyed the freshness of the ingredients; it made a difference.
-U961,R961,47,Female,Street Food,I was not a fan of the seasoning; it felt a bit off.
-U962,R962,16,Female,Healthy,and every bite was a joy!
-U963,R963,60,Male,Vegan,The consistency was a bit strange; not what I expected.
-U964,R964,29,Male,Spicy,The texture was perfect
-U965,R965,66,Female,Dessert,I found it to be too oily for my liking.
-U966,R966,43,Female,Spicy,The overall experience was pleasant
-U967,R967,60,Female,Chinese,The meal had great potential but ultimately fell short.
-U968,R968,35,Male,Seafood,The overall experience was pleasant
-U969,R969,46,Male,Seafood,The ingredients felt fresh
-U970,R970,66,Male,Spicy,The portion size was generous
-U971,R971,20,Male,Cheesy,though not memorable.
-U972,R972,50,Male,Vegan,though not memorable.
-U973,R973,32,Female,Dessert,The meal had great potential but ultimately fell short.
-U974,R974,26,Male,Seafood,I enjoyed the freshness of the ingredients; it made a difference.
-U975,R975,61,Male,Healthy,The aroma was inviting
-U976,R976,55,Male,Spicy,but the food was just average.
-U977,R977,56,Female,Dessert,but I think it could use a bit more spice.
-U978,R978,70,Female,Spicy,The meal was satisfying
-U979,R979,12,Male,Dessert,I was surprised by how bland the dish turned out to be.
-U980,R980,15,Male,Vegan,but I wouldn't order it again.
-U981,R981,65,Female,Vegan,I appreciated the effort put into the dish
-U982,R982,34,Male,Chinese,but it missed the mark.
-U983,R983,36,Female,Seafood,though not memorable.
-U984,R984,31,Male,Healthy,but it missed the mark.
-U985,R985,36,Male,Spicy,but I feel there are better options available.
-U986,R986,42,Female,Chinese,I appreciated the effort put into the dish
-U987,R987,65,Male,Healthy,The service was excellent
-U988,R988,55,Female,Snacks,and the taste did not disappoint.
-U989,R989,45,Female,Seafood,The dish was average; I expected more based on the hype.
-U990,R990,10,Male,Dessert,though not memorable.
-U991,R991,58,Female,Cheesy,The meal was packed with flavor; I can't wait to have it again!
-U992,R992,37,Male,Vegan,making it a memorable dish.
-U993,R993,26,Female,Chinese,Absolutely loved the spices used; it was a delightful experience!
-U994,R994,31,Female,Healthy,The consistency was a bit strange; not what I expected.
-U995,R995,58,Male,Chinese,Overall
-U996,R996,18,Male,Chinese,I found it to be too oily for my liking.
-U997,R997,42,Male,Vegan,It was quite disappointing; I expected a lot more flavor.
-U998,R998,37,Male,Street Food,The dish was well-prepared and the flavors were spot on!
-U999,R999,20,Male,Vegan,I was surprised by how bland the dish turned out to be.
-U1000,R1000,21,Male,Healthy,I was surprised by how bland the dish turned out to be.
+U1000,AaharAlly_Main,16,Male,Snacks,Perfect flavor - Snacks is great!
+U1000,AaharAlly_Main,16,Male,Vegan,Amazing taste - Vegan is great!
+U1000,AaharAlly_Main,16,Male,Cheesy,I loved it - Cheesy is great!
+U1001,AaharAlly_Main,20,Male,Street Food,Highly recommended - Street Food is great!
+U1001,AaharAlly_Main,20,Male,Snacks,I loved it - Snacks is great!
+U1001,AaharAlly_Main,20,Male,Snacks,Amazing taste - Snacks is great!
+U1001,AaharAlly_Main,20,Male,Cheesy,Delicious - Cheesy is great!
+U1002,AaharAlly_Main,25,Male,Spicy,I loved it - Spicy is great!
+U1002,AaharAlly_Main,25,Male,Snacks,I loved it - Snacks is great!
+U1003,AaharAlly_Main,23,Male,Spicy,Highly recommended - Spicy is great!
+U1004,AaharAlly_Main,16,Male,Snacks,I loved it - Snacks is great!
+U1005,AaharAlly_Main,19,Male,Seafood,Highly recommended - Seafood is great!
+U1005,AaharAlly_Main,19,Male,Street Food,Highly recommended - Street Food is great!
+U1005,AaharAlly_Main,19,Male,Chinese,Good value - Chinese is great!
+U1006,AaharAlly_Main,15,Male,Snacks,Good value - Snacks is great!
+U1006,AaharAlly_Main,15,Male,Cheesy,I loved it - Cheesy is great!
+U1006,AaharAlly_Main,15,Male,Street Food,Good value - Street Food is great!
+U1007,AaharAlly_Main,18,Male,Snacks,Amazing taste - Snacks is great!
+U1007,AaharAlly_Main,18,Male,Indian Curry,Good value - Indian Curry is great!
+U1007,AaharAlly_Main,18,Male,Snacks,I loved it - Snacks is great!
+U1008,AaharAlly_Main,23,Male,Spicy,I loved it - Spicy is great!
+U1009,AaharAlly_Main,24,Male,Snacks,Good value - Snacks is great!
+U1009,AaharAlly_Main,24,Male,Spicy,I loved it - Spicy is great!
+U1009,AaharAlly_Main,24,Male,Healthy,Highly recommended - Healthy is great!
+U1010,AaharAlly_Main,19,Male,Spicy,Will order again - Spicy is great!
+U1010,AaharAlly_Main,19,Male,Street Food,I loved it - Street Food is great!
+U1010,AaharAlly_Main,19,Male,Chinese,Will order again - Chinese is great!
+U1011,AaharAlly_Main,15,Male,Spicy,Will order again - Spicy is great!
+U1011,AaharAlly_Main,15,Male,Spicy,Delicious - Spicy is great!
+U1011,AaharAlly_Main,15,Male,Cheesy,Good value - Cheesy is great!
+U1012,AaharAlly_Main,17,Male,Street Food,Amazing taste - Street Food is great!
+U1012,AaharAlly_Main,17,Male,Spicy,Highly recommended - Spicy is great!
+U1012,AaharAlly_Main,17,Male,Street Food,Good value - Street Food is great!
+U1013,AaharAlly_Main,17,Male,Snacks,Highly recommended - Snacks is great!
+U1013,AaharAlly_Main,17,Male,Street Food,Amazing taste - Street Food is great!
+U1013,AaharAlly_Main,17,Male,Snacks,Highly recommended - Snacks is great!
+U1013,AaharAlly_Main,17,Male,Spicy,Will order again - Spicy is great!
+U1014,AaharAlly_Main,21,Male,Snacks,Will order again - Snacks is great!
+U1014,AaharAlly_Main,21,Male,Spicy,Will order again - Spicy is great!
+U1014,AaharAlly_Main,21,Male,Snacks,Amazing taste - Snacks is great!
+U1015,AaharAlly_Main,17,Male,Cheesy,Will order again - Cheesy is great!
+U1015,AaharAlly_Main,17,Male,Snacks,Amazing taste - Snacks is great!
+U1015,AaharAlly_Main,17,Male,Spicy,Amazing taste - Spicy is great!
+U1015,AaharAlly_Main,17,Male,Spicy,Will order again - Spicy is great!
+U1016,AaharAlly_Main,19,Male,Street Food,Will order again - Street Food is great!
+U1016,AaharAlly_Main,19,Male,Snacks,Will order again - Snacks is great!
+U1016,AaharAlly_Main,19,Male,Snacks,I loved it - Snacks is great!
+U1017,AaharAlly_Main,17,Male,Spicy,Good value - Spicy is great!
+U1017,AaharAlly_Main,17,Male,Spicy,Perfect flavor - Spicy is great!
+U1017,AaharAlly_Main,17,Male,Snacks,I loved it - Snacks is great!
+U1018,AaharAlly_Main,25,Male,Street Food,Delicious - Street Food is great!
+U1018,AaharAlly_Main,25,Male,Healthy,Perfect flavor - Healthy is great!
+U1019,AaharAlly_Main,17,Male,Cheesy,Delicious - Cheesy is great!
+U1020,AaharAlly_Main,20,Male,Dessert,Good value - Dessert is great!
+U1020,AaharAlly_Main,20,Male,Cheesy,Highly recommended - Cheesy is great!
+U1021,AaharAlly_Main,20,Male,Cheesy,Delicious - Cheesy is great!
+U1021,AaharAlly_Main,20,Male,Spicy,Highly recommended - Spicy is great!
+U1022,AaharAlly_Main,22,Male,Cheesy,Amazing taste - Cheesy is great!
+U1022,AaharAlly_Main,22,Male,Snacks,Highly recommended - Snacks is great!
+U1022,AaharAlly_Main,22,Male,Dessert,Highly recommended - Dessert is great!
+U1023,AaharAlly_Main,23,Male,Spicy,Amazing taste - Spicy is great!
+U1024,AaharAlly_Main,19,Male,Spicy,I loved it - Spicy is great!
+U1025,AaharAlly_Main,19,Male,Street Food,I loved it - Street Food is great!
+U1025,AaharAlly_Main,19,Male,Spicy,Delicious - Spicy is great!
+U1025,AaharAlly_Main,19,Male,Spicy,I loved it - Spicy is great!
+U1025,AaharAlly_Main,19,Male,Spicy,Perfect flavor - Spicy is great!
+U1026,AaharAlly_Main,24,Male,Spicy,Amazing taste - Spicy is great!
+U1026,AaharAlly_Main,24,Male,Snacks,Highly recommended - Snacks is great!
+U1027,AaharAlly_Main,15,Male,Dessert,Perfect flavor - Dessert is great!
+U1027,AaharAlly_Main,15,Male,Snacks,Perfect flavor - Snacks is great!
+U1027,AaharAlly_Main,15,Male,Vegan,Delicious - Vegan is great!
+U1028,AaharAlly_Main,20,Male,Snacks,I loved it - Snacks is great!
+U1028,AaharAlly_Main,20,Male,Cheesy,Perfect flavor - Cheesy is great!
+U1029,AaharAlly_Main,23,Male,Cheesy,I loved it - Cheesy is great!
+U1029,AaharAlly_Main,23,Male,Snacks,Highly recommended - Snacks is great!
+U1030,AaharAlly_Main,25,Male,Cheesy,Will order again - Cheesy is great!
+U1030,AaharAlly_Main,25,Male,Spicy,Good value - Spicy is great!
+U1031,AaharAlly_Main,21,Male,Street Food,Highly recommended - Street Food is great!
+U1031,AaharAlly_Main,21,Male,Snacks,Delicious - Snacks is great!
+U1031,AaharAlly_Main,21,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1032,AaharAlly_Main,20,Male,Spicy,Amazing taste - Spicy is great!
+U1033,AaharAlly_Main,24,Male,Spicy,Delicious - Spicy is great!
+U1033,AaharAlly_Main,24,Male,Seafood,Will order again - Seafood is great!
+U1033,AaharAlly_Main,24,Male,Spicy,I loved it - Spicy is great!
+U1034,AaharAlly_Main,22,Male,Cheesy,I loved it - Cheesy is great!
+U1034,AaharAlly_Main,22,Male,Seafood,Amazing taste - Seafood is great!
+U1035,AaharAlly_Main,21,Male,Spicy,Highly recommended - Spicy is great!
+U1036,AaharAlly_Main,23,Male,Cheesy,I loved it - Cheesy is great!
+U1036,AaharAlly_Main,23,Male,Street Food,Perfect flavor - Street Food is great!
+U1036,AaharAlly_Main,23,Male,Spicy,Highly recommended - Spicy is great!
+U1037,AaharAlly_Main,18,Male,Street Food,Good value - Street Food is great!
+U1037,AaharAlly_Main,18,Male,Cheesy,Delicious - Cheesy is great!
+U1037,AaharAlly_Main,18,Male,Cheesy,I loved it - Cheesy is great!
+U1038,AaharAlly_Main,24,Male,Cheesy,I loved it - Cheesy is great!
+U1038,AaharAlly_Main,24,Male,Chinese,Good value - Chinese is great!
+U1039,AaharAlly_Main,24,Male,Cheesy,Amazing taste - Cheesy is great!
+U1040,AaharAlly_Main,17,Male,Cheesy,Good value - Cheesy is great!
+U1040,AaharAlly_Main,17,Male,Cheesy,Will order again - Cheesy is great!
+U1040,AaharAlly_Main,17,Male,Spicy,Will order again - Spicy is great!
+U1040,AaharAlly_Main,17,Male,Cheesy,Amazing taste - Cheesy is great!
+U1041,AaharAlly_Main,25,Male,Snacks,Delicious - Snacks is great!
+U1041,AaharAlly_Main,25,Male,Snacks,Highly recommended - Snacks is great!
+U1041,AaharAlly_Main,25,Male,Cheesy,Perfect flavor - Cheesy is great!
+U1041,AaharAlly_Main,25,Male,Street Food,I loved it - Street Food is great!
+U1042,AaharAlly_Main,21,Male,Cheesy,I loved it - Cheesy is great!
+U1042,AaharAlly_Main,21,Male,Cheesy,Good value - Cheesy is great!
+U1043,AaharAlly_Main,16,Male,Snacks,Good value - Snacks is great!
+U1043,AaharAlly_Main,16,Male,Spicy,Highly recommended - Spicy is great!
+U1043,AaharAlly_Main,16,Male,Vegan,Delicious - Vegan is great!
+U1044,AaharAlly_Main,18,Male,Spicy,Will order again - Spicy is great!
+U1044,AaharAlly_Main,18,Male,Street Food,Perfect flavor - Street Food is great!
+U1045,AaharAlly_Main,22,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1045,AaharAlly_Main,22,Male,Snacks,Highly recommended - Snacks is great!
+U1046,AaharAlly_Main,21,Male,Snacks,Delicious - Snacks is great!
+U1046,AaharAlly_Main,21,Male,Cheesy,Highly recommended - Cheesy is great!
+U1047,AaharAlly_Main,23,Male,Street Food,Will order again - Street Food is great!
+U1047,AaharAlly_Main,23,Male,Snacks,Amazing taste - Snacks is great!
+U1048,AaharAlly_Main,16,Male,Cheesy,Good value - Cheesy is great!
+U1048,AaharAlly_Main,16,Male,Cheesy,Good value - Cheesy is great!
+U1048,AaharAlly_Main,16,Male,Street Food,Perfect flavor - Street Food is great!
+U1049,AaharAlly_Main,20,Male,Dessert,I loved it - Dessert is great!
+U1049,AaharAlly_Main,20,Male,Indian Curry,Good value - Indian Curry is great!
+U1049,AaharAlly_Main,20,Male,Street Food,Delicious - Street Food is great!
+U1049,AaharAlly_Main,20,Male,Snacks,Highly recommended - Snacks is great!
+U1050,AaharAlly_Main,15,Male,Cheesy,Highly recommended - Cheesy is great!
+U1050,AaharAlly_Main,15,Male,Street Food,Good value - Street Food is great!
+U1051,AaharAlly_Main,22,Male,Street Food,Highly recommended - Street Food is great!
+U1051,AaharAlly_Main,22,Male,Cheesy,Will order again - Cheesy is great!
+U1052,AaharAlly_Main,16,Male,Cheesy,Good value - Cheesy is great!
+U1052,AaharAlly_Main,16,Male,Chinese,I loved it - Chinese is great!
+U1052,AaharAlly_Main,16,Male,Snacks,Perfect flavor - Snacks is great!
+U1052,AaharAlly_Main,16,Male,Street Food,Will order again - Street Food is great!
+U1053,AaharAlly_Main,22,Male,Snacks,Highly recommended - Snacks is great!
+U1054,AaharAlly_Main,23,Male,Street Food,Good value - Street Food is great!
+U1054,AaharAlly_Main,23,Male,Street Food,Perfect flavor - Street Food is great!
+U1055,AaharAlly_Main,15,Male,Spicy,Highly recommended - Spicy is great!
+U1055,AaharAlly_Main,15,Male,Spicy,Amazing taste - Spicy is great!
+U1056,AaharAlly_Main,18,Male,Street Food,Amazing taste - Street Food is great!
+U1057,AaharAlly_Main,25,Male,Seafood,Perfect flavor - Seafood is great!
+U1057,AaharAlly_Main,25,Male,Vegan,Amazing taste - Vegan is great!
+U1058,AaharAlly_Main,15,Male,Cheesy,Delicious - Cheesy is great!
+U1058,AaharAlly_Main,15,Male,Cheesy,Will order again - Cheesy is great!
+U1058,AaharAlly_Main,15,Male,Street Food,I loved it - Street Food is great!
+U1059,AaharAlly_Main,20,Male,Vegan,Good value - Vegan is great!
+U1059,AaharAlly_Main,20,Male,Dessert,Perfect flavor - Dessert is great!
+U1059,AaharAlly_Main,20,Male,Street Food,Highly recommended - Street Food is great!
+U1060,AaharAlly_Main,25,Male,Street Food,Will order again - Street Food is great!
+U1061,AaharAlly_Main,23,Male,Cheesy,Amazing taste - Cheesy is great!
+U1061,AaharAlly_Main,23,Male,Chinese,I loved it - Chinese is great!
+U1061,AaharAlly_Main,23,Male,Street Food,Amazing taste - Street Food is great!
+U1061,AaharAlly_Main,23,Male,Street Food,Perfect flavor - Street Food is great!
+U1062,AaharAlly_Main,15,Male,Snacks,Amazing taste - Snacks is great!
+U1062,AaharAlly_Main,15,Male,Healthy,Perfect flavor - Healthy is great!
+U1062,AaharAlly_Main,15,Male,Snacks,Highly recommended - Snacks is great!
+U1062,AaharAlly_Main,15,Male,Street Food,Perfect flavor - Street Food is great!
+U1063,AaharAlly_Main,17,Male,Cheesy,I loved it - Cheesy is great!
+U1064,AaharAlly_Main,24,Male,Street Food,Will order again - Street Food is great!
+U1064,AaharAlly_Main,24,Male,Cheesy,Amazing taste - Cheesy is great!
+U1064,AaharAlly_Main,24,Male,Spicy,Delicious - Spicy is great!
+U1065,AaharAlly_Main,24,Male,Snacks,I loved it - Snacks is great!
+U1066,AaharAlly_Main,25,Male,Seafood,Will order again - Seafood is great!
+U1066,AaharAlly_Main,25,Male,Snacks,I loved it - Snacks is great!
+U1067,AaharAlly_Main,21,Male,Healthy,Amazing taste - Healthy is great!
+U1067,AaharAlly_Main,21,Male,Dessert,Perfect flavor - Dessert is great!
+U1068,AaharAlly_Main,25,Male,Spicy,Good value - Spicy is great!
+U1069,AaharAlly_Main,22,Male,Snacks,Amazing taste - Snacks is great!
+U1069,AaharAlly_Main,22,Male,Spicy,Amazing taste - Spicy is great!
+U1069,AaharAlly_Main,22,Male,Healthy,Good value - Healthy is great!
+U1070,AaharAlly_Main,23,Male,Spicy,Good value - Spicy is great!
+U1070,AaharAlly_Main,23,Male,Snacks,Perfect flavor - Snacks is great!
+U1070,AaharAlly_Main,23,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1070,AaharAlly_Main,23,Male,Snacks,Highly recommended - Snacks is great!
+U1071,AaharAlly_Main,24,Male,Spicy,Will order again - Spicy is great!
+U1071,AaharAlly_Main,24,Male,Chinese,Highly recommended - Chinese is great!
+U1071,AaharAlly_Main,24,Male,Seafood,Perfect flavor - Seafood is great!
+U1072,AaharAlly_Main,24,Male,Chinese,Perfect flavor - Chinese is great!
+U1072,AaharAlly_Main,24,Male,Street Food,Will order again - Street Food is great!
+U1072,AaharAlly_Main,24,Male,Street Food,I loved it - Street Food is great!
+U1072,AaharAlly_Main,24,Male,Cheesy,Amazing taste - Cheesy is great!
+U1073,AaharAlly_Main,21,Male,Street Food,Delicious - Street Food is great!
+U1073,AaharAlly_Main,21,Male,Snacks,Highly recommended - Snacks is great!
+U1073,AaharAlly_Main,21,Male,Spicy,Perfect flavor - Spicy is great!
+U1073,AaharAlly_Main,21,Male,Street Food,Good value - Street Food is great!
+U1074,AaharAlly_Main,21,Male,Cheesy,Highly recommended - Cheesy is great!
+U1075,AaharAlly_Main,17,Male,Street Food,Delicious - Street Food is great!
+U1075,AaharAlly_Main,17,Male,Street Food,Will order again - Street Food is great!
+U1075,AaharAlly_Main,17,Male,Street Food,I loved it - Street Food is great!
+U1075,AaharAlly_Main,17,Male,Cheesy,Perfect flavor - Cheesy is great!
+U1076,AaharAlly_Main,24,Male,Chinese,Will order again - Chinese is great!
+U1076,AaharAlly_Main,24,Male,Seafood,Highly recommended - Seafood is great!
+U1077,AaharAlly_Main,22,Male,Street Food,Will order again - Street Food is great!
+U1078,AaharAlly_Main,19,Male,Snacks,Amazing taste - Snacks is great!
+U1078,AaharAlly_Main,19,Male,Chinese,Delicious - Chinese is great!
+U1078,AaharAlly_Main,19,Male,Spicy,Will order again - Spicy is great!
+U1079,AaharAlly_Main,15,Male,Cheesy,Amazing taste - Cheesy is great!
+U1079,AaharAlly_Main,15,Male,Street Food,I loved it - Street Food is great!
+U1080,AaharAlly_Main,17,Male,Snacks,Perfect flavor - Snacks is great!
+U1080,AaharAlly_Main,17,Male,Chinese,Good value - Chinese is great!
+U1080,AaharAlly_Main,17,Male,Cheesy,Perfect flavor - Cheesy is great!
+U1081,AaharAlly_Main,19,Male,Snacks,Amazing taste - Snacks is great!
+U1081,AaharAlly_Main,19,Male,Chinese,Amazing taste - Chinese is great!
+U1081,AaharAlly_Main,19,Male,Cheesy,Highly recommended - Cheesy is great!
+U1082,AaharAlly_Main,15,Male,Snacks,Delicious - Snacks is great!
+U1082,AaharAlly_Main,15,Male,Street Food,Perfect flavor - Street Food is great!
+U1083,AaharAlly_Main,15,Male,Snacks,Perfect flavor - Snacks is great!
+U1084,AaharAlly_Main,24,Male,Cheesy,Delicious - Cheesy is great!
+U1085,AaharAlly_Main,23,Male,Spicy,Good value - Spicy is great!
+U1086,AaharAlly_Main,17,Male,Spicy,Will order again - Spicy is great!
+U1086,AaharAlly_Main,17,Male,Snacks,Amazing taste - Snacks is great!
+U1087,AaharAlly_Main,20,Male,Street Food,I loved it - Street Food is great!
+U1087,AaharAlly_Main,20,Male,Spicy,Amazing taste - Spicy is great!
+U1087,AaharAlly_Main,20,Male,Street Food,Amazing taste - Street Food is great!
+U1087,AaharAlly_Main,20,Male,Snacks,Will order again - Snacks is great!
+U1088,AaharAlly_Main,24,Male,Chinese,I loved it - Chinese is great!
+U1088,AaharAlly_Main,24,Male,Spicy,I loved it - Spicy is great!
+U1089,AaharAlly_Main,17,Male,Healthy,Highly recommended - Healthy is great!
+U1089,AaharAlly_Main,17,Male,Spicy,Will order again - Spicy is great!
+U1090,AaharAlly_Main,23,Male,Spicy,Perfect flavor - Spicy is great!
+U1090,AaharAlly_Main,23,Male,Indian Curry,Delicious - Indian Curry is great!
+U1090,AaharAlly_Main,23,Male,Spicy,Amazing taste - Spicy is great!
+U1090,AaharAlly_Main,23,Male,Snacks,Will order again - Snacks is great!
+U1091,AaharAlly_Main,23,Male,Spicy,Delicious - Spicy is great!
+U1091,AaharAlly_Main,23,Male,Street Food,Good value - Street Food is great!
+U1092,AaharAlly_Main,21,Male,Snacks,Amazing taste - Snacks is great!
+U1092,AaharAlly_Main,21,Male,Snacks,Delicious - Snacks is great!
+U1092,AaharAlly_Main,21,Male,Spicy,Amazing taste - Spicy is great!
+U1092,AaharAlly_Main,21,Male,Cheesy,Good value - Cheesy is great!
+U1093,AaharAlly_Main,15,Male,Indian Curry,Delicious - Indian Curry is great!
+U1094,AaharAlly_Main,22,Male,Spicy,Will order again - Spicy is great!
+U1094,AaharAlly_Main,22,Male,Street Food,Perfect flavor - Street Food is great!
+U1095,AaharAlly_Main,24,Male,Dessert,Highly recommended - Dessert is great!
+U1095,AaharAlly_Main,24,Male,Street Food,Perfect flavor - Street Food is great!
+U1095,AaharAlly_Main,24,Male,Indian Curry,Good value - Indian Curry is great!
+U1096,AaharAlly_Main,17,Male,Street Food,Perfect flavor - Street Food is great!
+U1096,AaharAlly_Main,17,Male,Spicy,Will order again - Spicy is great!
+U1096,AaharAlly_Main,17,Male,Street Food,Delicious - Street Food is great!
+U1096,AaharAlly_Main,17,Male,Snacks,I loved it - Snacks is great!
+U1097,AaharAlly_Main,19,Male,Cheesy,Amazing taste - Cheesy is great!
+U1097,AaharAlly_Main,19,Male,Seafood,Highly recommended - Seafood is great!
+U1097,AaharAlly_Main,19,Male,Snacks,I loved it - Snacks is great!
+U1097,AaharAlly_Main,19,Male,Spicy,Delicious - Spicy is great!
+U1098,AaharAlly_Main,17,Male,Snacks,Highly recommended - Snacks is great!
+U1098,AaharAlly_Main,17,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1099,AaharAlly_Main,22,Male,Snacks,Delicious - Snacks is great!
+U1099,AaharAlly_Main,22,Male,Cheesy,I loved it - Cheesy is great!
+U1100,AaharAlly_Main,23,Female,Healthy,Amazing taste - Healthy is great!
+U1100,AaharAlly_Main,23,Female,Street Food,Perfect flavor - Street Food is great!
+U1100,AaharAlly_Main,23,Female,Street Food,Highly recommended - Street Food is great!
+U1100,AaharAlly_Main,23,Female,Street Food,Amazing taste - Street Food is great!
+U1101,AaharAlly_Main,23,Female,Vegan,Highly recommended - Vegan is great!
+U1101,AaharAlly_Main,23,Female,Seafood,Highly recommended - Seafood is great!
+U1102,AaharAlly_Main,18,Female,Seafood,Delicious - Seafood is great!
+U1102,AaharAlly_Main,18,Female,Dessert,Perfect flavor - Dessert is great!
+U1102,AaharAlly_Main,18,Female,Spicy,Will order again - Spicy is great!
+U1102,AaharAlly_Main,18,Female,Healthy,Good value - Healthy is great!
+U1103,AaharAlly_Main,17,Female,Dessert,Perfect flavor - Dessert is great!
+U1104,AaharAlly_Main,23,Female,Healthy,Amazing taste - Healthy is great!
+U1104,AaharAlly_Main,23,Female,Indian Curry,Delicious - Indian Curry is great!
+U1104,AaharAlly_Main,23,Female,Vegan,Highly recommended - Vegan is great!
+U1104,AaharAlly_Main,23,Female,Vegan,Amazing taste - Vegan is great!
+U1105,AaharAlly_Main,25,Female,Vegan,Perfect flavor - Vegan is great!
+U1105,AaharAlly_Main,25,Female,Street Food,Delicious - Street Food is great!
+U1105,AaharAlly_Main,25,Female,Healthy,Delicious - Healthy is great!
+U1105,AaharAlly_Main,25,Female,Street Food,Amazing taste - Street Food is great!
+U1106,AaharAlly_Main,18,Female,Vegan,Highly recommended - Vegan is great!
+U1106,AaharAlly_Main,18,Female,Healthy,Perfect flavor - Healthy is great!
+U1106,AaharAlly_Main,18,Female,Street Food,Delicious - Street Food is great!
+U1107,AaharAlly_Main,15,Female,Dessert,Will order again - Dessert is great!
+U1108,AaharAlly_Main,23,Female,Healthy,Good value - Healthy is great!
+U1108,AaharAlly_Main,23,Female,Dessert,Delicious - Dessert is great!
+U1109,AaharAlly_Main,23,Female,Healthy,I loved it - Healthy is great!
+U1110,AaharAlly_Main,22,Female,Dessert,Good value - Dessert is great!
+U1111,AaharAlly_Main,18,Female,Healthy,I loved it - Healthy is great!
+U1111,AaharAlly_Main,18,Female,Healthy,Perfect flavor - Healthy is great!
+U1111,AaharAlly_Main,18,Female,Indian Curry,Will order again - Indian Curry is great!
+U1111,AaharAlly_Main,18,Female,Street Food,I loved it - Street Food is great!
+U1112,AaharAlly_Main,15,Female,Healthy,Good value - Healthy is great!
+U1113,AaharAlly_Main,23,Female,Street Food,Will order again - Street Food is great!
+U1113,AaharAlly_Main,23,Female,Healthy,Delicious - Healthy is great!
+U1113,AaharAlly_Main,23,Female,Street Food,Perfect flavor - Street Food is great!
+U1113,AaharAlly_Main,23,Female,Vegan,Perfect flavor - Vegan is great!
+U1114,AaharAlly_Main,16,Female,Healthy,Highly recommended - Healthy is great!
+U1114,AaharAlly_Main,16,Female,Dessert,Perfect flavor - Dessert is great!
+U1114,AaharAlly_Main,16,Female,Dessert,Perfect flavor - Dessert is great!
+U1115,AaharAlly_Main,18,Female,Dessert,I loved it - Dessert is great!
+U1115,AaharAlly_Main,18,Female,Dessert,Amazing taste - Dessert is great!
+U1116,AaharAlly_Main,15,Female,Street Food,Highly recommended - Street Food is great!
+U1116,AaharAlly_Main,15,Female,Street Food,Perfect flavor - Street Food is great!
+U1116,AaharAlly_Main,15,Female,Healthy,Will order again - Healthy is great!
+U1117,AaharAlly_Main,23,Female,Vegan,Good value - Vegan is great!
+U1117,AaharAlly_Main,23,Female,Street Food,I loved it - Street Food is great!
+U1117,AaharAlly_Main,23,Female,Street Food,Amazing taste - Street Food is great!
+U1117,AaharAlly_Main,23,Female,Dessert,Good value - Dessert is great!
+U1118,AaharAlly_Main,24,Female,Chinese,I loved it - Chinese is great!
+U1119,AaharAlly_Main,15,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1120,AaharAlly_Main,21,Female,Healthy,Perfect flavor - Healthy is great!
+U1121,AaharAlly_Main,24,Female,Dessert,Will order again - Dessert is great!
+U1121,AaharAlly_Main,24,Female,Seafood,Highly recommended - Seafood is great!
+U1122,AaharAlly_Main,15,Female,Vegan,Good value - Vegan is great!
+U1123,AaharAlly_Main,15,Female,Vegan,Will order again - Vegan is great!
+U1124,AaharAlly_Main,17,Female,Dessert,Amazing taste - Dessert is great!
+U1124,AaharAlly_Main,17,Female,Vegan,I loved it - Vegan is great!
+U1125,AaharAlly_Main,15,Female,Healthy,Delicious - Healthy is great!
+U1126,AaharAlly_Main,21,Female,Vegan,Delicious - Vegan is great!
+U1126,AaharAlly_Main,21,Female,Spicy,Good value - Spicy is great!
+U1126,AaharAlly_Main,21,Female,Vegan,Perfect flavor - Vegan is great!
+U1126,AaharAlly_Main,21,Female,Healthy,Amazing taste - Healthy is great!
+U1127,AaharAlly_Main,25,Female,Vegan,Highly recommended - Vegan is great!
+U1127,AaharAlly_Main,25,Female,Vegan,Perfect flavor - Vegan is great!
+U1128,AaharAlly_Main,18,Female,Vegan,Good value - Vegan is great!
+U1128,AaharAlly_Main,18,Female,Vegan,Delicious - Vegan is great!
+U1128,AaharAlly_Main,18,Female,Healthy,Amazing taste - Healthy is great!
+U1128,AaharAlly_Main,18,Female,Vegan,Perfect flavor - Vegan is great!
+U1129,AaharAlly_Main,18,Female,Healthy,Will order again - Healthy is great!
+U1129,AaharAlly_Main,18,Female,Dessert,Amazing taste - Dessert is great!
+U1129,AaharAlly_Main,18,Female,Street Food,Amazing taste - Street Food is great!
+U1130,AaharAlly_Main,15,Female,Vegan,Perfect flavor - Vegan is great!
+U1130,AaharAlly_Main,15,Female,Healthy,Will order again - Healthy is great!
+U1130,AaharAlly_Main,15,Female,Street Food,Delicious - Street Food is great!
+U1131,AaharAlly_Main,19,Female,Street Food,Will order again - Street Food is great!
+U1131,AaharAlly_Main,19,Female,Chinese,Delicious - Chinese is great!
+U1131,AaharAlly_Main,19,Female,Chinese,Highly recommended - Chinese is great!
+U1132,AaharAlly_Main,15,Female,Dessert,I loved it - Dessert is great!
+U1132,AaharAlly_Main,15,Female,Dessert,Will order again - Dessert is great!
+U1133,AaharAlly_Main,23,Female,Vegan,Amazing taste - Vegan is great!
+U1133,AaharAlly_Main,23,Female,Healthy,Good value - Healthy is great!
+U1133,AaharAlly_Main,23,Female,Dessert,Amazing taste - Dessert is great!
+U1134,AaharAlly_Main,25,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1134,AaharAlly_Main,25,Female,Indian Curry,I loved it - Indian Curry is great!
+U1134,AaharAlly_Main,25,Female,Indian Curry,Delicious - Indian Curry is great!
+U1134,AaharAlly_Main,25,Female,Vegan,Amazing taste - Vegan is great!
+U1135,AaharAlly_Main,17,Female,Cheesy,Perfect flavor - Cheesy is great!
+U1135,AaharAlly_Main,17,Female,Dessert,Perfect flavor - Dessert is great!
+U1135,AaharAlly_Main,17,Female,Street Food,Delicious - Street Food is great!
+U1135,AaharAlly_Main,17,Female,Vegan,Delicious - Vegan is great!
+U1136,AaharAlly_Main,24,Female,Healthy,Amazing taste - Healthy is great!
+U1136,AaharAlly_Main,24,Female,Snacks,Perfect flavor - Snacks is great!
+U1137,AaharAlly_Main,23,Female,Dessert,Will order again - Dessert is great!
+U1137,AaharAlly_Main,23,Female,Vegan,Highly recommended - Vegan is great!
+U1137,AaharAlly_Main,23,Female,Snacks,Will order again - Snacks is great!
+U1137,AaharAlly_Main,23,Female,Healthy,Amazing taste - Healthy is great!
+U1138,AaharAlly_Main,22,Female,Snacks,Good value - Snacks is great!
+U1138,AaharAlly_Main,22,Female,Healthy,Delicious - Healthy is great!
+U1139,AaharAlly_Main,19,Female,Street Food,Will order again - Street Food is great!
+U1139,AaharAlly_Main,19,Female,Healthy,Amazing taste - Healthy is great!
+U1140,AaharAlly_Main,22,Female,Dessert,Perfect flavor - Dessert is great!
+U1140,AaharAlly_Main,22,Female,Seafood,Will order again - Seafood is great!
+U1141,AaharAlly_Main,16,Female,Healthy,Perfect flavor - Healthy is great!
+U1141,AaharAlly_Main,16,Female,Healthy,I loved it - Healthy is great!
+U1141,AaharAlly_Main,16,Female,Cheesy,Highly recommended - Cheesy is great!
+U1142,AaharAlly_Main,19,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1142,AaharAlly_Main,19,Female,Vegan,Delicious - Vegan is great!
+U1143,AaharAlly_Main,25,Female,Healthy,Good value - Healthy is great!
+U1143,AaharAlly_Main,25,Female,Street Food,I loved it - Street Food is great!
+U1144,AaharAlly_Main,24,Female,Healthy,Perfect flavor - Healthy is great!
+U1145,AaharAlly_Main,16,Female,Vegan,Good value - Vegan is great!
+U1146,AaharAlly_Main,24,Female,Dessert,Highly recommended - Dessert is great!
+U1146,AaharAlly_Main,24,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1146,AaharAlly_Main,24,Female,Vegan,Will order again - Vegan is great!
+U1147,AaharAlly_Main,24,Female,Vegan,Good value - Vegan is great!
+U1147,AaharAlly_Main,24,Female,Healthy,Perfect flavor - Healthy is great!
+U1148,AaharAlly_Main,23,Female,Spicy,Good value - Spicy is great!
+U1148,AaharAlly_Main,23,Female,Vegan,Highly recommended - Vegan is great!
+U1148,AaharAlly_Main,23,Female,Dessert,Highly recommended - Dessert is great!
+U1149,AaharAlly_Main,24,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1149,AaharAlly_Main,24,Female,Dessert,Amazing taste - Dessert is great!
+U1149,AaharAlly_Main,24,Female,Dessert,Highly recommended - Dessert is great!
+U1149,AaharAlly_Main,24,Female,Vegan,Delicious - Vegan is great!
+U1150,AaharAlly_Main,19,Female,Street Food,Delicious - Street Food is great!
+U1150,AaharAlly_Main,19,Female,Street Food,Good value - Street Food is great!
+U1150,AaharAlly_Main,19,Female,Street Food,Good value - Street Food is great!
+U1150,AaharAlly_Main,19,Female,Vegan,Amazing taste - Vegan is great!
+U1151,AaharAlly_Main,21,Female,Dessert,I loved it - Dessert is great!
+U1151,AaharAlly_Main,21,Female,Street Food,Will order again - Street Food is great!
+U1152,AaharAlly_Main,17,Female,Street Food,Will order again - Street Food is great!
+U1152,AaharAlly_Main,17,Female,Vegan,Amazing taste - Vegan is great!
+U1152,AaharAlly_Main,17,Female,Healthy,Will order again - Healthy is great!
+U1152,AaharAlly_Main,17,Female,Street Food,Good value - Street Food is great!
+U1153,AaharAlly_Main,16,Female,Dessert,I loved it - Dessert is great!
+U1153,AaharAlly_Main,16,Female,Dessert,I loved it - Dessert is great!
+U1154,AaharAlly_Main,19,Female,Dessert,Will order again - Dessert is great!
+U1154,AaharAlly_Main,19,Female,Street Food,Perfect flavor - Street Food is great!
+U1154,AaharAlly_Main,19,Female,Street Food,Amazing taste - Street Food is great!
+U1154,AaharAlly_Main,19,Female,Chinese,Will order again - Chinese is great!
+U1155,AaharAlly_Main,15,Female,Healthy,Good value - Healthy is great!
+U1156,AaharAlly_Main,18,Female,Healthy,Good value - Healthy is great!
+U1157,AaharAlly_Main,18,Female,Vegan,Good value - Vegan is great!
+U1157,AaharAlly_Main,18,Female,Healthy,Perfect flavor - Healthy is great!
+U1158,AaharAlly_Main,24,Female,Healthy,I loved it - Healthy is great!
+U1158,AaharAlly_Main,24,Female,Street Food,Good value - Street Food is great!
+U1158,AaharAlly_Main,24,Female,Healthy,Highly recommended - Healthy is great!
+U1158,AaharAlly_Main,24,Female,Cheesy,Will order again - Cheesy is great!
+U1159,AaharAlly_Main,19,Female,Street Food,Good value - Street Food is great!
+U1159,AaharAlly_Main,19,Female,Street Food,Will order again - Street Food is great!
+U1159,AaharAlly_Main,19,Female,Vegan,Amazing taste - Vegan is great!
+U1160,AaharAlly_Main,15,Female,Dessert,Perfect flavor - Dessert is great!
+U1160,AaharAlly_Main,15,Female,Healthy,I loved it - Healthy is great!
+U1160,AaharAlly_Main,15,Female,Dessert,Good value - Dessert is great!
+U1161,AaharAlly_Main,23,Female,Street Food,Will order again - Street Food is great!
+U1161,AaharAlly_Main,23,Female,Dessert,Good value - Dessert is great!
+U1161,AaharAlly_Main,23,Female,Healthy,I loved it - Healthy is great!
+U1161,AaharAlly_Main,23,Female,Street Food,Will order again - Street Food is great!
+U1162,AaharAlly_Main,20,Female,Street Food,Highly recommended - Street Food is great!
+U1163,AaharAlly_Main,24,Female,Street Food,Highly recommended - Street Food is great!
+U1163,AaharAlly_Main,24,Female,Street Food,Amazing taste - Street Food is great!
+U1163,AaharAlly_Main,24,Female,Street Food,Highly recommended - Street Food is great!
+U1163,AaharAlly_Main,24,Female,Dessert,Will order again - Dessert is great!
+U1164,AaharAlly_Main,25,Female,Healthy,Amazing taste - Healthy is great!
+U1165,AaharAlly_Main,19,Female,Dessert,I loved it - Dessert is great!
+U1165,AaharAlly_Main,19,Female,Healthy,Will order again - Healthy is great!
+U1166,AaharAlly_Main,23,Female,Healthy,Good value - Healthy is great!
+U1166,AaharAlly_Main,23,Female,Healthy,Highly recommended - Healthy is great!
+U1166,AaharAlly_Main,23,Female,Street Food,Amazing taste - Street Food is great!
+U1167,AaharAlly_Main,25,Female,Vegan,Amazing taste - Vegan is great!
+U1168,AaharAlly_Main,21,Female,Vegan,Highly recommended - Vegan is great!
+U1168,AaharAlly_Main,21,Female,Vegan,I loved it - Vegan is great!
+U1168,AaharAlly_Main,21,Female,Healthy,Delicious - Healthy is great!
+U1169,AaharAlly_Main,17,Female,Street Food,Good value - Street Food is great!
+U1169,AaharAlly_Main,17,Female,Vegan,Perfect flavor - Vegan is great!
+U1169,AaharAlly_Main,17,Female,Vegan,Delicious - Vegan is great!
+U1169,AaharAlly_Main,17,Female,Healthy,I loved it - Healthy is great!
+U1170,AaharAlly_Main,18,Female,Spicy,Perfect flavor - Spicy is great!
+U1170,AaharAlly_Main,18,Female,Dessert,Will order again - Dessert is great!
+U1170,AaharAlly_Main,18,Female,Dessert,Will order again - Dessert is great!
+U1170,AaharAlly_Main,18,Female,Dessert,Highly recommended - Dessert is great!
+U1171,AaharAlly_Main,22,Female,Dessert,Good value - Dessert is great!
+U1171,AaharAlly_Main,22,Female,Dessert,I loved it - Dessert is great!
+U1171,AaharAlly_Main,22,Female,Seafood,Amazing taste - Seafood is great!
+U1172,AaharAlly_Main,23,Female,Indian Curry,Good value - Indian Curry is great!
+U1172,AaharAlly_Main,23,Female,Healthy,Highly recommended - Healthy is great!
+U1172,AaharAlly_Main,23,Female,Dessert,I loved it - Dessert is great!
+U1172,AaharAlly_Main,23,Female,Street Food,I loved it - Street Food is great!
+U1173,AaharAlly_Main,24,Female,Seafood,Delicious - Seafood is great!
+U1173,AaharAlly_Main,24,Female,Chinese,Amazing taste - Chinese is great!
+U1173,AaharAlly_Main,24,Female,Dessert,Will order again - Dessert is great!
+U1174,AaharAlly_Main,19,Female,Dessert,I loved it - Dessert is great!
+U1174,AaharAlly_Main,19,Female,Indian Curry,Delicious - Indian Curry is great!
+U1174,AaharAlly_Main,19,Female,Indian Curry,I loved it - Indian Curry is great!
+U1175,AaharAlly_Main,15,Female,Cheesy,Will order again - Cheesy is great!
+U1175,AaharAlly_Main,15,Female,Dessert,Perfect flavor - Dessert is great!
+U1176,AaharAlly_Main,18,Female,Healthy,Amazing taste - Healthy is great!
+U1176,AaharAlly_Main,18,Female,Street Food,Amazing taste - Street Food is great!
+U1177,AaharAlly_Main,15,Female,Street Food,Will order again - Street Food is great!
+U1177,AaharAlly_Main,15,Female,Healthy,Highly recommended - Healthy is great!
+U1177,AaharAlly_Main,15,Female,Vegan,Will order again - Vegan is great!
+U1177,AaharAlly_Main,15,Female,Street Food,Delicious - Street Food is great!
+U1178,AaharAlly_Main,21,Female,Vegan,Will order again - Vegan is great!
+U1179,AaharAlly_Main,24,Female,Vegan,Delicious - Vegan is great!
+U1180,AaharAlly_Main,18,Female,Dessert,Delicious - Dessert is great!
+U1180,AaharAlly_Main,18,Female,Dessert,Will order again - Dessert is great!
+U1180,AaharAlly_Main,18,Female,Healthy,Will order again - Healthy is great!
+U1180,AaharAlly_Main,18,Female,Dessert,Delicious - Dessert is great!
+U1181,AaharAlly_Main,22,Female,Healthy,Delicious - Healthy is great!
+U1181,AaharAlly_Main,22,Female,Healthy,I loved it - Healthy is great!
+U1182,AaharAlly_Main,18,Female,Street Food,Good value - Street Food is great!
+U1182,AaharAlly_Main,18,Female,Vegan,Good value - Vegan is great!
+U1183,AaharAlly_Main,20,Female,Vegan,Amazing taste - Vegan is great!
+U1183,AaharAlly_Main,20,Female,Street Food,Delicious - Street Food is great!
+U1184,AaharAlly_Main,22,Female,Seafood,Good value - Seafood is great!
+U1185,AaharAlly_Main,25,Female,Seafood,Good value - Seafood is great!
+U1185,AaharAlly_Main,25,Female,Vegan,Delicious - Vegan is great!
+U1185,AaharAlly_Main,25,Female,Healthy,I loved it - Healthy is great!
+U1186,AaharAlly_Main,21,Female,Healthy,Perfect flavor - Healthy is great!
+U1186,AaharAlly_Main,21,Female,Healthy,Delicious - Healthy is great!
+U1186,AaharAlly_Main,21,Female,Vegan,Amazing taste - Vegan is great!
+U1187,AaharAlly_Main,22,Female,Healthy,I loved it - Healthy is great!
+U1187,AaharAlly_Main,22,Female,Dessert,I loved it - Dessert is great!
+U1187,AaharAlly_Main,22,Female,Seafood,Delicious - Seafood is great!
+U1188,AaharAlly_Main,21,Female,Vegan,Good value - Vegan is great!
+U1188,AaharAlly_Main,21,Female,Cheesy,I loved it - Cheesy is great!
+U1188,AaharAlly_Main,21,Female,Dessert,Will order again - Dessert is great!
+U1188,AaharAlly_Main,21,Female,Healthy,I loved it - Healthy is great!
+U1189,AaharAlly_Main,21,Female,Healthy,I loved it - Healthy is great!
+U1189,AaharAlly_Main,21,Female,Dessert,Highly recommended - Dessert is great!
+U1190,AaharAlly_Main,19,Female,Vegan,Highly recommended - Vegan is great!
+U1190,AaharAlly_Main,19,Female,Dessert,Highly recommended - Dessert is great!
+U1191,AaharAlly_Main,24,Female,Dessert,Amazing taste - Dessert is great!
+U1191,AaharAlly_Main,24,Female,Dessert,Will order again - Dessert is great!
+U1191,AaharAlly_Main,24,Female,Dessert,Perfect flavor - Dessert is great!
+U1191,AaharAlly_Main,24,Female,Dessert,Good value - Dessert is great!
+U1192,AaharAlly_Main,18,Female,Healthy,Will order again - Healthy is great!
+U1193,AaharAlly_Main,15,Female,Spicy,Will order again - Spicy is great!
+U1193,AaharAlly_Main,15,Female,Chinese,Amazing taste - Chinese is great!
+U1194,AaharAlly_Main,24,Female,Healthy,Amazing taste - Healthy is great!
+U1194,AaharAlly_Main,24,Female,Dessert,Will order again - Dessert is great!
+U1194,AaharAlly_Main,24,Female,Vegan,Delicious - Vegan is great!
+U1194,AaharAlly_Main,24,Female,Dessert,Good value - Dessert is great!
+U1195,AaharAlly_Main,19,Female,Dessert,Will order again - Dessert is great!
+U1196,AaharAlly_Main,19,Female,Dessert,Highly recommended - Dessert is great!
+U1196,AaharAlly_Main,19,Female,Dessert,Delicious - Dessert is great!
+U1196,AaharAlly_Main,19,Female,Dessert,I loved it - Dessert is great!
+U1196,AaharAlly_Main,19,Female,Street Food,Highly recommended - Street Food is great!
+U1197,AaharAlly_Main,19,Female,Vegan,Delicious - Vegan is great!
+U1197,AaharAlly_Main,19,Female,Snacks,Delicious - Snacks is great!
+U1198,AaharAlly_Main,15,Female,Dessert,I loved it - Dessert is great!
+U1198,AaharAlly_Main,15,Female,Street Food,I loved it - Street Food is great!
+U1198,AaharAlly_Main,15,Female,Vegan,Delicious - Vegan is great!
+U1199,AaharAlly_Main,22,Female,Spicy,Perfect flavor - Spicy is great!
+U1200,AaharAlly_Main,32,Male,Chinese,Good value - Chinese is great!
+U1200,AaharAlly_Main,32,Male,Spicy,Amazing taste - Spicy is great!
+U1201,AaharAlly_Main,37,Male,Spicy,Delicious - Spicy is great!
+U1202,AaharAlly_Main,42,Male,Cheesy,Highly recommended - Cheesy is great!
+U1202,AaharAlly_Main,42,Male,Seafood,Highly recommended - Seafood is great!
+U1203,AaharAlly_Main,29,Male,Chinese,I loved it - Chinese is great!
+U1203,AaharAlly_Main,29,Male,Indian Curry,Delicious - Indian Curry is great!
+U1204,AaharAlly_Main,32,Male,Spicy,Amazing taste - Spicy is great!
+U1204,AaharAlly_Main,32,Male,Indian Curry,I loved it - Indian Curry is great!
+U1205,AaharAlly_Main,29,Male,Dessert,Perfect flavor - Dessert is great!
+U1206,AaharAlly_Main,42,Male,Chinese,Will order again - Chinese is great!
+U1206,AaharAlly_Main,42,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1206,AaharAlly_Main,42,Male,Spicy,I loved it - Spicy is great!
+U1207,AaharAlly_Main,30,Male,Cheesy,I loved it - Cheesy is great!
+U1208,AaharAlly_Main,36,Male,Seafood,Highly recommended - Seafood is great!
+U1208,AaharAlly_Main,36,Male,Indian Curry,I loved it - Indian Curry is great!
+U1208,AaharAlly_Main,36,Male,Seafood,I loved it - Seafood is great!
+U1208,AaharAlly_Main,36,Male,Chinese,Perfect flavor - Chinese is great!
+U1209,AaharAlly_Main,27,Male,Seafood,I loved it - Seafood is great!
+U1209,AaharAlly_Main,27,Male,Chinese,Highly recommended - Chinese is great!
+U1209,AaharAlly_Main,27,Male,Chinese,Amazing taste - Chinese is great!
+U1210,AaharAlly_Main,40,Male,Spicy,Highly recommended - Spicy is great!
+U1211,AaharAlly_Main,37,Male,Chinese,Highly recommended - Chinese is great!
+U1212,AaharAlly_Main,32,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1213,AaharAlly_Main,40,Male,Chinese,Will order again - Chinese is great!
+U1213,AaharAlly_Main,40,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1214,AaharAlly_Main,30,Male,Seafood,Highly recommended - Seafood is great!
+U1214,AaharAlly_Main,30,Male,Indian Curry,Will order again - Indian Curry is great!
+U1214,AaharAlly_Main,30,Male,Chinese,I loved it - Chinese is great!
+U1214,AaharAlly_Main,30,Male,Cheesy,Perfect flavor - Cheesy is great!
+U1215,AaharAlly_Main,36,Male,Chinese,Delicious - Chinese is great!
+U1216,AaharAlly_Main,41,Male,Spicy,Delicious - Spicy is great!
+U1217,AaharAlly_Main,40,Male,Indian Curry,Will order again - Indian Curry is great!
+U1217,AaharAlly_Main,40,Male,Spicy,Amazing taste - Spicy is great!
+U1217,AaharAlly_Main,40,Male,Snacks,Will order again - Snacks is great!
+U1217,AaharAlly_Main,40,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1218,AaharAlly_Main,38,Male,Snacks,Good value - Snacks is great!
+U1219,AaharAlly_Main,36,Male,Spicy,Perfect flavor - Spicy is great!
+U1219,AaharAlly_Main,36,Male,Dessert,Good value - Dessert is great!
+U1219,AaharAlly_Main,36,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1220,AaharAlly_Main,38,Male,Indian Curry,Will order again - Indian Curry is great!
+U1220,AaharAlly_Main,38,Male,Chinese,Amazing taste - Chinese is great!
+U1220,AaharAlly_Main,38,Male,Healthy,Good value - Healthy is great!
+U1221,AaharAlly_Main,36,Male,Snacks,Good value - Snacks is great!
+U1221,AaharAlly_Main,36,Male,Cheesy,Will order again - Cheesy is great!
+U1222,AaharAlly_Main,40,Male,Spicy,I loved it - Spicy is great!
+U1222,AaharAlly_Main,40,Male,Vegan,Highly recommended - Vegan is great!
+U1222,AaharAlly_Main,40,Male,Chinese,Good value - Chinese is great!
+U1222,AaharAlly_Main,40,Male,Seafood,Highly recommended - Seafood is great!
+U1223,AaharAlly_Main,40,Male,Chinese,Good value - Chinese is great!
+U1223,AaharAlly_Main,40,Male,Seafood,Amazing taste - Seafood is great!
+U1223,AaharAlly_Main,40,Male,Seafood,Good value - Seafood is great!
+U1224,AaharAlly_Main,33,Male,Seafood,I loved it - Seafood is great!
+U1224,AaharAlly_Main,33,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1224,AaharAlly_Main,33,Male,Chinese,Highly recommended - Chinese is great!
+U1224,AaharAlly_Main,33,Male,Healthy,Amazing taste - Healthy is great!
+U1225,AaharAlly_Main,40,Male,Spicy,Good value - Spicy is great!
+U1225,AaharAlly_Main,40,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1225,AaharAlly_Main,40,Male,Seafood,Will order again - Seafood is great!
+U1225,AaharAlly_Main,40,Male,Vegan,Delicious - Vegan is great!
+U1226,AaharAlly_Main,33,Male,Vegan,Good value - Vegan is great!
+U1226,AaharAlly_Main,33,Male,Seafood,Perfect flavor - Seafood is great!
+U1227,AaharAlly_Main,33,Male,Chinese,Perfect flavor - Chinese is great!
+U1228,AaharAlly_Main,40,Male,Vegan,Delicious - Vegan is great!
+U1228,AaharAlly_Main,40,Male,Seafood,Good value - Seafood is great!
+U1228,AaharAlly_Main,40,Male,Dessert,Perfect flavor - Dessert is great!
+U1228,AaharAlly_Main,40,Male,Spicy,Delicious - Spicy is great!
+U1229,AaharAlly_Main,45,Male,Seafood,Amazing taste - Seafood is great!
+U1229,AaharAlly_Main,45,Male,Seafood,Good value - Seafood is great!
+U1230,AaharAlly_Main,28,Male,Snacks,Will order again - Snacks is great!
+U1231,AaharAlly_Main,32,Male,Street Food,Amazing taste - Street Food is great!
+U1232,AaharAlly_Main,43,Male,Spicy,I loved it - Spicy is great!
+U1233,AaharAlly_Main,33,Male,Indian Curry,Delicious - Indian Curry is great!
+U1233,AaharAlly_Main,33,Male,Snacks,Highly recommended - Snacks is great!
+U1233,AaharAlly_Main,33,Male,Seafood,Good value - Seafood is great!
+U1234,AaharAlly_Main,41,Male,Spicy,Will order again - Spicy is great!
+U1234,AaharAlly_Main,41,Male,Spicy,Delicious - Spicy is great!
+U1234,AaharAlly_Main,41,Male,Chinese,Amazing taste - Chinese is great!
+U1235,AaharAlly_Main,28,Male,Chinese,Good value - Chinese is great!
+U1236,AaharAlly_Main,41,Male,Seafood,Amazing taste - Seafood is great!
+U1236,AaharAlly_Main,41,Male,Seafood,Good value - Seafood is great!
+U1236,AaharAlly_Main,41,Male,Chinese,Good value - Chinese is great!
+U1236,AaharAlly_Main,41,Male,Snacks,Delicious - Snacks is great!
+U1237,AaharAlly_Main,38,Male,Chinese,Will order again - Chinese is great!
+U1237,AaharAlly_Main,38,Male,Spicy,Highly recommended - Spicy is great!
+U1238,AaharAlly_Main,28,Male,Indian Curry,Good value - Indian Curry is great!
+U1239,AaharAlly_Main,30,Male,Seafood,Will order again - Seafood is great!
+U1239,AaharAlly_Main,30,Male,Seafood,Good value - Seafood is great!
+U1240,AaharAlly_Main,39,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1240,AaharAlly_Main,39,Male,Chinese,Will order again - Chinese is great!
+U1240,AaharAlly_Main,39,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1240,AaharAlly_Main,39,Male,Spicy,Good value - Spicy is great!
+U1241,AaharAlly_Main,40,Male,Seafood,Delicious - Seafood is great!
+U1242,AaharAlly_Main,30,Male,Chinese,Delicious - Chinese is great!
+U1243,AaharAlly_Main,35,Male,Spicy,Will order again - Spicy is great!
+U1243,AaharAlly_Main,35,Male,Seafood,Amazing taste - Seafood is great!
+U1244,AaharAlly_Main,31,Male,Indian Curry,Delicious - Indian Curry is great!
+U1244,AaharAlly_Main,31,Male,Cheesy,Delicious - Cheesy is great!
+U1244,AaharAlly_Main,31,Male,Seafood,I loved it - Seafood is great!
+U1244,AaharAlly_Main,31,Male,Snacks,Highly recommended - Snacks is great!
+U1245,AaharAlly_Main,26,Male,Spicy,I loved it - Spicy is great!
+U1245,AaharAlly_Main,26,Male,Snacks,Amazing taste - Snacks is great!
+U1245,AaharAlly_Main,26,Male,Seafood,Delicious - Seafood is great!
+U1245,AaharAlly_Main,26,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1246,AaharAlly_Main,42,Male,Chinese,Perfect flavor - Chinese is great!
+U1247,AaharAlly_Main,42,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1247,AaharAlly_Main,42,Male,Chinese,Will order again - Chinese is great!
+U1248,AaharAlly_Main,27,Male,Dessert,Delicious - Dessert is great!
+U1248,AaharAlly_Main,27,Male,Street Food,Highly recommended - Street Food is great!
+U1249,AaharAlly_Main,39,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1250,AaharAlly_Main,44,Male,Snacks,I loved it - Snacks is great!
+U1250,AaharAlly_Main,44,Male,Spicy,I loved it - Spicy is great!
+U1250,AaharAlly_Main,44,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1250,AaharAlly_Main,44,Male,Spicy,Perfect flavor - Spicy is great!
+U1251,AaharAlly_Main,42,Male,Spicy,I loved it - Spicy is great!
+U1251,AaharAlly_Main,42,Male,Indian Curry,I loved it - Indian Curry is great!
+U1251,AaharAlly_Main,42,Male,Indian Curry,Will order again - Indian Curry is great!
+U1251,AaharAlly_Main,42,Male,Chinese,I loved it - Chinese is great!
+U1252,AaharAlly_Main,26,Male,Spicy,Highly recommended - Spicy is great!
+U1253,AaharAlly_Main,32,Male,Chinese,I loved it - Chinese is great!
+U1253,AaharAlly_Main,32,Male,Chinese,Amazing taste - Chinese is great!
+U1254,AaharAlly_Main,28,Male,Seafood,Amazing taste - Seafood is great!
+U1254,AaharAlly_Main,28,Male,Seafood,Amazing taste - Seafood is great!
+U1254,AaharAlly_Main,28,Male,Chinese,Amazing taste - Chinese is great!
+U1254,AaharAlly_Main,28,Male,Spicy,I loved it - Spicy is great!
+U1255,AaharAlly_Main,43,Male,Chinese,Good value - Chinese is great!
+U1255,AaharAlly_Main,43,Male,Dessert,Will order again - Dessert is great!
+U1256,AaharAlly_Main,26,Male,Chinese,I loved it - Chinese is great!
+U1256,AaharAlly_Main,26,Male,Seafood,Perfect flavor - Seafood is great!
+U1257,AaharAlly_Main,32,Male,Chinese,Good value - Chinese is great!
+U1257,AaharAlly_Main,32,Male,Chinese,Delicious - Chinese is great!
+U1257,AaharAlly_Main,32,Male,Chinese,Good value - Chinese is great!
+U1258,AaharAlly_Main,44,Male,Healthy,Delicious - Healthy is great!
+U1258,AaharAlly_Main,44,Male,Indian Curry,Good value - Indian Curry is great!
+U1258,AaharAlly_Main,44,Male,Indian Curry,Will order again - Indian Curry is great!
+U1259,AaharAlly_Main,37,Male,Seafood,Delicious - Seafood is great!
+U1259,AaharAlly_Main,37,Male,Chinese,I loved it - Chinese is great!
+U1259,AaharAlly_Main,37,Male,Chinese,Amazing taste - Chinese is great!
+U1259,AaharAlly_Main,37,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1260,AaharAlly_Main,32,Male,Seafood,Good value - Seafood is great!
+U1261,AaharAlly_Main,29,Male,Indian Curry,Will order again - Indian Curry is great!
+U1261,AaharAlly_Main,29,Male,Seafood,Delicious - Seafood is great!
+U1261,AaharAlly_Main,29,Male,Chinese,Perfect flavor - Chinese is great!
+U1261,AaharAlly_Main,29,Male,Dessert,I loved it - Dessert is great!
+U1262,AaharAlly_Main,43,Male,Spicy,Highly recommended - Spicy is great!
+U1262,AaharAlly_Main,43,Male,Vegan,Perfect flavor - Vegan is great!
+U1262,AaharAlly_Main,43,Male,Spicy,Highly recommended - Spicy is great!
+U1263,AaharAlly_Main,27,Male,Chinese,Perfect flavor - Chinese is great!
+U1263,AaharAlly_Main,27,Male,Chinese,Delicious - Chinese is great!
+U1263,AaharAlly_Main,27,Male,Chinese,Good value - Chinese is great!
+U1263,AaharAlly_Main,27,Male,Indian Curry,I loved it - Indian Curry is great!
+U1264,AaharAlly_Main,27,Male,Spicy,Amazing taste - Spicy is great!
+U1264,AaharAlly_Main,27,Male,Healthy,I loved it - Healthy is great!
+U1265,AaharAlly_Main,43,Male,Seafood,Perfect flavor - Seafood is great!
+U1266,AaharAlly_Main,31,Male,Spicy,Highly recommended - Spicy is great!
+U1267,AaharAlly_Main,39,Male,Seafood,Delicious - Seafood is great!
+U1267,AaharAlly_Main,39,Male,Vegan,Good value - Vegan is great!
+U1267,AaharAlly_Main,39,Male,Seafood,Delicious - Seafood is great!
+U1268,AaharAlly_Main,40,Male,Spicy,Perfect flavor - Spicy is great!
+U1268,AaharAlly_Main,40,Male,Seafood,Good value - Seafood is great!
+U1269,AaharAlly_Main,43,Male,Seafood,I loved it - Seafood is great!
+U1269,AaharAlly_Main,43,Male,Chinese,Delicious - Chinese is great!
+U1269,AaharAlly_Main,43,Male,Seafood,Amazing taste - Seafood is great!
+U1270,AaharAlly_Main,33,Male,Chinese,Highly recommended - Chinese is great!
+U1270,AaharAlly_Main,33,Male,Spicy,Will order again - Spicy is great!
+U1270,AaharAlly_Main,33,Male,Street Food,I loved it - Street Food is great!
+U1271,AaharAlly_Main,29,Male,Indian Curry,Will order again - Indian Curry is great!
+U1271,AaharAlly_Main,29,Male,Spicy,Perfect flavor - Spicy is great!
+U1272,AaharAlly_Main,44,Male,Spicy,Good value - Spicy is great!
+U1272,AaharAlly_Main,44,Male,Chinese,Amazing taste - Chinese is great!
+U1273,AaharAlly_Main,30,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1273,AaharAlly_Main,30,Male,Chinese,Highly recommended - Chinese is great!
+U1274,AaharAlly_Main,45,Male,Seafood,Delicious - Seafood is great!
+U1274,AaharAlly_Main,45,Male,Indian Curry,Will order again - Indian Curry is great!
+U1275,AaharAlly_Main,34,Male,Seafood,Highly recommended - Seafood is great!
+U1276,AaharAlly_Main,29,Male,Spicy,Perfect flavor - Spicy is great!
+U1276,AaharAlly_Main,29,Male,Cheesy,I loved it - Cheesy is great!
+U1276,AaharAlly_Main,29,Male,Vegan,Good value - Vegan is great!
+U1277,AaharAlly_Main,38,Male,Seafood,Delicious - Seafood is great!
+U1277,AaharAlly_Main,38,Male,Spicy,Highly recommended - Spicy is great!
+U1277,AaharAlly_Main,38,Male,Spicy,Good value - Spicy is great!
+U1278,AaharAlly_Main,41,Male,Seafood,Amazing taste - Seafood is great!
+U1278,AaharAlly_Main,41,Male,Chinese,Perfect flavor - Chinese is great!
+U1279,AaharAlly_Main,33,Male,Chinese,Delicious - Chinese is great!
+U1280,AaharAlly_Main,33,Male,Chinese,Highly recommended - Chinese is great!
+U1280,AaharAlly_Main,33,Male,Chinese,Perfect flavor - Chinese is great!
+U1281,AaharAlly_Main,44,Male,Seafood,Perfect flavor - Seafood is great!
+U1281,AaharAlly_Main,44,Male,Spicy,Amazing taste - Spicy is great!
+U1282,AaharAlly_Main,33,Male,Spicy,Amazing taste - Spicy is great!
+U1282,AaharAlly_Main,33,Male,Seafood,Perfect flavor - Seafood is great!
+U1282,AaharAlly_Main,33,Male,Chinese,Good value - Chinese is great!
+U1282,AaharAlly_Main,33,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1283,AaharAlly_Main,45,Male,Cheesy,I loved it - Cheesy is great!
+U1283,AaharAlly_Main,45,Male,Spicy,Perfect flavor - Spicy is great!
+U1283,AaharAlly_Main,45,Male,Chinese,Amazing taste - Chinese is great!
+U1283,AaharAlly_Main,45,Male,Healthy,Good value - Healthy is great!
+U1284,AaharAlly_Main,39,Male,Spicy,I loved it - Spicy is great!
+U1284,AaharAlly_Main,39,Male,Seafood,Perfect flavor - Seafood is great!
+U1284,AaharAlly_Main,39,Male,Dessert,Good value - Dessert is great!
+U1285,AaharAlly_Main,34,Male,Chinese,Will order again - Chinese is great!
+U1285,AaharAlly_Main,34,Male,Seafood,Highly recommended - Seafood is great!
+U1286,AaharAlly_Main,42,Male,Spicy,Delicious - Spicy is great!
+U1286,AaharAlly_Main,42,Male,Indian Curry,I loved it - Indian Curry is great!
+U1286,AaharAlly_Main,42,Male,Indian Curry,Will order again - Indian Curry is great!
+U1287,AaharAlly_Main,40,Male,Seafood,Delicious - Seafood is great!
+U1287,AaharAlly_Main,40,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1287,AaharAlly_Main,40,Male,Seafood,Good value - Seafood is great!
+U1288,AaharAlly_Main,40,Male,Street Food,Delicious - Street Food is great!
+U1288,AaharAlly_Main,40,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1288,AaharAlly_Main,40,Male,Spicy,I loved it - Spicy is great!
+U1288,AaharAlly_Main,40,Male,Indian Curry,Delicious - Indian Curry is great!
+U1289,AaharAlly_Main,35,Male,Chinese,Good value - Chinese is great!
+U1289,AaharAlly_Main,35,Male,Spicy,Good value - Spicy is great!
+U1289,AaharAlly_Main,35,Male,Snacks,Highly recommended - Snacks is great!
+U1289,AaharAlly_Main,35,Male,Indian Curry,Good value - Indian Curry is great!
+U1290,AaharAlly_Main,27,Male,Indian Curry,Delicious - Indian Curry is great!
+U1291,AaharAlly_Main,36,Male,Seafood,Highly recommended - Seafood is great!
+U1291,AaharAlly_Main,36,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1291,AaharAlly_Main,36,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1292,AaharAlly_Main,30,Male,Healthy,Highly recommended - Healthy is great!
+U1293,AaharAlly_Main,36,Male,Spicy,Good value - Spicy is great!
+U1293,AaharAlly_Main,36,Male,Indian Curry,Delicious - Indian Curry is great!
+U1293,AaharAlly_Main,36,Male,Spicy,Highly recommended - Spicy is great!
+U1294,AaharAlly_Main,44,Male,Vegan,Highly recommended - Vegan is great!
+U1294,AaharAlly_Main,44,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1294,AaharAlly_Main,44,Male,Snacks,Amazing taste - Snacks is great!
+U1295,AaharAlly_Main,29,Male,Indian Curry,Will order again - Indian Curry is great!
+U1296,AaharAlly_Main,31,Male,Dessert,Good value - Dessert is great!
+U1296,AaharAlly_Main,31,Male,Seafood,Perfect flavor - Seafood is great!
+U1297,AaharAlly_Main,33,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1298,AaharAlly_Main,38,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1298,AaharAlly_Main,38,Male,Indian Curry,Good value - Indian Curry is great!
+U1299,AaharAlly_Main,43,Male,Chinese,Good value - Chinese is great!
+U1300,AaharAlly_Main,42,Female,Dessert,Highly recommended - Dessert is great!
+U1300,AaharAlly_Main,42,Female,Cheesy,I loved it - Cheesy is great!
+U1301,AaharAlly_Main,37,Female,Vegan,Will order again - Vegan is great!
+U1301,AaharAlly_Main,37,Female,Chinese,Perfect flavor - Chinese is great!
+U1302,AaharAlly_Main,39,Female,Dessert,Highly recommended - Dessert is great!
+U1302,AaharAlly_Main,39,Female,Vegan,I loved it - Vegan is great!
+U1302,AaharAlly_Main,39,Female,Healthy,Good value - Healthy is great!
+U1303,AaharAlly_Main,44,Female,Vegan,I loved it - Vegan is great!
+U1303,AaharAlly_Main,44,Female,Vegan,Perfect flavor - Vegan is great!
+U1303,AaharAlly_Main,44,Female,Street Food,Delicious - Street Food is great!
+U1304,AaharAlly_Main,39,Female,Vegan,Delicious - Vegan is great!
+U1305,AaharAlly_Main,32,Female,Indian Curry,Perfect flavor - Indian Curry is great!
+U1305,AaharAlly_Main,32,Female,Vegan,Good value - Vegan is great!
+U1305,AaharAlly_Main,32,Female,Snacks,I loved it - Snacks is great!
+U1305,AaharAlly_Main,32,Female,Healthy,Amazing taste - Healthy is great!
+U1306,AaharAlly_Main,43,Female,Indian Curry,Good value - Indian Curry is great!
+U1306,AaharAlly_Main,43,Female,Dessert,Will order again - Dessert is great!
+U1307,AaharAlly_Main,27,Female,Dessert,Perfect flavor - Dessert is great!
+U1307,AaharAlly_Main,27,Female,Chinese,Good value - Chinese is great!
+U1308,AaharAlly_Main,43,Female,Street Food,I loved it - Street Food is great!
+U1308,AaharAlly_Main,43,Female,Dessert,Perfect flavor - Dessert is great!
+U1308,AaharAlly_Main,43,Female,Chinese,Will order again - Chinese is great!
+U1309,AaharAlly_Main,31,Female,Dessert,Highly recommended - Dessert is great!
+U1309,AaharAlly_Main,31,Female,Dessert,Amazing taste - Dessert is great!
+U1309,AaharAlly_Main,31,Female,Dessert,Highly recommended - Dessert is great!
+U1309,AaharAlly_Main,31,Female,Vegan,Highly recommended - Vegan is great!
+U1310,AaharAlly_Main,41,Female,Dessert,Amazing taste - Dessert is great!
+U1310,AaharAlly_Main,41,Female,Vegan,I loved it - Vegan is great!
+U1310,AaharAlly_Main,41,Female,Healthy,Will order again - Healthy is great!
+U1310,AaharAlly_Main,41,Female,Dessert,Good value - Dessert is great!
+U1311,AaharAlly_Main,35,Female,Chinese,Amazing taste - Chinese is great!
+U1312,AaharAlly_Main,26,Female,Chinese,Perfect flavor - Chinese is great!
+U1312,AaharAlly_Main,26,Female,Healthy,Delicious - Healthy is great!
+U1313,AaharAlly_Main,45,Female,Chinese,Amazing taste - Chinese is great!
+U1314,AaharAlly_Main,29,Female,Vegan,Delicious - Vegan is great!
+U1315,AaharAlly_Main,27,Female,Chinese,Highly recommended - Chinese is great!
+U1316,AaharAlly_Main,37,Female,Healthy,Perfect flavor - Healthy is great!
+U1316,AaharAlly_Main,37,Female,Chinese,Delicious - Chinese is great!
+U1316,AaharAlly_Main,37,Female,Chinese,Delicious - Chinese is great!
+U1317,AaharAlly_Main,33,Female,Dessert,I loved it - Dessert is great!
+U1317,AaharAlly_Main,33,Female,Chinese,Amazing taste - Chinese is great!
+U1317,AaharAlly_Main,33,Female,Chinese,Highly recommended - Chinese is great!
+U1318,AaharAlly_Main,26,Female,Vegan,Delicious - Vegan is great!
+U1318,AaharAlly_Main,26,Female,Indian Curry,Will order again - Indian Curry is great!
+U1318,AaharAlly_Main,26,Female,Healthy,Delicious - Healthy is great!
+U1319,AaharAlly_Main,29,Female,Chinese,Amazing taste - Chinese is great!
+U1319,AaharAlly_Main,29,Female,Seafood,I loved it - Seafood is great!
+U1319,AaharAlly_Main,29,Female,Dessert,Good value - Dessert is great!
+U1319,AaharAlly_Main,29,Female,Vegan,I loved it - Vegan is great!
+U1320,AaharAlly_Main,31,Female,Chinese,Will order again - Chinese is great!
+U1320,AaharAlly_Main,31,Female,Seafood,Perfect flavor - Seafood is great!
+U1320,AaharAlly_Main,31,Female,Dessert,Perfect flavor - Dessert is great!
+U1321,AaharAlly_Main,36,Female,Vegan,Perfect flavor - Vegan is great!
+U1322,AaharAlly_Main,38,Female,Vegan,Delicious - Vegan is great!
+U1322,AaharAlly_Main,38,Female,Street Food,Good value - Street Food is great!
+U1323,AaharAlly_Main,45,Female,Chinese,I loved it - Chinese is great!
+U1324,AaharAlly_Main,26,Female,Chinese,I loved it - Chinese is great!
+U1324,AaharAlly_Main,26,Female,Seafood,Delicious - Seafood is great!
+U1325,AaharAlly_Main,38,Female,Dessert,Perfect flavor - Dessert is great!
+U1326,AaharAlly_Main,29,Female,Healthy,Will order again - Healthy is great!
+U1326,AaharAlly_Main,29,Female,Healthy,Perfect flavor - Healthy is great!
+U1327,AaharAlly_Main,45,Female,Spicy,Perfect flavor - Spicy is great!
+U1327,AaharAlly_Main,45,Female,Dessert,Highly recommended - Dessert is great!
+U1327,AaharAlly_Main,45,Female,Healthy,Highly recommended - Healthy is great!
+U1327,AaharAlly_Main,45,Female,Dessert,Delicious - Dessert is great!
+U1328,AaharAlly_Main,27,Female,Vegan,Perfect flavor - Vegan is great!
+U1328,AaharAlly_Main,27,Female,Snacks,Highly recommended - Snacks is great!
+U1328,AaharAlly_Main,27,Female,Snacks,Will order again - Snacks is great!
+U1329,AaharAlly_Main,26,Female,Healthy,Perfect flavor - Healthy is great!
+U1330,AaharAlly_Main,42,Female,Chinese,Perfect flavor - Chinese is great!
+U1330,AaharAlly_Main,42,Female,Healthy,I loved it - Healthy is great!
+U1330,AaharAlly_Main,42,Female,Chinese,Perfect flavor - Chinese is great!
+U1330,AaharAlly_Main,42,Female,Dessert,Will order again - Dessert is great!
+U1331,AaharAlly_Main,42,Female,Chinese,Amazing taste - Chinese is great!
+U1332,AaharAlly_Main,35,Female,Vegan,I loved it - Vegan is great!
+U1332,AaharAlly_Main,35,Female,Healthy,Good value - Healthy is great!
+U1333,AaharAlly_Main,37,Female,Healthy,Delicious - Healthy is great!
+U1334,AaharAlly_Main,26,Female,Chinese,Good value - Chinese is great!
+U1335,AaharAlly_Main,29,Female,Dessert,Amazing taste - Dessert is great!
+U1335,AaharAlly_Main,29,Female,Snacks,Good value - Snacks is great!
+U1335,AaharAlly_Main,29,Female,Cheesy,Good value - Cheesy is great!
+U1335,AaharAlly_Main,29,Female,Chinese,Will order again - Chinese is great!
+U1336,AaharAlly_Main,42,Female,Chinese,Amazing taste - Chinese is great!
+U1336,AaharAlly_Main,42,Female,Healthy,Amazing taste - Healthy is great!
+U1336,AaharAlly_Main,42,Female,Healthy,Will order again - Healthy is great!
+U1337,AaharAlly_Main,42,Female,Dessert,I loved it - Dessert is great!
+U1337,AaharAlly_Main,42,Female,Healthy,Amazing taste - Healthy is great!
+U1338,AaharAlly_Main,35,Female,Chinese,Highly recommended - Chinese is great!
+U1339,AaharAlly_Main,41,Female,Cheesy,Will order again - Cheesy is great!
+U1339,AaharAlly_Main,41,Female,Dessert,Good value - Dessert is great!
+U1339,AaharAlly_Main,41,Female,Healthy,Delicious - Healthy is great!
+U1339,AaharAlly_Main,41,Female,Vegan,Good value - Vegan is great!
+U1340,AaharAlly_Main,43,Female,Dessert,I loved it - Dessert is great!
+U1340,AaharAlly_Main,43,Female,Dessert,Delicious - Dessert is great!
+U1341,AaharAlly_Main,35,Female,Healthy,I loved it - Healthy is great!
+U1341,AaharAlly_Main,35,Female,Chinese,Amazing taste - Chinese is great!
+U1342,AaharAlly_Main,30,Female,Vegan,Highly recommended - Vegan is great!
+U1342,AaharAlly_Main,30,Female,Vegan,Delicious - Vegan is great!
+U1342,AaharAlly_Main,30,Female,Dessert,Perfect flavor - Dessert is great!
+U1342,AaharAlly_Main,30,Female,Vegan,Perfect flavor - Vegan is great!
+U1343,AaharAlly_Main,31,Female,Healthy,I loved it - Healthy is great!
+U1344,AaharAlly_Main,31,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1344,AaharAlly_Main,31,Female,Dessert,Will order again - Dessert is great!
+U1344,AaharAlly_Main,31,Female,Vegan,I loved it - Vegan is great!
+U1344,AaharAlly_Main,31,Female,Street Food,Perfect flavor - Street Food is great!
+U1345,AaharAlly_Main,38,Female,Street Food,Will order again - Street Food is great!
+U1346,AaharAlly_Main,26,Female,Seafood,Perfect flavor - Seafood is great!
+U1346,AaharAlly_Main,26,Female,Cheesy,Highly recommended - Cheesy is great!
+U1346,AaharAlly_Main,26,Female,Chinese,Good value - Chinese is great!
+U1347,AaharAlly_Main,40,Female,Healthy,I loved it - Healthy is great!
+U1347,AaharAlly_Main,40,Female,Healthy,Perfect flavor - Healthy is great!
+U1347,AaharAlly_Main,40,Female,Cheesy,Perfect flavor - Cheesy is great!
+U1347,AaharAlly_Main,40,Female,Vegan,Perfect flavor - Vegan is great!
+U1348,AaharAlly_Main,27,Female,Dessert,Amazing taste - Dessert is great!
+U1348,AaharAlly_Main,27,Female,Healthy,Delicious - Healthy is great!
+U1349,AaharAlly_Main,37,Female,Cheesy,Good value - Cheesy is great!
+U1350,AaharAlly_Main,26,Female,Seafood,Amazing taste - Seafood is great!
+U1350,AaharAlly_Main,26,Female,Chinese,Perfect flavor - Chinese is great!
+U1350,AaharAlly_Main,26,Female,Vegan,Perfect flavor - Vegan is great!
+U1351,AaharAlly_Main,42,Female,Vegan,Good value - Vegan is great!
+U1351,AaharAlly_Main,42,Female,Healthy,I loved it - Healthy is great!
+U1352,AaharAlly_Main,34,Female,Chinese,I loved it - Chinese is great!
+U1353,AaharAlly_Main,26,Female,Vegan,I loved it - Vegan is great!
+U1353,AaharAlly_Main,26,Female,Chinese,Perfect flavor - Chinese is great!
+U1354,AaharAlly_Main,27,Female,Dessert,Perfect flavor - Dessert is great!
+U1355,AaharAlly_Main,26,Female,Street Food,Will order again - Street Food is great!
+U1355,AaharAlly_Main,26,Female,Chinese,I loved it - Chinese is great!
+U1355,AaharAlly_Main,26,Female,Seafood,Delicious - Seafood is great!
+U1355,AaharAlly_Main,26,Female,Seafood,Amazing taste - Seafood is great!
+U1356,AaharAlly_Main,36,Female,Chinese,I loved it - Chinese is great!
+U1357,AaharAlly_Main,27,Female,Seafood,Amazing taste - Seafood is great!
+U1357,AaharAlly_Main,27,Female,Dessert,Highly recommended - Dessert is great!
+U1357,AaharAlly_Main,27,Female,Vegan,Perfect flavor - Vegan is great!
+U1358,AaharAlly_Main,38,Female,Dessert,Highly recommended - Dessert is great!
+U1358,AaharAlly_Main,38,Female,Chinese,Good value - Chinese is great!
+U1358,AaharAlly_Main,38,Female,Chinese,Delicious - Chinese is great!
+U1359,AaharAlly_Main,30,Female,Dessert,Highly recommended - Dessert is great!
+U1359,AaharAlly_Main,30,Female,Spicy,Amazing taste - Spicy is great!
+U1359,AaharAlly_Main,30,Female,Healthy,Will order again - Healthy is great!
+U1359,AaharAlly_Main,30,Female,Chinese,I loved it - Chinese is great!
+U1360,AaharAlly_Main,27,Female,Chinese,Good value - Chinese is great!
+U1360,AaharAlly_Main,27,Female,Snacks,I loved it - Snacks is great!
+U1360,AaharAlly_Main,27,Female,Healthy,Highly recommended - Healthy is great!
+U1361,AaharAlly_Main,45,Female,Vegan,Will order again - Vegan is great!
+U1361,AaharAlly_Main,45,Female,Dessert,I loved it - Dessert is great!
+U1361,AaharAlly_Main,45,Female,Dessert,Will order again - Dessert is great!
+U1361,AaharAlly_Main,45,Female,Snacks,Delicious - Snacks is great!
+U1362,AaharAlly_Main,33,Female,Dessert,Good value - Dessert is great!
+U1362,AaharAlly_Main,33,Female,Vegan,Good value - Vegan is great!
+U1363,AaharAlly_Main,36,Female,Snacks,Delicious - Snacks is great!
+U1364,AaharAlly_Main,42,Female,Chinese,Perfect flavor - Chinese is great!
+U1365,AaharAlly_Main,45,Female,Chinese,Amazing taste - Chinese is great!
+U1366,AaharAlly_Main,28,Female,Vegan,Will order again - Vegan is great!
+U1366,AaharAlly_Main,28,Female,Chinese,Good value - Chinese is great!
+U1366,AaharAlly_Main,28,Female,Dessert,Perfect flavor - Dessert is great!
+U1366,AaharAlly_Main,28,Female,Dessert,Will order again - Dessert is great!
+U1367,AaharAlly_Main,30,Female,Spicy,Perfect flavor - Spicy is great!
+U1367,AaharAlly_Main,30,Female,Healthy,I loved it - Healthy is great!
+U1368,AaharAlly_Main,28,Female,Chinese,I loved it - Chinese is great!
+U1368,AaharAlly_Main,28,Female,Chinese,Will order again - Chinese is great!
+U1369,AaharAlly_Main,32,Female,Vegan,Will order again - Vegan is great!
+U1369,AaharAlly_Main,32,Female,Seafood,Delicious - Seafood is great!
+U1369,AaharAlly_Main,32,Female,Vegan,Perfect flavor - Vegan is great!
+U1369,AaharAlly_Main,32,Female,Chinese,Delicious - Chinese is great!
+U1370,AaharAlly_Main,45,Female,Chinese,Highly recommended - Chinese is great!
+U1370,AaharAlly_Main,45,Female,Healthy,Amazing taste - Healthy is great!
+U1370,AaharAlly_Main,45,Female,Healthy,Good value - Healthy is great!
+U1371,AaharAlly_Main,44,Female,Healthy,Highly recommended - Healthy is great!
+U1371,AaharAlly_Main,44,Female,Healthy,Delicious - Healthy is great!
+U1371,AaharAlly_Main,44,Female,Healthy,I loved it - Healthy is great!
+U1371,AaharAlly_Main,44,Female,Vegan,Delicious - Vegan is great!
+U1372,AaharAlly_Main,33,Female,Healthy,Will order again - Healthy is great!
+U1372,AaharAlly_Main,33,Female,Vegan,Amazing taste - Vegan is great!
+U1373,AaharAlly_Main,45,Female,Chinese,Good value - Chinese is great!
+U1373,AaharAlly_Main,45,Female,Dessert,Good value - Dessert is great!
+U1373,AaharAlly_Main,45,Female,Dessert,I loved it - Dessert is great!
+U1374,AaharAlly_Main,34,Female,Healthy,Good value - Healthy is great!
+U1374,AaharAlly_Main,34,Female,Snacks,Perfect flavor - Snacks is great!
+U1374,AaharAlly_Main,34,Female,Dessert,Amazing taste - Dessert is great!
+U1374,AaharAlly_Main,34,Female,Vegan,Perfect flavor - Vegan is great!
+U1375,AaharAlly_Main,26,Female,Vegan,Will order again - Vegan is great!
+U1375,AaharAlly_Main,26,Female,Healthy,I loved it - Healthy is great!
+U1375,AaharAlly_Main,26,Female,Vegan,Amazing taste - Vegan is great!
+U1376,AaharAlly_Main,38,Female,Chinese,Amazing taste - Chinese is great!
+U1376,AaharAlly_Main,38,Female,Dessert,Will order again - Dessert is great!
+U1376,AaharAlly_Main,38,Female,Dessert,Delicious - Dessert is great!
+U1377,AaharAlly_Main,38,Female,Vegan,Good value - Vegan is great!
+U1377,AaharAlly_Main,38,Female,Vegan,Amazing taste - Vegan is great!
+U1378,AaharAlly_Main,26,Female,Indian Curry,Perfect flavor - Indian Curry is great!
+U1378,AaharAlly_Main,26,Female,Healthy,Amazing taste - Healthy is great!
+U1378,AaharAlly_Main,26,Female,Healthy,Good value - Healthy is great!
+U1378,AaharAlly_Main,26,Female,Chinese,Will order again - Chinese is great!
+U1379,AaharAlly_Main,26,Female,Seafood,Perfect flavor - Seafood is great!
+U1379,AaharAlly_Main,26,Female,Chinese,Will order again - Chinese is great!
+U1379,AaharAlly_Main,26,Female,Vegan,Good value - Vegan is great!
+U1379,AaharAlly_Main,26,Female,Street Food,I loved it - Street Food is great!
+U1380,AaharAlly_Main,38,Female,Chinese,Will order again - Chinese is great!
+U1380,AaharAlly_Main,38,Female,Healthy,Amazing taste - Healthy is great!
+U1381,AaharAlly_Main,29,Female,Chinese,Delicious - Chinese is great!
+U1381,AaharAlly_Main,29,Female,Chinese,Delicious - Chinese is great!
+U1381,AaharAlly_Main,29,Female,Indian Curry,Delicious - Indian Curry is great!
+U1382,AaharAlly_Main,36,Female,Vegan,Highly recommended - Vegan is great!
+U1382,AaharAlly_Main,36,Female,Healthy,Delicious - Healthy is great!
+U1383,AaharAlly_Main,34,Female,Healthy,Amazing taste - Healthy is great!
+U1384,AaharAlly_Main,37,Female,Chinese,Delicious - Chinese is great!
+U1384,AaharAlly_Main,37,Female,Snacks,Perfect flavor - Snacks is great!
+U1384,AaharAlly_Main,37,Female,Chinese,Good value - Chinese is great!
+U1384,AaharAlly_Main,37,Female,Dessert,I loved it - Dessert is great!
+U1385,AaharAlly_Main,34,Female,Healthy,Highly recommended - Healthy is great!
+U1386,AaharAlly_Main,40,Female,Healthy,Amazing taste - Healthy is great!
+U1387,AaharAlly_Main,36,Female,Indian Curry,Will order again - Indian Curry is great!
+U1387,AaharAlly_Main,36,Female,Dessert,Perfect flavor - Dessert is great!
+U1388,AaharAlly_Main,45,Female,Dessert,Good value - Dessert is great!
+U1388,AaharAlly_Main,45,Female,Vegan,Will order again - Vegan is great!
+U1388,AaharAlly_Main,45,Female,Healthy,Delicious - Healthy is great!
+U1389,AaharAlly_Main,36,Female,Healthy,Delicious - Healthy is great!
+U1390,AaharAlly_Main,38,Female,Healthy,Perfect flavor - Healthy is great!
+U1391,AaharAlly_Main,39,Female,Healthy,Amazing taste - Healthy is great!
+U1391,AaharAlly_Main,39,Female,Healthy,Good value - Healthy is great!
+U1391,AaharAlly_Main,39,Female,Seafood,Amazing taste - Seafood is great!
+U1392,AaharAlly_Main,34,Female,Healthy,Perfect flavor - Healthy is great!
+U1392,AaharAlly_Main,34,Female,Chinese,Perfect flavor - Chinese is great!
+U1392,AaharAlly_Main,34,Female,Dessert,Highly recommended - Dessert is great!
+U1393,AaharAlly_Main,44,Female,Healthy,Perfect flavor - Healthy is great!
+U1393,AaharAlly_Main,44,Female,Snacks,Will order again - Snacks is great!
+U1393,AaharAlly_Main,44,Female,Dessert,I loved it - Dessert is great!
+U1393,AaharAlly_Main,44,Female,Cheesy,Will order again - Cheesy is great!
+U1394,AaharAlly_Main,35,Female,Chinese,I loved it - Chinese is great!
+U1395,AaharAlly_Main,26,Female,Chinese,Will order again - Chinese is great!
+U1395,AaharAlly_Main,26,Female,Spicy,Will order again - Spicy is great!
+U1395,AaharAlly_Main,26,Female,Vegan,I loved it - Vegan is great!
+U1396,AaharAlly_Main,26,Female,Dessert,Amazing taste - Dessert is great!
+U1396,AaharAlly_Main,26,Female,Dessert,Will order again - Dessert is great!
+U1396,AaharAlly_Main,26,Female,Snacks,Amazing taste - Snacks is great!
+U1397,AaharAlly_Main,39,Female,Healthy,Good value - Healthy is great!
+U1397,AaharAlly_Main,39,Female,Healthy,Good value - Healthy is great!
+U1397,AaharAlly_Main,39,Female,Vegan,Will order again - Vegan is great!
+U1398,AaharAlly_Main,38,Female,Vegan,Good value - Vegan is great!
+U1398,AaharAlly_Main,38,Female,Chinese,I loved it - Chinese is great!
+U1399,AaharAlly_Main,42,Female,Healthy,Highly recommended - Healthy is great!
+U1399,AaharAlly_Main,42,Female,Cheesy,Will order again - Cheesy is great!
+U1400,AaharAlly_Main,66,Male,Healthy,Will order again - Healthy is great!
+U1400,AaharAlly_Main,66,Male,Seafood,Highly recommended - Seafood is great!
+U1400,AaharAlly_Main,66,Male,Snacks,Good value - Snacks is great!
+U1401,AaharAlly_Main,66,Male,Healthy,Perfect flavor - Healthy is great!
+U1401,AaharAlly_Main,66,Male,Spicy,Amazing taste - Spicy is great!
+U1401,AaharAlly_Main,66,Male,Indian Curry,I loved it - Indian Curry is great!
+U1402,AaharAlly_Main,61,Male,Healthy,Perfect flavor - Healthy is great!
+U1402,AaharAlly_Main,61,Male,Indian Curry,I loved it - Indian Curry is great!
+U1402,AaharAlly_Main,61,Male,Spicy,Perfect flavor - Spicy is great!
+U1403,AaharAlly_Main,51,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1403,AaharAlly_Main,51,Male,Seafood,I loved it - Seafood is great!
+U1403,AaharAlly_Main,51,Male,Spicy,Will order again - Spicy is great!
+U1404,AaharAlly_Main,79,Male,Healthy,I loved it - Healthy is great!
+U1404,AaharAlly_Main,79,Male,Healthy,Amazing taste - Healthy is great!
+U1405,AaharAlly_Main,46,Male,Seafood,Good value - Seafood is great!
+U1405,AaharAlly_Main,46,Male,Indian Curry,Delicious - Indian Curry is great!
+U1405,AaharAlly_Main,46,Male,Seafood,Delicious - Seafood is great!
+U1406,AaharAlly_Main,64,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1407,AaharAlly_Main,58,Male,Seafood,I loved it - Seafood is great!
+U1408,AaharAlly_Main,57,Male,Spicy,Perfect flavor - Spicy is great!
+U1408,AaharAlly_Main,57,Male,Healthy,Will order again - Healthy is great!
+U1408,AaharAlly_Main,57,Male,Seafood,Will order again - Seafood is great!
+U1408,AaharAlly_Main,57,Male,Seafood,I loved it - Seafood is great!
+U1409,AaharAlly_Main,77,Male,Healthy,Good value - Healthy is great!
+U1409,AaharAlly_Main,77,Male,Healthy,Perfect flavor - Healthy is great!
+U1410,AaharAlly_Main,55,Male,Street Food,Highly recommended - Street Food is great!
+U1411,AaharAlly_Main,69,Male,Seafood,Perfect flavor - Seafood is great!
+U1412,AaharAlly_Main,47,Male,Healthy,Will order again - Healthy is great!
+U1412,AaharAlly_Main,47,Male,Healthy,Good value - Healthy is great!
+U1413,AaharAlly_Main,73,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1413,AaharAlly_Main,73,Male,Snacks,I loved it - Snacks is great!
+U1414,AaharAlly_Main,76,Male,Seafood,Highly recommended - Seafood is great!
+U1415,AaharAlly_Main,79,Male,Indian Curry,Will order again - Indian Curry is great!
+U1415,AaharAlly_Main,79,Male,Seafood,Amazing taste - Seafood is great!
+U1416,AaharAlly_Main,79,Male,Healthy,Highly recommended - Healthy is great!
+U1416,AaharAlly_Main,79,Male,Seafood,Will order again - Seafood is great!
+U1417,AaharAlly_Main,72,Male,Healthy,I loved it - Healthy is great!
+U1418,AaharAlly_Main,54,Male,Cheesy,I loved it - Cheesy is great!
+U1419,AaharAlly_Main,62,Male,Indian Curry,Good value - Indian Curry is great!
+U1419,AaharAlly_Main,62,Male,Indian Curry,Delicious - Indian Curry is great!
+U1420,AaharAlly_Main,75,Male,Snacks,Amazing taste - Snacks is great!
+U1420,AaharAlly_Main,75,Male,Healthy,Will order again - Healthy is great!
+U1421,AaharAlly_Main,66,Male,Seafood,Highly recommended - Seafood is great!
+U1421,AaharAlly_Main,66,Male,Healthy,Highly recommended - Healthy is great!
+U1422,AaharAlly_Main,69,Male,Dessert,Highly recommended - Dessert is great!
+U1422,AaharAlly_Main,69,Male,Indian Curry,I loved it - Indian Curry is great!
+U1422,AaharAlly_Main,69,Male,Healthy,Amazing taste - Healthy is great!
+U1423,AaharAlly_Main,72,Male,Dessert,Will order again - Dessert is great!
+U1423,AaharAlly_Main,72,Male,Seafood,Highly recommended - Seafood is great!
+U1423,AaharAlly_Main,72,Male,Chinese,Will order again - Chinese is great!
+U1423,AaharAlly_Main,72,Male,Healthy,Amazing taste - Healthy is great!
+U1424,AaharAlly_Main,57,Male,Chinese,Delicious - Chinese is great!
+U1425,AaharAlly_Main,70,Male,Seafood,Good value - Seafood is great!
+U1425,AaharAlly_Main,70,Male,Healthy,Will order again - Healthy is great!
+U1426,AaharAlly_Main,57,Male,Healthy,Perfect flavor - Healthy is great!
+U1426,AaharAlly_Main,57,Male,Cheesy,Good value - Cheesy is great!
+U1426,AaharAlly_Main,57,Male,Dessert,Will order again - Dessert is great!
+U1427,AaharAlly_Main,71,Male,Seafood,Amazing taste - Seafood is great!
+U1427,AaharAlly_Main,71,Male,Healthy,Good value - Healthy is great!
+U1427,AaharAlly_Main,71,Male,Indian Curry,I loved it - Indian Curry is great!
+U1427,AaharAlly_Main,71,Male,Healthy,Highly recommended - Healthy is great!
+U1428,AaharAlly_Main,47,Male,Seafood,Highly recommended - Seafood is great!
+U1428,AaharAlly_Main,47,Male,Seafood,Highly recommended - Seafood is great!
+U1428,AaharAlly_Main,47,Male,Seafood,Highly recommended - Seafood is great!
+U1429,AaharAlly_Main,75,Male,Seafood,Perfect flavor - Seafood is great!
+U1429,AaharAlly_Main,75,Male,Indian Curry,I loved it - Indian Curry is great!
+U1429,AaharAlly_Main,75,Male,Healthy,Amazing taste - Healthy is great!
+U1429,AaharAlly_Main,75,Male,Healthy,Good value - Healthy is great!
+U1430,AaharAlly_Main,80,Male,Seafood,Amazing taste - Seafood is great!
+U1430,AaharAlly_Main,80,Male,Healthy,Amazing taste - Healthy is great!
+U1431,AaharAlly_Main,66,Male,Seafood,I loved it - Seafood is great!
+U1432,AaharAlly_Main,73,Male,Seafood,Perfect flavor - Seafood is great!
+U1432,AaharAlly_Main,73,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1432,AaharAlly_Main,73,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1432,AaharAlly_Main,73,Male,Indian Curry,Will order again - Indian Curry is great!
+U1433,AaharAlly_Main,77,Male,Seafood,Perfect flavor - Seafood is great!
+U1433,AaharAlly_Main,77,Male,Dessert,I loved it - Dessert is great!
+U1433,AaharAlly_Main,77,Male,Cheesy,Highly recommended - Cheesy is great!
+U1433,AaharAlly_Main,77,Male,Indian Curry,Good value - Indian Curry is great!
+U1434,AaharAlly_Main,75,Male,Healthy,Will order again - Healthy is great!
+U1434,AaharAlly_Main,75,Male,Seafood,Perfect flavor - Seafood is great!
+U1434,AaharAlly_Main,75,Male,Healthy,Perfect flavor - Healthy is great!
+U1434,AaharAlly_Main,75,Male,Healthy,Good value - Healthy is great!
+U1435,AaharAlly_Main,77,Male,Seafood,Delicious - Seafood is great!
+U1435,AaharAlly_Main,77,Male,Vegan,Will order again - Vegan is great!
+U1435,AaharAlly_Main,77,Male,Healthy,Highly recommended - Healthy is great!
+U1435,AaharAlly_Main,77,Male,Healthy,Will order again - Healthy is great!
+U1436,AaharAlly_Main,72,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1437,AaharAlly_Main,58,Male,Healthy,Perfect flavor - Healthy is great!
+U1438,AaharAlly_Main,64,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1438,AaharAlly_Main,64,Male,Seafood,Good value - Seafood is great!
+U1438,AaharAlly_Main,64,Male,Cheesy,Will order again - Cheesy is great!
+U1438,AaharAlly_Main,64,Male,Spicy,Will order again - Spicy is great!
+U1439,AaharAlly_Main,57,Male,Seafood,Highly recommended - Seafood is great!
+U1440,AaharAlly_Main,77,Male,Vegan,Highly recommended - Vegan is great!
+U1440,AaharAlly_Main,77,Male,Healthy,Good value - Healthy is great!
+U1441,AaharAlly_Main,46,Male,Healthy,Good value - Healthy is great!
+U1442,AaharAlly_Main,70,Male,Healthy,I loved it - Healthy is great!
+U1442,AaharAlly_Main,70,Male,Indian Curry,Delicious - Indian Curry is great!
+U1442,AaharAlly_Main,70,Male,Healthy,I loved it - Healthy is great!
+U1442,AaharAlly_Main,70,Male,Healthy,Delicious - Healthy is great!
+U1443,AaharAlly_Main,56,Male,Healthy,Perfect flavor - Healthy is great!
+U1443,AaharAlly_Main,56,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1444,AaharAlly_Main,57,Male,Seafood,Delicious - Seafood is great!
+U1444,AaharAlly_Main,57,Male,Healthy,Highly recommended - Healthy is great!
+U1444,AaharAlly_Main,57,Male,Seafood,I loved it - Seafood is great!
+U1445,AaharAlly_Main,71,Male,Indian Curry,Good value - Indian Curry is great!
+U1445,AaharAlly_Main,71,Male,Vegan,Amazing taste - Vegan is great!
+U1446,AaharAlly_Main,50,Male,Healthy,Will order again - Healthy is great!
+U1447,AaharAlly_Main,49,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1447,AaharAlly_Main,49,Male,Healthy,I loved it - Healthy is great!
+U1447,AaharAlly_Main,49,Male,Indian Curry,Will order again - Indian Curry is great!
+U1447,AaharAlly_Main,49,Male,Indian Curry,Delicious - Indian Curry is great!
+U1448,AaharAlly_Main,58,Male,Snacks,Will order again - Snacks is great!
+U1448,AaharAlly_Main,58,Male,Seafood,Perfect flavor - Seafood is great!
+U1449,AaharAlly_Main,60,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1450,AaharAlly_Main,66,Male,Healthy,I loved it - Healthy is great!
+U1450,AaharAlly_Main,66,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1450,AaharAlly_Main,66,Male,Indian Curry,Delicious - Indian Curry is great!
+U1450,AaharAlly_Main,66,Male,Street Food,Amazing taste - Street Food is great!
+U1451,AaharAlly_Main,70,Male,Street Food,Highly recommended - Street Food is great!
+U1451,AaharAlly_Main,70,Male,Cheesy,Amazing taste - Cheesy is great!
+U1452,AaharAlly_Main,50,Male,Healthy,Will order again - Healthy is great!
+U1452,AaharAlly_Main,50,Male,Street Food,Delicious - Street Food is great!
+U1453,AaharAlly_Main,64,Male,Seafood,I loved it - Seafood is great!
+U1454,AaharAlly_Main,79,Male,Healthy,Perfect flavor - Healthy is great!
+U1455,AaharAlly_Main,70,Male,Snacks,Good value - Snacks is great!
+U1455,AaharAlly_Main,70,Male,Indian Curry,Will order again - Indian Curry is great!
+U1456,AaharAlly_Main,64,Male,Indian Curry,Good value - Indian Curry is great!
+U1456,AaharAlly_Main,64,Male,Healthy,Delicious - Healthy is great!
+U1457,AaharAlly_Main,57,Male,Healthy,I loved it - Healthy is great!
+U1457,AaharAlly_Main,57,Male,Chinese,Perfect flavor - Chinese is great!
+U1458,AaharAlly_Main,55,Male,Seafood,Amazing taste - Seafood is great!
+U1459,AaharAlly_Main,49,Male,Seafood,Will order again - Seafood is great!
+U1459,AaharAlly_Main,49,Male,Indian Curry,I loved it - Indian Curry is great!
+U1459,AaharAlly_Main,49,Male,Seafood,I loved it - Seafood is great!
+U1459,AaharAlly_Main,49,Male,Chinese,Highly recommended - Chinese is great!
+U1460,AaharAlly_Main,53,Male,Healthy,Highly recommended - Healthy is great!
+U1461,AaharAlly_Main,59,Male,Indian Curry,Good value - Indian Curry is great!
+U1461,AaharAlly_Main,59,Male,Indian Curry,Will order again - Indian Curry is great!
+U1462,AaharAlly_Main,78,Male,Healthy,Perfect flavor - Healthy is great!
+U1463,AaharAlly_Main,56,Male,Healthy,Will order again - Healthy is great!
+U1463,AaharAlly_Main,56,Male,Seafood,Will order again - Seafood is great!
+U1463,AaharAlly_Main,56,Male,Seafood,Will order again - Seafood is great!
+U1463,AaharAlly_Main,56,Male,Seafood,Will order again - Seafood is great!
+U1464,AaharAlly_Main,66,Male,Seafood,Delicious - Seafood is great!
+U1464,AaharAlly_Main,66,Male,Healthy,Perfect flavor - Healthy is great!
+U1465,AaharAlly_Main,49,Male,Seafood,Delicious - Seafood is great!
+U1465,AaharAlly_Main,49,Male,Spicy,Perfect flavor - Spicy is great!
+U1465,AaharAlly_Main,49,Male,Healthy,I loved it - Healthy is great!
+U1465,AaharAlly_Main,49,Male,Indian Curry,Delicious - Indian Curry is great!
+U1466,AaharAlly_Main,73,Male,Seafood,I loved it - Seafood is great!
+U1466,AaharAlly_Main,73,Male,Chinese,Highly recommended - Chinese is great!
+U1467,AaharAlly_Main,59,Male,Indian Curry,I loved it - Indian Curry is great!
+U1467,AaharAlly_Main,59,Male,Cheesy,Will order again - Cheesy is great!
+U1467,AaharAlly_Main,59,Male,Indian Curry,I loved it - Indian Curry is great!
+U1468,AaharAlly_Main,51,Male,Healthy,Amazing taste - Healthy is great!
+U1468,AaharAlly_Main,51,Male,Healthy,I loved it - Healthy is great!
+U1469,AaharAlly_Main,47,Male,Healthy,Highly recommended - Healthy is great!
+U1469,AaharAlly_Main,47,Male,Indian Curry,I loved it - Indian Curry is great!
+U1469,AaharAlly_Main,47,Male,Indian Curry,Good value - Indian Curry is great!
+U1469,AaharAlly_Main,47,Male,Healthy,Highly recommended - Healthy is great!
+U1470,AaharAlly_Main,57,Male,Healthy,Delicious - Healthy is great!
+U1470,AaharAlly_Main,57,Male,Spicy,I loved it - Spicy is great!
+U1470,AaharAlly_Main,57,Male,Spicy,Will order again - Spicy is great!
+U1470,AaharAlly_Main,57,Male,Healthy,Perfect flavor - Healthy is great!
+U1471,AaharAlly_Main,46,Male,Seafood,Will order again - Seafood is great!
+U1472,AaharAlly_Main,77,Male,Healthy,Perfect flavor - Healthy is great!
+U1472,AaharAlly_Main,77,Male,Healthy,Good value - Healthy is great!
+U1472,AaharAlly_Main,77,Male,Indian Curry,Good value - Indian Curry is great!
+U1473,AaharAlly_Main,64,Male,Seafood,Amazing taste - Seafood is great!
+U1473,AaharAlly_Main,64,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1474,AaharAlly_Main,77,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1475,AaharAlly_Main,46,Male,Seafood,Perfect flavor - Seafood is great!
+U1475,AaharAlly_Main,46,Male,Chinese,Delicious - Chinese is great!
+U1475,AaharAlly_Main,46,Male,Healthy,Good value - Healthy is great!
+U1476,AaharAlly_Main,73,Male,Seafood,Will order again - Seafood is great!
+U1476,AaharAlly_Main,73,Male,Healthy,I loved it - Healthy is great!
+U1476,AaharAlly_Main,73,Male,Indian Curry,Good value - Indian Curry is great!
+U1476,AaharAlly_Main,73,Male,Healthy,Good value - Healthy is great!
+U1477,AaharAlly_Main,46,Male,Healthy,I loved it - Healthy is great!
+U1477,AaharAlly_Main,46,Male,Healthy,Good value - Healthy is great!
+U1477,AaharAlly_Main,46,Male,Indian Curry,I loved it - Indian Curry is great!
+U1477,AaharAlly_Main,46,Male,Healthy,Delicious - Healthy is great!
+U1478,AaharAlly_Main,53,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1478,AaharAlly_Main,53,Male,Spicy,Good value - Spicy is great!
+U1478,AaharAlly_Main,53,Male,Seafood,Will order again - Seafood is great!
+U1478,AaharAlly_Main,53,Male,Indian Curry,Will order again - Indian Curry is great!
+U1479,AaharAlly_Main,56,Male,Seafood,Amazing taste - Seafood is great!
+U1479,AaharAlly_Main,56,Male,Indian Curry,Good value - Indian Curry is great!
+U1479,AaharAlly_Main,56,Male,Seafood,I loved it - Seafood is great!
+U1479,AaharAlly_Main,56,Male,Indian Curry,I loved it - Indian Curry is great!
+U1480,AaharAlly_Main,48,Male,Healthy,Amazing taste - Healthy is great!
+U1481,AaharAlly_Main,54,Male,Healthy,I loved it - Healthy is great!
+U1481,AaharAlly_Main,54,Male,Indian Curry,Good value - Indian Curry is great!
+U1481,AaharAlly_Main,54,Male,Seafood,Perfect flavor - Seafood is great!
+U1481,AaharAlly_Main,54,Male,Healthy,I loved it - Healthy is great!
+U1482,AaharAlly_Main,75,Male,Indian Curry,Good value - Indian Curry is great!
+U1482,AaharAlly_Main,75,Male,Healthy,Amazing taste - Healthy is great!
+U1482,AaharAlly_Main,75,Male,Seafood,Highly recommended - Seafood is great!
+U1483,AaharAlly_Main,79,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1483,AaharAlly_Main,79,Male,Healthy,Highly recommended - Healthy is great!
+U1483,AaharAlly_Main,79,Male,Healthy,Will order again - Healthy is great!
+U1484,AaharAlly_Main,64,Male,Healthy,Amazing taste - Healthy is great!
+U1485,AaharAlly_Main,76,Male,Healthy,I loved it - Healthy is great!
+U1485,AaharAlly_Main,76,Male,Healthy,Delicious - Healthy is great!
+U1486,AaharAlly_Main,61,Male,Healthy,Perfect flavor - Healthy is great!
+U1487,AaharAlly_Main,49,Male,Indian Curry,I loved it - Indian Curry is great!
+U1488,AaharAlly_Main,56,Male,Cheesy,Amazing taste - Cheesy is great!
+U1488,AaharAlly_Main,56,Male,Healthy,Delicious - Healthy is great!
+U1489,AaharAlly_Main,73,Male,Seafood,Highly recommended - Seafood is great!
+U1489,AaharAlly_Main,73,Male,Healthy,Will order again - Healthy is great!
+U1489,AaharAlly_Main,73,Male,Indian Curry,I loved it - Indian Curry is great!
+U1490,AaharAlly_Main,64,Male,Dessert,Perfect flavor - Dessert is great!
+U1490,AaharAlly_Main,64,Male,Seafood,I loved it - Seafood is great!
+U1490,AaharAlly_Main,64,Male,Seafood,Will order again - Seafood is great!
+U1491,AaharAlly_Main,51,Male,Indian Curry,I loved it - Indian Curry is great!
+U1492,AaharAlly_Main,61,Male,Cheesy,Highly recommended - Cheesy is great!
+U1492,AaharAlly_Main,61,Male,Indian Curry,Good value - Indian Curry is great!
+U1492,AaharAlly_Main,61,Male,Indian Curry,Perfect flavor - Indian Curry is great!
+U1493,AaharAlly_Main,48,Male,Healthy,Perfect flavor - Healthy is great!
+U1493,AaharAlly_Main,48,Male,Seafood,Will order again - Seafood is great!
+U1493,AaharAlly_Main,48,Male,Chinese,Delicious - Chinese is great!
+U1493,AaharAlly_Main,48,Male,Indian Curry,Highly recommended - Indian Curry is great!
+U1494,AaharAlly_Main,74,Male,Healthy,Perfect flavor - Healthy is great!
+U1494,AaharAlly_Main,74,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1494,AaharAlly_Main,74,Male,Healthy,Perfect flavor - Healthy is great!
+U1494,AaharAlly_Main,74,Male,Healthy,Highly recommended - Healthy is great!
+U1495,AaharAlly_Main,51,Male,Seafood,Good value - Seafood is great!
+U1495,AaharAlly_Main,51,Male,Indian Curry,Amazing taste - Indian Curry is great!
+U1495,AaharAlly_Main,51,Male,Healthy,Perfect flavor - Healthy is great!
+U1495,AaharAlly_Main,51,Male,Indian Curry,Delicious - Indian Curry is great!
+U1496,AaharAlly_Main,58,Male,Indian Curry,Will order again - Indian Curry is great!
+U1496,AaharAlly_Main,58,Male,Dessert,Amazing taste - Dessert is great!
+U1496,AaharAlly_Main,58,Male,Healthy,Perfect flavor - Healthy is great!
+U1496,AaharAlly_Main,58,Male,Healthy,Highly recommended - Healthy is great!
+U1497,AaharAlly_Main,55,Male,Cheesy,Good value - Cheesy is great!
+U1497,AaharAlly_Main,55,Male,Healthy,I loved it - Healthy is great!
+U1497,AaharAlly_Main,55,Male,Street Food,Highly recommended - Street Food is great!
+U1497,AaharAlly_Main,55,Male,Seafood,Delicious - Seafood is great!
+U1498,AaharAlly_Main,77,Male,Healthy,Perfect flavor - Healthy is great!
+U1499,AaharAlly_Main,67,Male,Indian Curry,I loved it - Indian Curry is great!
+U1499,AaharAlly_Main,67,Male,Spicy,Highly recommended - Spicy is great!
+U1499,AaharAlly_Main,67,Male,Healthy,Amazing taste - Healthy is great!
+U1499,AaharAlly_Main,67,Male,Vegan,I loved it - Vegan is great!
+U1500,AaharAlly_Main,50,Female,Vegan,Will order again - Vegan is great!
+U1500,AaharAlly_Main,50,Female,Vegan,I loved it - Vegan is great!
+U1501,AaharAlly_Main,56,Female,Vegan,I loved it - Vegan is great!
+U1501,AaharAlly_Main,56,Female,Healthy,Amazing taste - Healthy is great!
+U1501,AaharAlly_Main,56,Female,Vegan,I loved it - Vegan is great!
+U1501,AaharAlly_Main,56,Female,Seafood,I loved it - Seafood is great!
+U1502,AaharAlly_Main,76,Female,Vegan,Highly recommended - Vegan is great!
+U1502,AaharAlly_Main,76,Female,Indian Curry,I loved it - Indian Curry is great!
+U1503,AaharAlly_Main,78,Female,Healthy,Good value - Healthy is great!
+U1503,AaharAlly_Main,78,Female,Vegan,I loved it - Vegan is great!
+U1504,AaharAlly_Main,76,Female,Dessert,Delicious - Dessert is great!
+U1504,AaharAlly_Main,76,Female,Vegan,Delicious - Vegan is great!
+U1504,AaharAlly_Main,76,Female,Vegan,I loved it - Vegan is great!
+U1504,AaharAlly_Main,76,Female,Vegan,I loved it - Vegan is great!
+U1505,AaharAlly_Main,65,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1505,AaharAlly_Main,65,Female,Vegan,Delicious - Vegan is great!
+U1505,AaharAlly_Main,65,Female,Indian Curry,Good value - Indian Curry is great!
+U1506,AaharAlly_Main,47,Female,Vegan,Good value - Vegan is great!
+U1507,AaharAlly_Main,76,Female,Indian Curry,Good value - Indian Curry is great!
+U1508,AaharAlly_Main,62,Female,Vegan,I loved it - Vegan is great!
+U1508,AaharAlly_Main,62,Female,Vegan,Perfect flavor - Vegan is great!
+U1509,AaharAlly_Main,56,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1509,AaharAlly_Main,56,Female,Indian Curry,Delicious - Indian Curry is great!
+U1510,AaharAlly_Main,56,Female,Healthy,I loved it - Healthy is great!
+U1511,AaharAlly_Main,77,Female,Vegan,Amazing taste - Vegan is great!
+U1511,AaharAlly_Main,77,Female,Chinese,Delicious - Chinese is great!
+U1511,AaharAlly_Main,77,Female,Vegan,Amazing taste - Vegan is great!
+U1512,AaharAlly_Main,80,Female,Vegan,Amazing taste - Vegan is great!
+U1512,AaharAlly_Main,80,Female,Street Food,Will order again - Street Food is great!
+U1513,AaharAlly_Main,68,Female,Healthy,Will order again - Healthy is great!
+U1513,AaharAlly_Main,68,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1514,AaharAlly_Main,58,Female,Dessert,I loved it - Dessert is great!
+U1515,AaharAlly_Main,52,Female,Vegan,Delicious - Vegan is great!
+U1515,AaharAlly_Main,52,Female,Vegan,I loved it - Vegan is great!
+U1516,AaharAlly_Main,67,Female,Vegan,Delicious - Vegan is great!
+U1516,AaharAlly_Main,67,Female,Healthy,Good value - Healthy is great!
+U1516,AaharAlly_Main,67,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1517,AaharAlly_Main,46,Female,Healthy,Perfect flavor - Healthy is great!
+U1517,AaharAlly_Main,46,Female,Healthy,Good value - Healthy is great!
+U1517,AaharAlly_Main,46,Female,Dessert,I loved it - Dessert is great!
+U1518,AaharAlly_Main,59,Female,Indian Curry,Perfect flavor - Indian Curry is great!
+U1519,AaharAlly_Main,56,Female,Indian Curry,Delicious - Indian Curry is great!
+U1519,AaharAlly_Main,56,Female,Snacks,Highly recommended - Snacks is great!
+U1519,AaharAlly_Main,56,Female,Snacks,Will order again - Snacks is great!
+U1520,AaharAlly_Main,51,Female,Street Food,Will order again - Street Food is great!
+U1520,AaharAlly_Main,51,Female,Healthy,Amazing taste - Healthy is great!
+U1520,AaharAlly_Main,51,Female,Cheesy,Highly recommended - Cheesy is great!
+U1521,AaharAlly_Main,80,Female,Healthy,Good value - Healthy is great!
+U1521,AaharAlly_Main,80,Female,Vegan,Delicious - Vegan is great!
+U1522,AaharAlly_Main,47,Female,Chinese,Highly recommended - Chinese is great!
+U1522,AaharAlly_Main,47,Female,Indian Curry,I loved it - Indian Curry is great!
+U1522,AaharAlly_Main,47,Female,Vegan,I loved it - Vegan is great!
+U1523,AaharAlly_Main,60,Female,Healthy,Good value - Healthy is great!
+U1524,AaharAlly_Main,72,Female,Snacks,Perfect flavor - Snacks is great!
+U1524,AaharAlly_Main,72,Female,Spicy,Perfect flavor - Spicy is great!
+U1525,AaharAlly_Main,78,Female,Vegan,Will order again - Vegan is great!
+U1525,AaharAlly_Main,78,Female,Cheesy,Amazing taste - Cheesy is great!
+U1525,AaharAlly_Main,78,Female,Healthy,Highly recommended - Healthy is great!
+U1526,AaharAlly_Main,68,Female,Indian Curry,I loved it - Indian Curry is great!
+U1526,AaharAlly_Main,68,Female,Vegan,Will order again - Vegan is great!
+U1526,AaharAlly_Main,68,Female,Seafood,Highly recommended - Seafood is great!
+U1526,AaharAlly_Main,68,Female,Vegan,Highly recommended - Vegan is great!
+U1527,AaharAlly_Main,62,Female,Indian Curry,Good value - Indian Curry is great!
+U1527,AaharAlly_Main,62,Female,Healthy,Delicious - Healthy is great!
+U1528,AaharAlly_Main,78,Female,Vegan,Will order again - Vegan is great!
+U1528,AaharAlly_Main,78,Female,Vegan,Highly recommended - Vegan is great!
+U1528,AaharAlly_Main,78,Female,Indian Curry,I loved it - Indian Curry is great!
+U1529,AaharAlly_Main,65,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1529,AaharAlly_Main,65,Female,Healthy,Highly recommended - Healthy is great!
+U1529,AaharAlly_Main,65,Female,Healthy,Good value - Healthy is great!
+U1530,AaharAlly_Main,65,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1530,AaharAlly_Main,65,Female,Healthy,Delicious - Healthy is great!
+U1530,AaharAlly_Main,65,Female,Healthy,I loved it - Healthy is great!
+U1530,AaharAlly_Main,65,Female,Indian Curry,Good value - Indian Curry is great!
+U1531,AaharAlly_Main,80,Female,Indian Curry,Delicious - Indian Curry is great!
+U1531,AaharAlly_Main,80,Female,Indian Curry,Delicious - Indian Curry is great!
+U1532,AaharAlly_Main,48,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1532,AaharAlly_Main,48,Female,Vegan,Perfect flavor - Vegan is great!
+U1533,AaharAlly_Main,64,Female,Indian Curry,Delicious - Indian Curry is great!
+U1533,AaharAlly_Main,64,Female,Street Food,Amazing taste - Street Food is great!
+U1533,AaharAlly_Main,64,Female,Indian Curry,I loved it - Indian Curry is great!
+U1534,AaharAlly_Main,75,Female,Indian Curry,I loved it - Indian Curry is great!
+U1535,AaharAlly_Main,78,Female,Cheesy,Amazing taste - Cheesy is great!
+U1535,AaharAlly_Main,78,Female,Indian Curry,Perfect flavor - Indian Curry is great!
+U1535,AaharAlly_Main,78,Female,Healthy,Good value - Healthy is great!
+U1536,AaharAlly_Main,49,Female,Street Food,Good value - Street Food is great!
+U1536,AaharAlly_Main,49,Female,Seafood,Delicious - Seafood is great!
+U1536,AaharAlly_Main,49,Female,Indian Curry,I loved it - Indian Curry is great!
+U1536,AaharAlly_Main,49,Female,Vegan,I loved it - Vegan is great!
+U1537,AaharAlly_Main,65,Female,Vegan,Will order again - Vegan is great!
+U1537,AaharAlly_Main,65,Female,Vegan,Will order again - Vegan is great!
+U1537,AaharAlly_Main,65,Female,Indian Curry,Perfect flavor - Indian Curry is great!
+U1537,AaharAlly_Main,65,Female,Healthy,Will order again - Healthy is great!
+U1538,AaharAlly_Main,80,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1539,AaharAlly_Main,73,Female,Vegan,Amazing taste - Vegan is great!
+U1540,AaharAlly_Main,63,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1540,AaharAlly_Main,63,Female,Street Food,Delicious - Street Food is great!
+U1540,AaharAlly_Main,63,Female,Snacks,Amazing taste - Snacks is great!
+U1540,AaharAlly_Main,63,Female,Healthy,Perfect flavor - Healthy is great!
+U1541,AaharAlly_Main,47,Female,Healthy,I loved it - Healthy is great!
+U1542,AaharAlly_Main,65,Female,Snacks,Highly recommended - Snacks is great!
+U1543,AaharAlly_Main,48,Female,Vegan,Perfect flavor - Vegan is great!
+U1544,AaharAlly_Main,56,Female,Indian Curry,Delicious - Indian Curry is great!
+U1544,AaharAlly_Main,56,Female,Indian Curry,Will order again - Indian Curry is great!
+U1544,AaharAlly_Main,56,Female,Spicy,Delicious - Spicy is great!
+U1545,AaharAlly_Main,62,Female,Spicy,Highly recommended - Spicy is great!
+U1545,AaharAlly_Main,62,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1545,AaharAlly_Main,62,Female,Indian Curry,Delicious - Indian Curry is great!
+U1546,AaharAlly_Main,78,Female,Dessert,Perfect flavor - Dessert is great!
+U1546,AaharAlly_Main,78,Female,Chinese,Delicious - Chinese is great!
+U1546,AaharAlly_Main,78,Female,Street Food,Will order again - Street Food is great!
+U1546,AaharAlly_Main,78,Female,Indian Curry,Good value - Indian Curry is great!
+U1547,AaharAlly_Main,68,Female,Healthy,Good value - Healthy is great!
+U1547,AaharAlly_Main,68,Female,Vegan,Highly recommended - Vegan is great!
+U1547,AaharAlly_Main,68,Female,Indian Curry,Delicious - Indian Curry is great!
+U1548,AaharAlly_Main,61,Female,Vegan,Highly recommended - Vegan is great!
+U1548,AaharAlly_Main,61,Female,Seafood,Perfect flavor - Seafood is great!
+U1548,AaharAlly_Main,61,Female,Snacks,I loved it - Snacks is great!
+U1549,AaharAlly_Main,55,Female,Vegan,Amazing taste - Vegan is great!
+U1549,AaharAlly_Main,55,Female,Healthy,Good value - Healthy is great!
+U1550,AaharAlly_Main,48,Female,Healthy,Highly recommended - Healthy is great!
+U1550,AaharAlly_Main,48,Female,Vegan,Will order again - Vegan is great!
+U1550,AaharAlly_Main,48,Female,Vegan,Will order again - Vegan is great!
+U1551,AaharAlly_Main,72,Female,Seafood,Good value - Seafood is great!
+U1551,AaharAlly_Main,72,Female,Vegan,Will order again - Vegan is great!
+U1552,AaharAlly_Main,52,Female,Vegan,Highly recommended - Vegan is great!
+U1552,AaharAlly_Main,52,Female,Cheesy,Highly recommended - Cheesy is great!
+U1552,AaharAlly_Main,52,Female,Healthy,Good value - Healthy is great!
+U1552,AaharAlly_Main,52,Female,Healthy,Will order again - Healthy is great!
+U1553,AaharAlly_Main,67,Female,Vegan,Perfect flavor - Vegan is great!
+U1554,AaharAlly_Main,78,Female,Vegan,Amazing taste - Vegan is great!
+U1554,AaharAlly_Main,78,Female,Healthy,Amazing taste - Healthy is great!
+U1555,AaharAlly_Main,53,Female,Healthy,Delicious - Healthy is great!
+U1555,AaharAlly_Main,53,Female,Healthy,I loved it - Healthy is great!
+U1556,AaharAlly_Main,78,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1557,AaharAlly_Main,50,Female,Healthy,Delicious - Healthy is great!
+U1557,AaharAlly_Main,50,Female,Healthy,Good value - Healthy is great!
+U1557,AaharAlly_Main,50,Female,Indian Curry,Good value - Indian Curry is great!
+U1557,AaharAlly_Main,50,Female,Healthy,Perfect flavor - Healthy is great!
+U1558,AaharAlly_Main,46,Female,Healthy,I loved it - Healthy is great!
+U1558,AaharAlly_Main,46,Female,Indian Curry,Will order again - Indian Curry is great!
+U1559,AaharAlly_Main,76,Female,Snacks,Amazing taste - Snacks is great!
+U1560,AaharAlly_Main,58,Female,Vegan,Amazing taste - Vegan is great!
+U1560,AaharAlly_Main,58,Female,Spicy,Amazing taste - Spicy is great!
+U1560,AaharAlly_Main,58,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1560,AaharAlly_Main,58,Female,Vegan,Delicious - Vegan is great!
+U1561,AaharAlly_Main,69,Female,Healthy,Good value - Healthy is great!
+U1561,AaharAlly_Main,69,Female,Indian Curry,Good value - Indian Curry is great!
+U1561,AaharAlly_Main,69,Female,Cheesy,I loved it - Cheesy is great!
+U1561,AaharAlly_Main,69,Female,Dessert,Highly recommended - Dessert is great!
+U1562,AaharAlly_Main,54,Female,Healthy,I loved it - Healthy is great!
+U1563,AaharAlly_Main,48,Female,Healthy,I loved it - Healthy is great!
+U1563,AaharAlly_Main,48,Female,Healthy,Will order again - Healthy is great!
+U1563,AaharAlly_Main,48,Female,Chinese,Perfect flavor - Chinese is great!
+U1564,AaharAlly_Main,46,Female,Healthy,Will order again - Healthy is great!
+U1565,AaharAlly_Main,56,Female,Vegan,Will order again - Vegan is great!
+U1565,AaharAlly_Main,56,Female,Seafood,Will order again - Seafood is great!
+U1565,AaharAlly_Main,56,Female,Vegan,Highly recommended - Vegan is great!
+U1566,AaharAlly_Main,77,Female,Vegan,Will order again - Vegan is great!
+U1567,AaharAlly_Main,80,Female,Vegan,Highly recommended - Vegan is great!
+U1567,AaharAlly_Main,80,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1568,AaharAlly_Main,51,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1568,AaharAlly_Main,51,Female,Cheesy,Will order again - Cheesy is great!
+U1568,AaharAlly_Main,51,Female,Vegan,Perfect flavor - Vegan is great!
+U1568,AaharAlly_Main,51,Female,Dessert,Delicious - Dessert is great!
+U1569,AaharAlly_Main,64,Female,Healthy,Highly recommended - Healthy is great!
+U1569,AaharAlly_Main,64,Female,Indian Curry,Good value - Indian Curry is great!
+U1569,AaharAlly_Main,64,Female,Spicy,Will order again - Spicy is great!
+U1569,AaharAlly_Main,64,Female,Healthy,I loved it - Healthy is great!
+U1570,AaharAlly_Main,80,Female,Snacks,Good value - Snacks is great!
+U1570,AaharAlly_Main,80,Female,Healthy,Will order again - Healthy is great!
+U1570,AaharAlly_Main,80,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1570,AaharAlly_Main,80,Female,Vegan,Good value - Vegan is great!
+U1571,AaharAlly_Main,60,Female,Healthy,Delicious - Healthy is great!
+U1571,AaharAlly_Main,60,Female,Vegan,Good value - Vegan is great!
+U1571,AaharAlly_Main,60,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1572,AaharAlly_Main,46,Female,Indian Curry,Delicious - Indian Curry is great!
+U1572,AaharAlly_Main,46,Female,Dessert,Perfect flavor - Dessert is great!
+U1572,AaharAlly_Main,46,Female,Cheesy,Delicious - Cheesy is great!
+U1573,AaharAlly_Main,57,Female,Vegan,Good value - Vegan is great!
+U1573,AaharAlly_Main,57,Female,Snacks,Delicious - Snacks is great!
+U1574,AaharAlly_Main,70,Female,Vegan,Good value - Vegan is great!
+U1574,AaharAlly_Main,70,Female,Indian Curry,I loved it - Indian Curry is great!
+U1575,AaharAlly_Main,74,Female,Vegan,I loved it - Vegan is great!
+U1575,AaharAlly_Main,74,Female,Street Food,Good value - Street Food is great!
+U1576,AaharAlly_Main,57,Female,Spicy,Amazing taste - Spicy is great!
+U1576,AaharAlly_Main,57,Female,Vegan,I loved it - Vegan is great!
+U1576,AaharAlly_Main,57,Female,Healthy,I loved it - Healthy is great!
+U1577,AaharAlly_Main,61,Female,Snacks,I loved it - Snacks is great!
+U1577,AaharAlly_Main,61,Female,Snacks,Highly recommended - Snacks is great!
+U1577,AaharAlly_Main,61,Female,Healthy,I loved it - Healthy is great!
+U1578,AaharAlly_Main,54,Female,Healthy,Amazing taste - Healthy is great!
+U1579,AaharAlly_Main,46,Female,Snacks,Will order again - Snacks is great!
+U1580,AaharAlly_Main,58,Female,Seafood,Will order again - Seafood is great!
+U1580,AaharAlly_Main,58,Female,Vegan,Highly recommended - Vegan is great!
+U1580,AaharAlly_Main,58,Female,Healthy,Good value - Healthy is great!
+U1580,AaharAlly_Main,58,Female,Vegan,Amazing taste - Vegan is great!
+U1581,AaharAlly_Main,47,Female,Chinese,Delicious - Chinese is great!
+U1582,AaharAlly_Main,54,Female,Healthy,I loved it - Healthy is great!
+U1582,AaharAlly_Main,54,Female,Vegan,I loved it - Vegan is great!
+U1582,AaharAlly_Main,54,Female,Vegan,Delicious - Vegan is great!
+U1582,AaharAlly_Main,54,Female,Indian Curry,Will order again - Indian Curry is great!
+U1583,AaharAlly_Main,61,Female,Healthy,Good value - Healthy is great!
+U1583,AaharAlly_Main,61,Female,Vegan,Good value - Vegan is great!
+U1583,AaharAlly_Main,61,Female,Indian Curry,Good value - Indian Curry is great!
+U1584,AaharAlly_Main,59,Female,Snacks,Highly recommended - Snacks is great!
+U1584,AaharAlly_Main,59,Female,Snacks,Will order again - Snacks is great!
+U1585,AaharAlly_Main,59,Female,Indian Curry,Perfect flavor - Indian Curry is great!
+U1585,AaharAlly_Main,59,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1586,AaharAlly_Main,66,Female,Indian Curry,Delicious - Indian Curry is great!
+U1586,AaharAlly_Main,66,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1586,AaharAlly_Main,66,Female,Spicy,Amazing taste - Spicy is great!
+U1587,AaharAlly_Main,50,Female,Street Food,Delicious - Street Food is great!
+U1588,AaharAlly_Main,58,Female,Vegan,Delicious - Vegan is great!
+U1588,AaharAlly_Main,58,Female,Healthy,Perfect flavor - Healthy is great!
+U1589,AaharAlly_Main,76,Female,Street Food,Amazing taste - Street Food is great!
+U1589,AaharAlly_Main,76,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1589,AaharAlly_Main,76,Female,Vegan,Good value - Vegan is great!
+U1590,AaharAlly_Main,75,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1590,AaharAlly_Main,75,Female,Vegan,I loved it - Vegan is great!
+U1590,AaharAlly_Main,75,Female,Vegan,Perfect flavor - Vegan is great!
+U1590,AaharAlly_Main,75,Female,Healthy,Highly recommended - Healthy is great!
+U1591,AaharAlly_Main,54,Female,Indian Curry,Delicious - Indian Curry is great!
+U1591,AaharAlly_Main,54,Female,Indian Curry,Delicious - Indian Curry is great!
+U1591,AaharAlly_Main,54,Female,Healthy,Good value - Healthy is great!
+U1591,AaharAlly_Main,54,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1592,AaharAlly_Main,56,Female,Vegan,Good value - Vegan is great!
+U1592,AaharAlly_Main,56,Female,Vegan,Amazing taste - Vegan is great!
+U1592,AaharAlly_Main,56,Female,Vegan,I loved it - Vegan is great!
+U1592,AaharAlly_Main,56,Female,Healthy,Delicious - Healthy is great!
+U1593,AaharAlly_Main,71,Female,Street Food,I loved it - Street Food is great!
+U1594,AaharAlly_Main,79,Female,Seafood,Delicious - Seafood is great!
+U1594,AaharAlly_Main,79,Female,Vegan,Perfect flavor - Vegan is great!
+U1594,AaharAlly_Main,79,Female,Indian Curry,Amazing taste - Indian Curry is great!
+U1594,AaharAlly_Main,79,Female,Vegan,Amazing taste - Vegan is great!
+U1595,AaharAlly_Main,80,Female,Seafood,Perfect flavor - Seafood is great!
+U1596,AaharAlly_Main,58,Female,Vegan,Good value - Vegan is great!
+U1596,AaharAlly_Main,58,Female,Seafood,Amazing taste - Seafood is great!
+U1596,AaharAlly_Main,58,Female,Healthy,Amazing taste - Healthy is great!
+U1597,AaharAlly_Main,77,Female,Dessert,Good value - Dessert is great!
+U1597,AaharAlly_Main,77,Female,Healthy,Will order again - Healthy is great!
+U1597,AaharAlly_Main,77,Female,Dessert,Good value - Dessert is great!
+U1597,AaharAlly_Main,77,Female,Vegan,Delicious - Vegan is great!
+U1598,AaharAlly_Main,60,Female,Indian Curry,Highly recommended - Indian Curry is great!
+U1599,AaharAlly_Main,79,Female,Vegan,Good value - Vegan is great!
+U1599,AaharAlly_Main,79,Female,Vegan,Highly recommended - Vegan is great!
+U1599,AaharAlly_Main,79,Female,Indian Curry,Amazing taste - Indian Curry is great!

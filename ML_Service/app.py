@@ -12,7 +12,8 @@ from sklearn.metrics import classification_report
 from surprise import Dataset, Reader, SVD
 from surprise.model_selection import cross_validate
 from pymongo import MongoClient
-import json, random, warnings, pickle, os
+import json, random, warnings
+import os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -58,50 +59,6 @@ max_seq_len = 100
 
 
 ### Utilities
-def save_models_to_db():
-    print("Saving models to DB...")
-    # Save standard sklearn objects
-    data = {
-        'imputer': pickle.dumps(imputer) if imputer else None,
-        'scaler': pickle.dumps(scaler) if scaler else None,
-        'gender_le': pickle.dumps(gender_le) if gender_le else None,
-        'meal_ohe': pickle.dumps(meal_ohe) if meal_ohe else None,
-        'pca': pickle.dumps(pca) if pca else None,
-        'kmeans': pickle.dumps(kmeans) if kmeans else None,
-        'svd': pickle.dumps(svd) if svd else None,
-         # Light objects
-        'user_index': user_index,
-        'item_index': item_index,
-        'item_reverse_index': item_reverse_index
-    }
-    models_col.delete_many({'model': 'core_components'})
-    models_col.insert_one({'model': 'core_components', 'data': data})
-    print("Core models saved to DB.")
-
-def load_models_from_db():
-    global imputer, scaler, gender_le, meal_ohe, pca, kmeans, svd, user_index, item_index, item_reverse_index
-    
-    print("Loading models from DB...")
-    doc = models_col.find_one({'model': 'core_components'})
-    if not doc:
-        print("No core models found in DB.")
-        return False
-        
-    data = doc['data']
-    imputer = pickle.loads(data['imputer']) if data.get('imputer') else None
-    scaler = pickle.loads(data['scaler']) if data.get('scaler') else None
-    gender_le = pickle.loads(data['gender_le']) if data.get('gender_le') else None
-    meal_ohe = pickle.loads(data['meal_ohe']) if data.get('meal_ohe') else None
-    pca = pickle.loads(data['pca']) if data.get('pca') else None
-    kmeans = pickle.loads(data['kmeans']) if data.get('kmeans') else None
-    svd = pickle.loads(data['svd']) if data.get('svd') else None
-    
-    user_index = data.get('user_index')
-    item_index = data.get('item_index')
-    item_reverse_index = data.get('item_reverse_index')
-    
-    print("Core models loaded from DB.")
-    return True
 def to_jsonable(d):
     return json.loads(json.dumps(d, default=str))
 
@@ -344,133 +301,74 @@ def apply_sentiment_rerank(candidates, cat_sent_map):
 
 
 ### ---- API ----
+
+# Persistence Hooks
+def save_models_to_db():
+    print("Saving models to DB...")
+    data = {
+        'imputer': pickle.dumps(imputer) if imputer else None,
+        'scaler': pickle.dumps(scaler) if scaler else None,
+        'gender_le': pickle.dumps(gender_le) if gender_le else None,
+        'meal_ohe': pickle.dumps(meal_ohe) if meal_ohe else None,
+        'pca': pickle.dumps(pca) if pca else None,
+        'kmeans': pickle.dumps(kmeans) if kmeans else None,
+        'svd': pickle.dumps(svd) if svd else None,
+        'cat_sentiment': (models_col.find_one({'model':'metadata'}) or {}).get('cat_sentiment')
+    }
+    models_col.delete_many({'model': 'core_components'})
+    models_col.insert_one({'model': 'core_components', 'data': data})
+    print("Models saved.")
+
+def load_models_from_db():
+    global imputer, scaler, gender_le, meal_ohe, pca, kmeans, svd
+    doc = models_col.find_one({'model': 'core_components'})
+    if doc:
+        data = doc['data']
+        imputer = pickle.loads(data['imputer']) if data.get('imputer') else None
+        scaler = pickle.loads(data['scaler']) if data.get('scaler') else None
+        gender_le = pickle.loads(data['gender_le']) if data.get('gender_le') else None
+        meal_ohe = pickle.loads(data['meal_ohe']) if data.get('meal_ohe') else None
+        pca = pickle.loads(data['pca']) if data.get('pca') else None
+        kmeans = pickle.loads(data['kmeans']) if data.get('kmeans') else None
+        svd = pickle.loads(data['svd']) if data.get('svd') else None
+        print("Models loaded from DB.")
+
 @app.route('/api/train', methods=['POST'])
 def api_train():
     try:
+        # Robust JSON handling
         data = request.get_json(force=True, silent=True) or {}
         p = data.get('csv_path', 'train_data.csv')
 
-        # Try reading with header first
         df = pd.read_csv(p)
-        if df.columns[0].lower() not in ["user_id", "uid"]:
-            df = pd.read_csv(p, header=None,
-                             names=["user_id","restaurant_id","age","gender","meal_category","review"])
-
-        # Clean types
+        # Type cleaning...
         df['gender'] = df['gender'].apply(standardize_gender)
         df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(df['age'].median())
 
         df = fit_preprocess_cluster(df)
-        a = fit_apriori_cluster_popularity(df)
-        b = fit_restaurant_popularity(df)
-        c = fit_sentiment(df)
-        d = fit_cf(df)
-        e = fit_lstm_sentiment(df)
-        
-        save_models_to_db() # Save to DB
+        fit_apriori_cluster_popularity(df)
+        fit_restaurant_popularity(df)
+        fit_sentiment(df)
+        fit_cf(df)
+        fit_lstm_sentiment(df)
 
         cat_sent = build_sentiment_category_scores(df)
-        
-        save_models_to_db() # Save to DB
-
         models_col.delete_many({'model':'metadata'})
         models_col.insert_one({'model': 'metadata', 'cat_sentiment': cat_sent})
+        
+        save_models_to_db() # Critical for Persistence
 
-        return jsonify({
-            'success': True,
-            'clusters': a,
-            'restaurants': b,
-            'sentiment_logreg': c,
-            'cf': d,
-            'sentiment_lstm': e
-        })
-
+        return jsonify({'success': True, 'message': 'Trained and Saved'})
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)})
 
-
-
-@app.route('/api/store_order', methods=['POST'])
-def api_store_order():
-    try:
-        data = request.get_json()
-        data['user_id'] = str(data.get('user_id'))
-        data['restaurant_id'] = str(data.get('restaurant_id'))
-        data['gender'] = standardize_gender(data.get('gender', "other"))
-        orders_col.insert_one(data)
-        users_col.update_one({'user_id': data['user_id']},
-            {'$set':{'user_id':data['user_id'],'age':data.get('age'),'gender':data['gender']}}, upsert=True)
-        return jsonify({'success':True})
-    except Exception as e:
-        return jsonify({'success':False,'error':str(e)})
-
-
-@app.route('/api/sentiment/predict', methods=['POST'])
-def api_sentiment_predict():
-    try:
-        texts = request.json.get('texts', [])
-        probs = predict_sentiment(texts)
-        return jsonify({'success':True,'positive_probabilities': probs.tolist()})
-    except Exception as e:
-        return jsonify({'success':False,'error':str(e)})
-
-
-@app.route('/api/sentiment/predict_lstm', methods=['POST'])
-def api_sentiment_predict_lstm():
-    try:
-        texts = request.json.get('texts', [])
-        probs = predict_lstm_sentiment(texts)
-        return jsonify({'success':True,'positive_probabilities_lstm': probs.tolist()})
-    except Exception as e:
-        return jsonify({'success':False,'error':str(e)})
-
-
-@app.route('/api/recommend', methods=['POST'])
-def api_recommend():
-    try:
-        payload = request.get_json()
-        user_id = str(payload.get('user_id'))
-        age = float(payload.get('age'))
-        gender = standardize_gender(payload.get('gender'))
-        restaurant_id = str(payload.get('restaurant_id'))
-
-        c = age_gender_to_cluster(age, gender)
-        cluster_cats = pop_for_cluster(c)
-        rest_cats = pop_for_restaurant(restaurant_id)
-        hist = top_history_categories(user_id, n=10)
-
-        cat_sent_map = (models_col.find_one({'model':'metadata'}) or {}).get('cat_sentiment', {})
-        new_user = orders_col.count_documents({'user_id': user_id}) == 0
-
-        if new_user:
-            cand = list(set(cluster_cats) | set(rest_cats))
-            random.shuffle(cand)
-            cand = apply_sentiment_rerank(cand, cat_sent_map)
-            cand = rank_with_cf(user_id, cand)
-            return jsonify({'success':True,'user_type':'new','cluster':c,'recommendations':cand[:10]})
-        else:
-            base = list(dict.fromkeys(hist + cluster_cats + rest_cats))
-            if hist: base = [x for x in base if x in set(hist + cluster_cats)]
-            random.shuffle(base)
-            base = apply_sentiment_rerank(base, cat_sent_map)
-            base = rank_with_cf(user_id, base)
-            return jsonify({'success':True,'user_type':'returning','cluster':c,'recommendations':base[:10]})
-    except Exception as e:
-        return jsonify({'success':False,'error':str(e)})
-
-
-# Try loading on startup
+# Load on startup
 try:
     load_models_from_db()
-except Exception as e:
-    print(f"Failed to load models on startup: {e}")
-
-# Try loading on startup
-try:
-    load_models_from_db()
-except Exception as e:
-    print(f"Failed to load models on startup: {e}")
+except:
+    pass
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
