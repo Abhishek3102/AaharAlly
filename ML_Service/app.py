@@ -356,9 +356,17 @@ def run_training_pipeline(csv_path):
             df = fit_preprocess_cluster(df)
             fit_apriori_cluster_popularity(df)
             fit_restaurant_popularity(df)
-            fit_sentiment(df)
-            fit_cf(df)
-            fit_lstm_sentiment(df)
+            c = fit_sentiment(df)
+            d = fit_cf(df)
+            
+            # MEMORY OPTIMIZATION FOR RENDER FREE TIER
+            # LSTM (TensorFlow) is too heavy for 512MB RAM. 
+            # We skip it and rely on the faster LogisticRegression (c) above.
+            e = {'status': 'skipped_for_memory', 'accuracy': 'use_logreg_instead'}
+            # try:
+            #     e = fit_lstm_sentiment(df)
+            # except:
+            #     e = {}
 
             cat_sent = build_sentiment_category_scores(df)
             models_col.delete_many({'model':'metadata'})
