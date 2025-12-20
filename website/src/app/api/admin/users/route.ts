@@ -5,6 +5,10 @@ import { mongoConnect } from '@/app/utils/feature';
 import jwt from 'jsonwebtoken';
 import { cookies } from 'next/headers';
 
+// FORCE DYNAMIC: This API must always fetch fresh data from DB, never cache.
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET() {
     try {
         await mongoConnect();
