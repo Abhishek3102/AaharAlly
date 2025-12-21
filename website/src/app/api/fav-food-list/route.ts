@@ -1,6 +1,7 @@
 import { User } from "../../models/User";
 import { mongoConnect } from "../../utils/feature";
 import { NextRequest, NextResponse } from "next/server";
+import { food } from "../../models/Food"; // Register 'food' model
 
 mongoConnect();
 
