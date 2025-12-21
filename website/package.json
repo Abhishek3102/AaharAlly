@@ -9,6 +9,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
   "dependencies": {
     "@clerk/nextjs": "^6.0.2",
     "@google/generative-ai": "^0.21.0",
