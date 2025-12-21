@@ -14,7 +14,7 @@ const Navbar = () => {
 
     const handleSearch = () => {
         if (searchText.trim()) {
-            router.push(`/?search=${searchText}`);
+            router.push(`/search?search=${searchText}`);
         } else {
             router.push(`/`);
         }

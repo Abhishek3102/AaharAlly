@@ -117,7 +117,15 @@ const Filters: React.FC = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
+  const ignoreNextEffect = useRef(false);
+
   useEffect(() => {
+    // If flag is set, skip this effect execution and reset the flag
+    if (ignoreNextEffect.current) {
+        ignoreNextEffect.current = false;
+        return;
+    }
+
     const selectedCategories = categoryItems
       .filter((item) => item.selected)
       .map((item) => item.label)
@@ -139,7 +147,7 @@ const Filters: React.FC = () => {
       params.delete("region");
     }
 
-    router.push(`?${params.toString()}`, undefined, { shallow: true });
+    router.push(`?${params.toString()}`, { scroll: false });
   }, [categoryItems, regionItems, router]);
 
   useEffect(() => {
@@ -178,18 +186,24 @@ const Filters: React.FC = () => {
   };
 
   const handleReset = () => {
+    // Prevent the useEffect from syncing state to URL (which reads stale URL)
+    ignoreNextEffect.current = true;
+
     setCategoryItems(
       categoryItems.map((item) => ({ ...item, selected: false }))
     );
     setRegionItems(regionItems.map((item) => ({ ...item, selected: false })));
     setOpenDropdown(null);
 
+    // Hard Reset: Clears everything
     const params = new URLSearchParams(window.location.search);
     params.delete("category");
     params.delete("region");
     params.delete("meal_type");
+    params.delete("health_condition");
+    params.delete("age");
 
-    router.push(`?${params.toString()}`, undefined, { shallow: true });
+    router.push(`?${params.toString()}`, { scroll: false });
   };
 
   const handleOpenModal = () => {

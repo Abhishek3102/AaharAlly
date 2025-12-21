@@ -58,3 +58,9 @@ export async function filterFoodsByCondition(foods: any[], condition: string) {
         return foods; // Fallback to returning all foods if AI fails
     }
 }
+
+export async function generateEmbedding(text: string) {
+    const model = genAI.getGenerativeModel({ model: "gemini-embedding-001" });
+    const result = await model.embedContent(text);
+    return result.embedding.values;
+}

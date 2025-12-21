@@ -7,6 +7,7 @@ import Loading from "@/components/loading";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useUser } from "@clerk/nextjs";
 import toast from "react-hot-toast";
+import PlateVisualizer from "@/components/PlateVisualizer";
 
 
 const IngredientsModal = ({ ingredients, onClose }: { ingredients: string[]; onClose: () => void }) => (
@@ -280,6 +281,21 @@ const TacoCard = ({ params }: { params: Promise<{ id: string }> }) => {
                   <p><strong>Mark:</strong> The best thing Ive ever had&#x21;</p>
                 </div>
               </div>
+            </div>
+            
+            {/* GenAI Plate Visualizer (COMING SOON) */}
+            <div className="mb-8 p-6 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl border border-purple-100 flex flex-col items-center text-center">
+                <div className="bg-white p-3 rounded-full shadow-sm mb-3">
+                    <span className="text-2xl">🎨</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-800">AI Plate Customizer (Coming Soon)</h3>
+                <p className="text-sm text-gray-600 max-w-md mt-2">
+                    Soon you'll be able to visually customize your dish (Add Cheese, Remove Bun) and see a 
+                    <span className="font-semibold text-purple-600"> Real-time 3D Generative Preview</span> before you order!
+                </p>
+                <div className="mt-4 text-xs font-semibold text-purple-500 bg-purple-100 px-3 py-1 rounded-full">
+                    🚧 Under Construction
+                </div>
             </div>
 
             <div className="flex justify-between items-center mt-5 mb-10">

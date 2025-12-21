@@ -263,24 +263,30 @@ export function BookingCard() {
   const isFilterActive =
     searchParams.get("category") ||
     searchParams.get("region") ||
+    searchParams.get("search") || 
     searchParams.get("meal_type");
 
   const categories = ["Breakfast", "Lunch", "Dinner"];
 
   if (initialLoading || loading) return <Loading />;
 
+  const healthCondition = searchParams.get("health_condition");
+
   if (!isFilterActive) {
       return (
           <div className="w-full flex flex-col gap-10 pb-10">
               {categories.map((cat) => {
-                  const items = allFood.filter(item => item.meal_type === cat).slice(0, 5);
+                  // Use filteredFood so server-side filters (Health) apply
+                  const items = filteredFood.filter(item => item.meal_type === cat).slice(0, 5);
                   if (items.length === 0) return null;
                   return (
                       <div key={cat} className="flex flex-col gap-4">
                           <div className="flex justify-between items-center px-4">
-                              <h2 className="text-2xl font-bold text-gray-800">{cat}</h2>
+                              <h2 className="text-2xl font-bold text-gray-800">
+                                {healthCondition ? `${cat} Suggestion for ${healthCondition}` : cat}
+                              </h2>
                               <button 
-                                onClick={() => router.push(`?meal_type=${cat}`)}
+                                onClick={() => router.push(`?meal_type=${cat}${healthCondition ? `&health_condition=${healthCondition}` : ''}`)}
                                 className="text-orangeCustom font-semibold hover:underline"
                               >
                                   View More
