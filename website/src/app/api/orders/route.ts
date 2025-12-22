@@ -27,9 +27,16 @@ export async function POST(req: Request) {
 
         const { shippingInfo } = await req.json();
 
+        // Filter out null foodIds (Orphans)
+        const validCartItems = dbUser.cart.filter((item: any) => item.foodId);
+
+        if (validCartItems.length === 0) {
+            return NextResponse.json({ success: false, message: "Cart items are unavailable" }, { status: 400 });
+        }
+
         // Calculate Total
         let totalAmount = 0;
-        const orderItems = dbUser.cart.map((item: any) => {
+        const orderItems = validCartItems.map((item: any) => {
             // Fix: Handle ranges like "$12-16"
             let priceStr = item.foodId.price || "0";
             if (priceStr.includes('-')) {
