@@ -16,5 +16,4 @@ const HealthCacheSchema = new mongoose.Schema({
     }
 });
 
-// Use useDb to switch to the ML database specifically for this model
-export const HealthCache = (mongoose.connection.useDb('aahar_ally_ml').models.HealthCache) || mongoose.connection.useDb('aahar_ally_ml').model("HealthCache", HealthCacheSchema);
+export const HealthCache = mongoose.models.HealthCache || mongoose.model("HealthCache", HealthCacheSchema);
