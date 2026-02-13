@@ -35,7 +35,7 @@
     "leaflet": "^1.9.4",
     "lucide-react": "^0.453.0",
     "mongoose": "^8.7.2",
-    "next": "^15.0.3",
+    "next": "^15.1.7",
     "react": "^19.0.0-rc.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^19.0.0-rc.1",
