@@ -44,6 +44,11 @@ const Navbar = () => {
            id: 4, 
            name: 'Orders',
            link: '/orders'
+        },
+        {
+           id: 5,
+           name: 'Hotels',
+           link: '/hotels'
         }
     ];
 

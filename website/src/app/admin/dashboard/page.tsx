@@ -54,6 +54,12 @@ const AdminDashboard = () => {
           <h1 className="text-3xl font-bold text-gray-800">Admin Dashboard</h1>
           <div className="flex gap-4">
              <button 
+              onClick={() => router.push('/admin/restaurants')}
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              Manage Restaurants 🏨
+            </button>
+             <button 
               onClick={fetchData} 
               className="bg-white text-gray-600 px-4 py-2 rounded-lg border hover:bg-gray-50 transition"
             >
