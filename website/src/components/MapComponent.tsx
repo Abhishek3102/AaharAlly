@@ -24,11 +24,11 @@ const hotelIcon = new L.Icon({
 
 
 const MapComponent = ({ hotels }: { hotels: any[] }) => {
-    // Center map on Mumbai default
-    const center: [number, number] = [19.0760, 72.8777]; 
+    // Center map on Maharashtra (approx)
+    const center: [number, number] = [19.60, 75.55];  
 
     return (
-        <MapContainer center={center} zoom={11} scrollWheelZoom={false} className="h-[500px] w-full rounded-lg shadow-lg z-0">
+        <MapContainer center={center} zoom={7} scrollWheelZoom={true} className="h-[500px] w-full rounded-lg shadow-lg z-0">
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -44,7 +44,7 @@ const MapComponent = ({ hotels }: { hotels: any[] }) => {
                             <img src={hotel.image} alt={hotel.name} className="w-full h-24 object-cover rounded mb-2" />
                             <h3 className="font-bold text-lg">{hotel.name}</h3>
                             <p className="text-sm text-gray-600 mb-2 truncate max-w-[200px]">{hotel.address}</p>
-                            <Link href={`/hotels/${hotel._id}`} className="inline-block bg-redCustom text-white text-xs px-3 py-1 rounded hover:opacity-80">
+                            <Link href={`/hotels/${hotel._id}`} className="inline-block bg-redCustom text-white text-red-500 px-3 py-1 rounded hover:opacity-80">
                                 View Menu
                             </Link>
                         </div>
