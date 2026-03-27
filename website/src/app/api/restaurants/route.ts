@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { mongoConnect } from '@/app/utils/feature';
 import { Restaurant } from '@/app/models/Restaurant';
+import '@/app/models/Food'; // Register Food schema for populate('menu')
 
 export const dynamic = 'force-dynamic';
 
