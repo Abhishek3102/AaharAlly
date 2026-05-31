@@ -201,28 +201,39 @@ export async function GET(req: Request) {
         });
 
 
-        // --- GEMINI FILTERING (CACHED) ---
+        // --- HARDCODED HEALTH CATEGORY FILTERING ---
         if (health_condition) {
-            // 1. Fetch pre-calculated safe IDs
-            const cache = await HealthCache.findOne({ condition: health_condition });
+            console.log(`Health Filter Request: ${health_condition}`);
+            const healthMap: Record<string, string[]> = {
+                "Diabetes": ["Healthy", "Vegan", "Seafood"],
+                "Hypoglycemia": ["Healthy", "Indian Curry", "Snacks", "South Indian"],
+                "Gastroparesis": ["Healthy", "Seafood", "Snacks"],
+                "IBS": ["Healthy", "Vegan", "South Indian"],
+                "Peptic Ulcer": ["Healthy", "Vegan", "South Indian"],
+                "Hyperthyroidism": ["Healthy", "Indian Curry", "Seafood", "Vegan"],
+                "Kidney Disease": ["Healthy", "Vegan", "South Indian"],
+                "Cystic Fibrosis": ["Cheesy", "Indian Curry", "Seafood", "Healthy"],
+                "Addison's Disease": ["Healthy", "Indian Curry", "Snacks"]
+            };
 
-            if (cache && cache.safe_food_ids) {
-                // 2. Filter the current result set
-                // Convert IDs to string for comparison or use includes
-                const safeSet = new Set(cache.safe_food_ids.map((id: any) => id.toString()));
-                data = data.filter((item: any) => safeSet.has(item._id.toString()));
+            const allowedCategories = (healthMap[health_condition] || []).map(c => c.toLowerCase());
+            
+            if (allowedCategories.length > 0) {
+                // Filter the current 'data' set strictly by these categories (Case Insensitive)
+                data = data.filter((item: any) => 
+                    item.category && allowedCategories.includes(item.category.toLowerCase())
+                );
+                
+                console.log(`Health Filter applied for ${health_condition}. Categories: [${allowedCategories.join(", ")}]. Items remaining: ${data.length}`);
             } else {
-                // Feature fallback: If cache empty, maybe return nothing or all?
-                // User expects valid filtering. If we haven't run the classifier, returning all is dangerous for health.
-                // We return empty array with a log.
-                console.warn(`No health cache found for: ${health_condition}`);
+                console.warn(`No health mapping found for precisely: "${health_condition}"`);
                 data = [];
             }
         }
 
         return NextResponse.json({ data, success: true }, { status: 200 });
     } catch (err: any) {
-        console.error("API Error:", err);
+        console.error("API Error in Users/route.ts:", err);
         return NextResponse.json({ message: `Error processing request: ${err.message}`, success: false }, { status: 500 });
     }
 }

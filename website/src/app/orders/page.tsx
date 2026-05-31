@@ -1,17 +1,18 @@
-
 "use client";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-// Assuming you have a Card or similar, but for orders we might want a list view.
-// I'll create a clean Tailwind layout.
 import Link from 'next/link';
+import { useUser } from '@clerk/nextjs';
+import { useRouter } from 'next/navigation';
+import { toast, Toaster } from 'react-hot-toast';
 
 interface OrderItem {
     foodId: {
+        _id: string;
         name: string;
         image: string;
         price: string;
-    };
+    } | any;
     quantity: number;
     price: number;
 }
@@ -24,30 +25,32 @@ interface Order {
     items: OrderItem[];
 }
 
-import { useUser } from '@clerk/nextjs';
-import { useRouter } from 'next/navigation';
-
 const OrdersPage = () => {
     const { user, isLoaded } = useUser();
     const router = useRouter();
     const [orders, setOrders] = useState<Order[]>([]);
     const [loading, setLoading] = useState(true);
+    
+    // Review State
+    const [reviewingId, setReviewingId] = useState<string | null>(null);
+    const [reviewText, setReviewText] = useState("");
+    const [submittingReview, setSubmittingReview] = useState(false);
 
     useEffect(() => {
         if (isLoaded && !user) {
-            router.push('/sign-in'); // Redirect if not logged in
+            router.push('/sign-in'); 
             return;
         }
 
         const fetchOrders = async () => {
-            if (!user) return; // double check
+            if (!user) return;
             try {
                 const res = await axios.get('/api/orders');
                 if (res.data.success) {
                     setOrders(res.data.orders);
                 }
             } catch (err) {
-                console.error(err);
+                console.error("Fetch Orders Error:", err);
             } finally {
                 setLoading(false);
             }
@@ -58,85 +61,139 @@ const OrdersPage = () => {
         }
     }, [user, isLoaded, router]);
 
-    if (loading) return <div className="text-center py-20">Loading orders...</div>;
+    const handleReviewSubmit = async (foodId: string) => {
+        if (!reviewText.trim()) {
+            toast.error("Please enter a review");
+            return;
+        }
+
+        setSubmittingReview(true);
+        try {
+            const res = await axios.post('/api/orders/review', {
+                foodId,
+                reviewText
+            });
+
+            if (res.data.success) {
+                toast.success(res.data.message, { icon: res.data.isPositive ? '🔥' : '❄️' });
+                setReviewingId(null);
+                setReviewText("");
+            }
+        } catch (err: any) {
+            toast.error(err.response?.data?.message || "Failed to submit review");
+        } finally {
+            setSubmittingReview(false);
+        }
+    };
+
+    if (loading) return <div className="text-center py-20 text-white bg-black min-h-screen">Loading orders...</div>;
 
     return (
-        <div className="container mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold mb-8 text-gray-800">Your Orders</h1>
-            
-            {orders.length === 0 ? (
-                <div className="text-center py-12 bg-white rounded-lg shadow">
-                    <p className="text-xl text-gray-600 mb-4">No orders found.</p>
-                    <Link href="/explore">
-                        <button className="bg-redCustom text-white px-6 py-2 rounded-full hover:bg-orangeCustom transition">
-                            Start Ordering
-                        </button>
-                    </Link>
-                </div>
-            ) : (
-                <div className="grid gap-8">
-                    {orders.map((order) => (
-                        <div key={order._id} className="bg-gradient-to-br from-gray-900 via-gray-800 to-black p-6 rounded-2xl shadow-xl border border-gray-700 text-white relative overflow-hidden transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-orange-500/10">
-                            {/* Decorative Top Bar */}
-                            <div className={`absolute top-0 left-0 w-full h-1 ${
-                                order.status === 'completed' ? 'bg-gradient-to-r from-green-400 to-emerald-600' : 'bg-gradient-to-r from-yellow-400 to-orange-500'
-                            }`} />
-
-                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 border-b border-gray-700 pb-4 mt-2">
-                                <div>
-                                    <p className="text-xs text-gray-400 font-mono tracking-wider uppercase mb-1">Order ID</p>
-                                    <p className="text-sm font-semibold text-gray-200">{order._id}</p>
-                                    <p className="text-xs text-gray-500 mt-1">
-                                        {new Date(order.createdAt).toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })} • {new Date(order.createdAt).toLocaleTimeString()}
-                                    </p>
-                                </div>
-                                <div className="text-right mt-4 md:mt-0 flex flex-col items-end">
-                                    <span className={`inline-block px-4 py-1 rounded-full text-xs font-bold tracking-wide shadow-lg mb-2 ${
-                                        order.status === 'completed' 
-                                        ? 'bg-green-900/50 text-green-400 border border-green-700/50' 
-                                        : 'bg-yellow-900/50 text-yellow-400 border border-yellow-700/50'
-                                    }`}>
-                                        {order.status.toUpperCase()}
-                                    </span>
-                                    <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                                        ₹{order.totalAmount.toFixed(2)}
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div className="space-y-3 mt-4">
-                                {order.items.map((item, idx) => (
-                                    <div key={idx} className="group flex justify-between items-center bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/10">
-                                        <div className="flex items-center space-x-5">
-                                            <div className="relative">
-                                                {item.foodId?.image ? (
-                                                    <img src={item.foodId.image} alt={item.foodId.name} className="w-16 h-16 object-cover rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300" />
-                                                ) : (
-                                                    <div className="w-16 h-16 bg-gray-700 rounded-xl flex items-center justify-center text-gray-500 text-xs">No Img</div>
-                                                )}
-                                                {/* Quantity Badge */}
-                                                <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full shadow-md border border-gray-900">
-                                                    {item.quantity}
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <p className="font-bold text-lg text-white group-hover:text-orange-400 transition-colors">{item.foodId?.name || "Unknown Item"}</p>
-                                                <p className="text-sm text-gray-400 mt-1">
-                                                     ₹{item.price} each
-                                                </p>
-                                            </div>
+        <div className="bg-black min-h-screen pb-20">
+            <Toaster position="bottom-center" />
+            <div className="container mx-auto px-4 py-8">
+                <h1 className="text-3xl font-bold mb-8 text-white text-center md:text-left">Your Order History</h1>
+                
+                {orders.length === 0 ? (
+                    <div className="text-center py-12 bg-white/5 backdrop-blur-md rounded-lg shadow border border-white/10">
+                        <p className="text-xl text-gray-400 mb-4">No orders found.</p>
+                        <Link href="/explore">
+                            <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">
+                                Explore Menu
+                            </button>
+                        </Link>
+                    </div>
+                ) : (
+                    <div className="grid gap-12">
+                        {orders.map((order) => (
+                            <div key={order._id} className="bg-gradient-to-br from-gray-900 via-gray-800 to-black p-6 rounded-3xl shadow-2xl border border-gray-800 text-white relative overflow-hidden transition-all duration-300 hover:shadow-orange-500/10">
+                                {/* Status Header */}
+                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 border-b border-white/10 pb-6">
+                                    <div className="flex flex-col">
+                                        <div className="flex items-center gap-3">
+                                            <span className={`w-3 h-3 rounded-full animate-pulse ${order.status === 'completed' ? 'bg-green-500' : 'bg-yellow-500'}`} />
+                                            <h2 className="text-xs font-mono text-gray-400 uppercase tracking-widest">Order Reference</h2>
                                         </div>
-                                        <div className="text-right">
-                                            <p className="font-bold text-xl text-white">₹{(item.quantity * item.price).toFixed(2)}</p>
-                                            <p className="text-xs text-gray-500 mt-1">Subtotal</p>
-                                        </div>
+                                        <p className="text-sm font-bold text-gray-300 mt-1">{order._id}</p>
+                                        <p className="text-xs text-gray-500 mt-2">
+                                            {new Date(order.createdAt).toDateString()} at {new Date(order.createdAt).toLocaleTimeString()}
+                                        </p>
                                     </div>
-                                ))}
+                                    <div className="mt-4 md:mt-0 text-right">
+                                        <p className="text-3xl font-black text-white">₹{order.totalAmount.toFixed(2)}</p>
+                                        <span className="text-[10px] text-orange-400 font-bold uppercase tracking-tighter">Verified Order</span>
+                                    </div>
+                                </div>
+                                
+                                <div className="space-y-6">
+                                    {order.items.map((item, idx) => (
+                                        <div key={idx} className="flex flex-col bg-white/5 rounded-2xl border border-white/5 overflow-hidden group hover:border-orange-500/20 transition-all duration-500">
+                                            <div className="p-5 flex justify-between items-center sm:items-start flex-wrap gap-4">
+                                                <div className="flex items-center space-x-6">
+                                                    <div className="relative">
+                                                        <img 
+                                                            src={item.foodId?.image || "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=100"} 
+                                                            alt="" 
+                                                            className="w-20 h-20 object-cover rounded-2xl shadow-xl group-hover:scale-110 transition-transform duration-500" 
+                                                        />
+                                                        <div className="absolute -top-3 -right-3 bg-redCustom text-white text-[10px] font-black w-7 h-7 flex items-center justify-center rounded-full border-2 border-black">
+                                                            {item.quantity}x
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h3 className="font-bold text-xl text-white group-hover:text-orange-400 transition-colors">
+                                                            {item.foodId?.name || "Premium Meal Item"}
+                                                        </h3>
+                                                        <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">
+                                                            Ref: {item.foodId?._id ? item.foodId._id.substring(0,8) : 'N/A'}
+                                                        </p>
+                                                        <p className="text-sm text-gray-400 mt-2 font-mono italic">Unit Price: ₹{item.price}</p>
+                                                    </div>
+                                                </div>
+
+                                                <div className="flex flex-col items-end gap-3 w-full sm:w-auto">
+                                                    <p className="text-2xl font-bold text-white">₹{(item.quantity * item.price).toFixed(2)}</p>
+                                                    <button 
+                                                        onClick={() => {
+                                                            const id = item.foodId?._id || item.foodId;
+                                                            if (!id) return;
+                                                            setReviewingId(reviewingId === id ? null : id);
+                                                        }}
+                                                        className="text-[10px] font-black tracking-widest text-orange-400 border border-orange-400/20 px-6 py-2 rounded-full hover:bg-orange-400 hover:text-black transition-all"
+                                                    >
+                                                        {reviewingId === (item.foodId?._id || item.foodId) ? "ABORT REVIEW" : "RATE & REVIEW ITEM"}
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            {/* Expandable Review Panel */}
+                                            {reviewingId === (item.foodId?._id || item.foodId) && (
+                                                <div className="px-5 py-5 bg-orange-500/5 border-t border-white/10 animate-in fade-in slide-in-from-top-2 duration-300">
+                                                    <textarea 
+                                                        value={reviewText}
+                                                        onChange={(e) => setReviewText(e.target.value)}
+                                                        className="w-full bg-black/60 border border-white/10 rounded-2xl p-4 text-sm text-white placeholder:text-gray-600 focus:outline-none focus:border-orange-500/40 min-h-[100px]"
+                                                        placeholder="Write your honest review here... Your feedback directly trains our recommendation engine."
+                                                    />
+                                                    <div className="flex justify-end mt-4">
+                                                        <button 
+                                                            disabled={submittingReview}
+                                                            onClick={() => handleReviewSubmit(item.foodId?._id || item.foodId)}
+                                                            className="bg-orange-500 text-black text-[11px] font-black px-8 py-3 rounded-full hover:bg-orange-400 disabled:bg-gray-800 disabled:text-gray-500 transition-all shadow-xl shadow-orange-500/10"
+                                                        >
+                                                            {submittingReview ? "ANALYZING SENTIMENT..." : "CAST REVIEW"}
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            )}
+                        ))}
+                    </div>
+                )}
+            </div>
         </div>
     );
 };
