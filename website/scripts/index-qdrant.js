@@ -32,17 +32,27 @@ const Food = mongoose.models.food || mongoose.model('food', foodSchema);
 
 const genAI = new GoogleGenerativeAI(NEXT_PUBLIC_GENAI);
 const model = genAI.getGenerativeModel({ model: "gemini-embedding-001" });
-const qdrant = new QdrantClient({ url: QDRANT_URL, apiKey: QDRANT_API_KEY });
+const qdrant = new QdrantClient({ 
+    url: QDRANT_URL, 
+    apiKey: QDRANT_API_KEY,
+    checkCompatibility: false 
+});
 
 // Delay helper to avoid rate limits
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function generateEmbedding(text) {
+async function generateEmbedding(text, retryCount = 0) {
     try {
         const result = await model.embedContent(text);
         return result.embedding.values;
     } catch (e) {
-        console.error("Embedding Error:", e.message);
+        if (e.message.includes("429") && retryCount < 5) {
+            const backoffTime = Math.pow(2, retryCount) * 2000;
+            console.log(`\nRate limit hit. Retrying in ${backoffTime/1000}s...`);
+            await delay(backoffTime);
+            return generateEmbedding(text, retryCount + 1);
+        }
+        console.error("\nEmbedding Error:", e.message);
         return null;
     }
 }
@@ -152,15 +162,15 @@ async function seed() {
                 console.error(`\nFailed to upsert ${food.name}:`, err.message);
             }
 
-            // Rate Limit Protection (free tier)
-            await delay(500); 
+            // Rate Limit Protection (Gemini Free Tier allows ~15 RPM, so we wait 4.5s per request)
+            await delay(4500); 
         }
 
         console.log("\n\nIndexing Complete!");
         process.exit(0);
 
     } catch (e) {
-        console.error("Script Error:", e);
+        console.error("\nScript Error:", e);
         process.exit(1);
     }
 }
