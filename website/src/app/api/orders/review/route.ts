@@ -38,6 +38,7 @@ export async function POST(req: Request) {
         // 2. Call ML Service for Sentiment Analysis
         const ML_API = process.env.NEXT_PUBLIC_ML_API_URL || "https://aaharally.onrender.com";
         let isPositive = true;
+        let mlSuccess = false;
 
         try {
             const mlRes = await axios.post(`${ML_API}/api/sentiment/predict`, {
@@ -47,11 +48,31 @@ export async function POST(req: Request) {
             if (mlRes.data.success && mlRes.data.positive_probabilities) {
                 const prob = mlRes.data.positive_probabilities[0];
                 isPositive = prob >= 0.5;
+                mlSuccess = true;
                 console.log(`Sentiment Result: ${isPositive ? 'Pos' : 'Neg'} (Prob: ${prob}) for text: "${reviewText}"`);
             }
         } catch (e) {
-            console.error("ML Sentiment Analysis Failed, defaulting to Positive:", e);
-            // Defaulting to positive to not punish the user on API failure
+            console.error("ML Sentiment Analysis HTTP Call Failed:", e.message);
+        }
+
+        // FALLBACK: If ML service is down, sleeping, or models aren't trained
+        if (!mlSuccess) {
+            console.log("Using Fallback Keyword Sentiment Analysis...");
+            const textLower = reviewText.toLowerCase();
+            
+            // Strong negative indicators
+            const negativeWords = ["not good", "bad", "terrible", "awful", "worst", "disappointed", "hate", "gross", "poor", "never", "bland", "cold"];
+            
+            // Check if any negative word is in the text
+            const hasNegative = negativeWords.some(word => textLower.includes(word));
+            
+            if (hasNegative) {
+                isPositive = false;
+                console.log(`Fallback Sentiment Result: Negative (Matched negative keywords in: "${reviewText}")`);
+            } else {
+                isPositive = true;
+                console.log(`Fallback Sentiment Result: Positive (Default/No negative keywords)`);
+            }
         }
 
         // 3. Update User Recommendations based on Sentiment (Re-ranking)
